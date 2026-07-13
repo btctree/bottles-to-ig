@@ -86,7 +86,9 @@ def fetch_album(base):
     photos = r.json().get("photos", [])
     out = []
     for p in photos:
-        derivs = p.get("derivatives", {})
+        if p.get("mediaAssetType", "").lower() == "video":
+            continue
+        derivs = {k: v for k, v in p.get("derivatives", {}).items() if k.isdigit()}
         if not derivs:
             continue
         best = max(derivs.items(), key=lambda kv: int(kv[0]))
