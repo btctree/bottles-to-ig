@@ -64,6 +64,12 @@
    "status": "disqualified",
    "phash": "8715782842dee3cf",
    "reason": "The photo shows multiple bottles instead of a single main subject, and they are standing upright rather than being tilted at a 45-degree angle."
+  },
+  "DCC0FD5C-521D-4517-AB2F-37A20BE61051": {
+   "status": "posted",
+   "phash": "b3c3e13ccca5b590",
+   "ig_media_id": "17966291592068810",
+   "kind": "sake"
   }
  },
  "token_refreshed_at": 1783956500
