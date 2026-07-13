@@ -10,6 +10,37 @@
    "phash": "b3c3e13ccca5b590",
    "ig_media_id": "17966291592068810",
    "kind": "sake"
+  },
+  "C6D5F869-9E94-42B4-BFBD-500F5B78EF86": {
+   "status": "disqualified",
+   "phash": "de7cd08dd3653412",
+   "reason": "The wine bottle is standing on a table rather than being held in a hand."
+  },
+  "4963F1BF-AD07-43FA-984C-A2C2CE951B4C": {
+   "status": "disqualified",
+   "phash": "dde0c8a76ac970ca",
+   "reason": "The bottle is sitting in an ice bucket, not being held by a hand."
+  },
+  "0EB3775A-8510-4B54-BC3F-9C9E1881AA9C": {
+   "status": "disqualified",
+   "phash": "e1aa52678ade9c62",
+   "reason": "The subject is a bottle of whisky, not wine or sake, and it is standing on a surface rather than being held in a hand."
+  },
+  "979CB83D-BDD3-48C4-A86D-1DE417FDF0CD": {
+   "status": "disqualified",
+   "phash": "c3c3a4d89aa6d399",
+   "reason": "The bottle is whisky, not wine or sake, and it is standing on a shelf rather than being held in a hand."
+  },
+  "5C1438A1-4189-4576-9B68-36B6F549DD47": {
+   "status": "disqualified",
+   "phash": "f545c513e2c3aac6",
+   "reason": "The label is too dark and low-contrast to be readable, making it impossible to identify the specific wine or sake."
+  },
+  "578E9475-E583-4C94-A496-9CA4FEF0F008": {
+   "status": "posted",
+   "phash": "ade19b967427c918",
+   "ig_media_id": "18107156687044057",
+   "kind": "sake"
   }
  },
  "token_refreshed_at": 1783956500
