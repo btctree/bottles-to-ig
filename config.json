@@ -1,0 +1,11 @@
+{
+  "posts_per_day": 1,
+  "max_vision_checks_per_run": 20,
+  "phash_threshold": 8,
+  "order": "newest_first",
+  "gemini_model": "gemini-2.5-flash",
+  "repo": "btctree/bottles-to-ig",
+  "branch": "main",
+  "album_token": "B2C5oqs3qXXAco",
+  "ig_username": "drink_drink_goodmorning"
+}

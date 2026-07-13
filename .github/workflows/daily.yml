@@ -1,0 +1,34 @@
+name: daily-post
+
+on:
+  schedule:
+    - cron: "0 1 * * *"   # 09:00 Hong Kong time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: configure git
+        run: |
+          git config user.name "bottles-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: run pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          ADMIN_PAT: ${{ secrets.ADMIN_PAT }}
+          GIT_PUSH: "1"
+        run: python pipeline.py
