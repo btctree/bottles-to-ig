@@ -202,13 +202,24 @@ def gemini(prompt, img_bytes=None, retries=3):
     }
     for i in range(retries):
         r = requests.post(url, json=body, timeout=120)
-        if r.status_code == 429:
+        if r.status_code in (429, 500, 502, 503):
             time.sleep(30 * (i + 1))
             continue
         r.raise_for_status()
         txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(txt)
-    raise RuntimeError("Gemini rate-limited after retries")
+        txt = re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip()
+        try:
+            return json.loads(txt)
+        except json.JSONDecodeError:
+            m = re.search(r"\{.*\}", txt, re.S)
+            if m:
+                try:
+                    return json.loads(m.group(0).replace("“", '\\"').replace("”", '\\"'))
+                except json.JSONDecodeError:
+                    pass
+            print(f"  bad JSON from model (attempt {i + 1}), retrying")
+            continue
+    raise RuntimeError("Gemini failed after retries")
 
 
 QUALIFY_PROMPT = """You check photos for an Instagram feed about wine and sake bottles.
@@ -226,12 +237,15 @@ If it is SAKE (nihonshu):
 If it is WINE:
 {"kind":"wine","name":"","country":"","region":"","village":"","grapes":["",""],"vintage":"e.g. 2019","flavor":"one word"}
 If you cannot identify it at all: {"kind":"unknown"}
-Rules: leave a field as empty string if not visible/known — do NOT guess.
-Read rice polishing ratio (精米歩合) and rice variety from the label if printed."""
+Rules: read fields from the label when visible (especially rice polishing ratio
+精米歩合 and rice variety). If you have confidently identified the exact product,
+you may fill remaining fields (grapes, flavor, brewery, city, rice, polish) from
+well-established knowledge of that specific product. Leave a field as empty
+string only when it cannot be determined either way — never fabricate."""
 
 
 def tagify(s):
-    s = re.sub(r"[^0-9A-Za-z぀-ヿ㐀-鿿ｦ-ﾟ]", "", s.strip())
+    s = "".join(ch for ch in s.strip() if ch.isalnum())
     return f"#{s}" if s else ""
 
 
