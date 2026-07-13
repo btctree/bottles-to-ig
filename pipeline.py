@@ -63,9 +63,13 @@ def commit_push(paths, msg):
         print(f"[dry] would commit: {msg}")
         return
     git("add", *paths)
-    r = git("commit", "-m", msg, check=False)
+    r = git("-c", "user.name=bottles-bot",
+            "-c", "user.email=actions@users.noreply.github.com",
+            "commit", "-m", msg, check=False)
     if r.returncode == 0:
         git("push")
+    elif "nothing to commit" not in (r.stdout + r.stderr):
+        print(f"git commit failed: {(r.stderr or r.stdout)[:200]}")
 
 
 # ---------------------------------------------------------------- iCloud album
@@ -330,7 +334,8 @@ def ig_publish(uid, image_url, caption):
     r = requests.post(f"{GRAPH}/{uid}/media", data={
         "image_url": image_url, "caption": caption,
         "access_token": IG_TOKEN}, timeout=120)
-    r.raise_for_status()
+    if not r.ok:
+        raise RuntimeError(f"media container HTTP {r.status_code}: {r.text[:300]}")
     container = r.json()["id"]
     for _ in range(20):
         s = requests.get(f"{GRAPH}/{container}", params={

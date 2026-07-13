@@ -1,4 +1,70 @@
 {
- "photos": {},
+ "photos": {
+  "C6D5F869-9E94-42B4-BFBD-500F5B78EF86": {
+   "status": "disqualified",
+   "phash": "de7cd08dd3653412",
+   "reason": "The wine bottle is standing upright instead of being tilted at a 45-degree angle as required."
+  },
+  "4963F1BF-AD07-43FA-984C-A2C2CE951B4C": {
+   "status": "disqualified",
+   "phash": "dde0c8a76ac970ca",
+   "reason": "The bottle is standing vertically in an ice bucket rather than being tilted at a 45-degree angle."
+  },
+  "0EB3775A-8510-4B54-BC3F-9C9E1881AA9C": {
+   "status": "disqualified",
+   "phash": "e1aa52678ade9c62",
+   "reason": "The image shows a whisky box rather than a wine or sake bottle, and it is standing vertically instead of being tilted at a 45-degree angle."
+  },
+  "979CB83D-BDD3-48C4-A86D-1DE417FDF0CD": {
+   "status": "disqualified",
+   "phash": "c3c3a4d89aa6d399",
+   "reason": "The bottle contains Scotch whisky rather than wine or sake, and it is standing vertically instead of being tilted at a 45-degree angle."
+  },
+  "F8C83039-5B6D-48B5-A26C-358C4BF804FD": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfc08d33f013c63c",
+   "match": "17927578237533829"
+  },
+  "5C1438A1-4189-4576-9B68-36B6F549DD47": {
+   "status": "disqualified",
+   "phash": "f545c513e2c3aac6",
+   "reason": "While the bottle is held at the correct diagonal angle, the label is too dark and lacks sufficient contrast with the bottle to be clearly readable."
+  },
+  "35346A52-2CB6-4E40-9C1F-C6139BA088FC": {
+   "status": "disqualified",
+   "phash": "e78e3ae7511934e0",
+   "reason": "The bottle is standing vertically rather than being tilted at a 45-degree angle."
+  },
+  "1748CAE2-4F77-4884-B705-6792B35840DC": {
+   "status": "disqualified",
+   "phash": "8f501db0d66eda26",
+   "reason": "The bottle is standing upright and is not tilted at the required 45-degree angle."
+  },
+  "082A7677-FA08-468A-BC04-F2B447FAB618": {
+   "status": "disqualified",
+   "phash": "8715782842deebcd",
+   "reason": "The photo shows multiple bottles instead of a single main subject, and they are standing upright rather than being tilted at a 45-degree angle."
+  },
+  "95968321-4179-4F0A-9596-C8D86401CC35": {
+   "status": "disqualified",
+   "phash": "d08aebf21e74990d",
+   "reason": "The photo shows multiple wine bottles instead of a single main subject, and they are standing upright rather than being tilted at a 45-degree angle."
+  },
+  "7C27CBE8-A8EC-4714-BA41-3C9E1479C931": {
+   "status": "disqualified",
+   "phash": "fa609597a7788296",
+   "reason": "The bottle is standing upright rather than being tilted at a 45-degree angle as required."
+  },
+  "D0834E63-6490-4EDB-B9E0-A2456F352630": {
+   "status": "disqualified",
+   "phash": "bda75803bc2724ba",
+   "reason": "The bottle is held vertically rather than being tilted at a 45-degree diagonal angle as required."
+  },
+  "4F8708E9-096E-4B1E-BAEE-E8610F71D4D0": {
+   "status": "disqualified",
+   "phash": "8715782842dee3cf",
+   "reason": "The photo shows multiple bottles instead of a single main subject, and they are standing upright rather than being tilted at a 45-degree angle."
+  }
+ },
  "token_refreshed_at": 1783956500
 }
