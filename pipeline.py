@@ -189,7 +189,7 @@ def apply_preset(img_bytes):
 # ---------------------------------------------------------------- gemini
 
 def gemini(prompt, img_bytes=None, retries=5):
-    models = [CONFIG["gemini_model"], "gemini-flash-latest"]
+    models = [CONFIG["gemini_model"], "gemini-3.1-flash-lite"]
     parts = [{"text": prompt}]
     if img_bytes:
         parts.append({"inline_data": {
