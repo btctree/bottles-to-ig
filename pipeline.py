@@ -433,6 +433,7 @@ def main():
         if not q.get("qualified"):
             photos_state[guid] = {"status": "disqualified", "phash": h,
                                   "reason": q.get("reason", "")}
+            save_json(STATE_PATH, state)
             print(f"{guid[:8]}: not qualified ({q.get('reason','')[:60]})")
             continue
 
