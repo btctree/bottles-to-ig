@@ -188,10 +188,8 @@ def apply_preset(img_bytes):
 
 # ---------------------------------------------------------------- gemini
 
-def gemini(prompt, img_bytes=None, retries=3):
-    model = CONFIG["gemini_model"]
-    url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-           f"{model}:generateContent?key={GEMINI_KEY}")
+def gemini(prompt, img_bytes=None, retries=5):
+    models = [CONFIG["gemini_model"], "gemini-flash-latest"]
     parts = [{"text": prompt}]
     if img_bytes:
         parts.append({"inline_data": {
@@ -202,10 +200,16 @@ def gemini(prompt, img_bytes=None, retries=3):
         "contents": [{"parts": parts}],
         "generationConfig": {"temperature": 0.2, "response_mime_type": "application/json"},
     }
+    last = ""
     for i in range(retries):
+        model = models[min(i // 2, len(models) - 1)]  # fall back after 2 tries
+        url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
+               f"{model}:generateContent?key={GEMINI_KEY}")
         r = requests.post(url, json=body, timeout=120)
         if r.status_code in (429, 500, 502, 503):
-            time.sleep(30 * (i + 1))
+            last = f"{model} HTTP {r.status_code}"
+            print(f"  {last}, retry {i + 1}")
+            time.sleep(20 * (i + 1))
             continue
         r.raise_for_status()
         txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
@@ -220,8 +224,9 @@ def gemini(prompt, img_bytes=None, retries=3):
                 except json.JSONDecodeError:
                     pass
             print(f"  bad JSON from model (attempt {i + 1}), retrying")
+            last = "bad JSON"
             continue
-    raise RuntimeError("Gemini failed after retries")
+    raise RuntimeError(f"Gemini failed after retries ({last})")
 
 
 QUALIFY_PROMPT = """You check photos for an Instagram feed about wine and sake bottles.
@@ -420,7 +425,11 @@ def main():
             continue
 
         checks += 1
-        q = gemini(QUALIFY_PROMPT, raw)
+        try:
+            q = gemini(QUALIFY_PROMPT, raw)
+        except Exception as e:
+            print(f"{guid[:8]}: vision unavailable ({e}) - stopping early, will retry next run")
+            break
         if not q.get("qualified"):
             photos_state[guid] = {"status": "disqualified", "phash": h,
                                   "reason": q.get("reason", "")}
