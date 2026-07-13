@@ -234,10 +234,15 @@ def gemini(prompt, img_bytes=None, retries=5):
 
 
 QUALIFY_PROMPT = """You check photos for an Instagram feed about wine and sake bottles.
+The feed's signature style: ONE bottle HELD IN A HAND, close up, filling most of
+the frame, front label facing the camera and readable. The bottle is usually
+tilted diagonally, anywhere from slightly leaning to ~60 degrees — a hand-held
+bottle that is nearly vertical still qualifies.
 Answer in JSON: {"qualified": true/false, "reason": "..."}
-qualified=true ONLY if: the photo clearly shows ONE wine or sake bottle as the main
-subject, AND the bottle is displayed/held tilted at roughly 45 degrees (diagonal),
-AND the label is readable enough to identify the drink."""
+qualified=true ONLY if ALL hold:
+- exactly one wine or sake bottle is the clear main subject (not whisky/beer/spirits)
+- a hand is holding the bottle (not standing on a table/shelf/ice bucket)
+- the label is readable enough to identify the drink"""
 
 IDENTIFY_PROMPT = """Identify this bottle precisely from its label. Answer in JSON only.
 If it is SAKE (nihonshu):
