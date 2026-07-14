@@ -41,6 +41,17 @@
    "phash": "ade19b967427c918",
    "ig_media_id": "18107156687044057",
    "kind": "sake"
+  },
+  "5C5D7A90-DF25-42FD-878E-C2A87DD7B540": {
+   "status": "disqualified",
+   "phash": "9a046d636dd6639c",
+   "reason": "The bottle is held perfectly vertical rather than tilted diagonally, and the image shows the back label (containing the barcode and technical specifications) instead of the front brand label."
+  },
+  "589CA7F3-3599-4349-BAC0-CF9F7EE8B779": {
+   "status": "posted",
+   "phash": "c8ff1077c31cc81b",
+   "ig_media_id": "17876668446511405",
+   "kind": "sake"
   }
  },
  "token_refreshed_at": 1783956500
