@@ -2,7 +2,7 @@ name: daily-post
 
 on:
   schedule:
-    - cron: "0 1 * * *"   # 09:00 Hong Kong time
+    - cron: "10 12 * * *"   # 20:10 Hong Kong / 21:10 Japan — evening prime time
   workflow_dispatch:
 
 permissions:
