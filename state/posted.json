@@ -52,6 +52,42 @@
    "phash": "c8ff1077c31cc81b",
    "ig_media_id": "17876668446511405",
    "kind": "sake"
+  },
+  "3F4DBB95-846E-4ABE-96AA-DA402227A48F": {
+   "status": "skipped_already_on_ig",
+   "phash": "bae58b12e405ed39",
+   "match": "17942736545895677"
+  },
+  "1999AEE5-AA89-45D7-9FC0-D77B3506F383": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec09b36e401ed39",
+   "match": "17942736545895677"
+  },
+  "6005B7F1-7AD8-4AEA-80EB-E1E7202B0CE0": {
+   "status": "disqualified",
+   "phash": "945b2be32c86b993",
+   "reason": "The subject is a sake box or carton rather than a bottle."
+  },
+  "DDFC506F-031B-432B-87A7-776193608D89": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec09b36a405adb9",
+   "match": "18063714838656366"
+  },
+  "8F4E8B3F-56FD-4E3D-8AAF-1669361D24E7": {
+   "status": "disqualified",
+   "phash": "e1cc1be126d6299e",
+   "reason": "The image shows a box rather than a bottle, and it is standing on a surface instead of being held in a hand."
+  },
+  "11BA4CBC-A39B-4B25-8D18-19028EDE75A2": {
+   "status": "disqualified",
+   "phash": "b1cc0bf126d628cf",
+   "reason": "The subject is a box rather than a bottle, and it is standing on a surface instead of being held in a hand."
+  },
+  "F004B320-CAC0-45AB-A6FE-BB9661305D20": {
+   "status": "posted",
+   "phash": "fee968a578846895",
+   "ig_media_id": "18130205566587844",
+   "kind": "sake"
   }
  },
  "token_refreshed_at": 1783956500
