@@ -88,6 +88,17 @@
    "phash": "fee968a578846895",
    "ig_media_id": "18130205566587844",
    "kind": "sake"
+  },
+  "4CAC0A8A-9D5E-4B5B-BBB4-557790928C7A": {
+   "status": "disqualified",
+   "phash": "9bff2d013c0f340d",
+   "reason": "The image shows the back label (technical specifications and ingredients) instead of the front label, which is a requirement of the feed's signature style."
+  },
+  "4D7794A6-FF34-47D9-A579-79BB8B73DDBE": {
+   "status": "posted",
+   "phash": "bcc183d2964a8f79",
+   "ig_media_id": "18606399319015766",
+   "kind": "sake"
   }
  },
  "token_refreshed_at": 1783956500
