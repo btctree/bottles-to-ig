@@ -233,15 +233,16 @@ def gemini(prompt, img_bytes=None, retries=5):
     raise RuntimeError(f"Gemini failed after retries ({last})")
 
 
-QUALIFY_PROMPT = """You check photos for an Instagram feed about wine and sake bottles.
-The feed's signature style: ONE bottle HELD IN A HAND, close up, filling most of
-the frame, front label facing the camera and readable. The bottle is usually
-tilted diagonally, anywhere from slightly leaning to ~60 degrees — a hand-held
-bottle that is nearly vertical still qualifies.
+QUALIFY_PROMPT = """You check photos for an Instagram feed about alcohol bottles
+(sake, wine, whisky, beer, champagne, gin, shochu, umeshu — any alcoholic drink).
+The feed's signature style: ONE bottle HELD IN A HAND and clearly TILTED
+DIAGONALLY at roughly 45 degrees, close up, front label facing the camera.
 Answer in JSON: {"qualified": true/false, "reason": "..."}
 qualified=true ONLY if ALL hold:
-- exactly one wine or sake bottle is the clear main subject (not whisky/beer/spirits)
+- exactly one alcohol bottle is the clear main subject
 - a hand is holding the bottle (not standing on a table/shelf/ice bucket)
+- the bottle is clearly tilted diagonally at roughly 45 degrees (about 25-65
+  degrees from vertical) — reject upright or only slightly leaning bottles
 - the label is readable enough to identify the drink"""
 
 IDENTIFY_PROMPT = """Identify this bottle precisely from its label. Answer in JSON only.
@@ -252,6 +253,9 @@ If it is SAKE (nihonshu):
 "city_en":"","city_ja":"","flavor_en":"one word e.g. fruity","flavor_ja":"e.g. フルーティー"}
 If it is WINE:
 {"kind":"wine","name":"","country":"","region":"","village":"","grapes":["",""],"vintage":"e.g. 2019","flavor":"one word"}
+If it is any OTHER alcohol (whisky, beer, champagne, gin, shochu, umeshu, liqueur...):
+{"kind":"other","name_en":"","name_ja":"","category_en":"e.g. Scotch whisky","category_ja":"e.g. スコッチウイスキー",
+"maker_en":"","maker_ja":"","country_en":"","country_ja":"","region":"","age_or_vintage":"","flavor_en":"one word","flavor_ja":""}
 If you cannot identify it at all: {"kind":"unknown"}
 Rules: read fields from the label when visible (especially rice polishing ratio
 精米歩合 and rice variety). If you have confidently identified the exact product,
@@ -286,6 +290,20 @@ def build_caption(info):
         tags.append(tagify(str(info.get("flavor", ""))))
         tags += ["#wine", "#winelover"]
         title = info.get("name") or ""
+    elif info.get("kind") == "other":
+        order = ["name_en", "name_ja", "category_ja", "category_en", "maker_ja",
+                 "maker_en", "country_ja", "country_en", "region",
+                 "flavor_ja", "flavor_en"]
+        for k in order:
+            tags.append(tagify(str(info.get(k, ""))))
+        a = str(info.get("age_or_vintage", "")).strip()
+        if a:
+            tags.append(tagify(f"aged{a}" if a.isdigit() else a))
+        words = str(info.get("category_en", "")).lower().split()
+        cat = re.sub(r"[^a-z]", "", words[-1]) if words else ""
+        if cat:
+            tags += [f"#{cat}", f"#{cat}lover"]
+        title = info.get("name_ja") or info.get("name_en") or ""
     else:
         return None
     tags = [t for t in dict.fromkeys(tags) if t and t != "#"]
@@ -314,6 +332,23 @@ def ig_media_pages(uid):
         yield from d.get("data", [])
         url = d.get("paging", {}).get("next")
         params = None
+
+
+def norm_name(s):
+    return re.sub(r"[^0-9a-z぀-ヿ㐀-鿿]", "", str(s).lower())
+
+
+def posted_bottle_names(uid):
+    """First line of every existing IG caption, normalized — so the same bottle
+    photographed again is never posted twice."""
+    names = set()
+    for m in ig_media_pages(uid):
+        lines = (m.get("caption") or "").strip().splitlines()
+        if lines:
+            n = norm_name(lines[0])
+            if n:
+                names.add(n)
+    return names
 
 
 def sync_ig_hashes(uid, ig_hashes):
@@ -410,6 +445,8 @@ def main():
         sync_ig_hashes(uid, ig_hashes)
         save_json(IG_HASH_PATH, ig_hashes)
         commit_push([IG_HASH_PATH], "index existing IG posts")
+    known_names = posted_bottle_names(uid)
+    print(f"Known bottle names on IG: {len(known_names)}")
 
     posted = 0
     checks = 0
@@ -454,6 +491,15 @@ def main():
             print(f"{guid[:8]}: could not identify bottle")
             continue
 
+        cand_names = [info.get(k, "") for k in ("name", "name_en", "name_ja")]
+        dup_name = next((c for c in cand_names if c and norm_name(c) in known_names), None)
+        if dup_name:
+            photos_state[guid] = {"status": "skipped_same_bottle", "phash": h,
+                                  "name": str(dup_name)}
+            save_json(STATE_PATH, state)
+            print(f"{guid[:8]}: same bottle already posted ({dup_name}) -> skip")
+            continue
+
         processed = apply_preset(raw)
         os.makedirs(PHOTOS_DIR, exist_ok=True)
         img_path = f"{PHOTOS_DIR}/{guid}.jpg"
@@ -472,7 +518,11 @@ def main():
 
         ig_hashes[media_id] = {"media_id": media_id, "phash": phash(processed), "ts": ""}
         photos_state[guid] = {"status": "posted", "phash": h, "ig_media_id": media_id,
-                              "kind": info.get("kind")}
+                              "kind": info.get("kind"),
+                              "name": next((c for c in cand_names if c), "")}
+        for c in cand_names:
+            if c:
+                known_names.add(norm_name(c))
         posted += 1
         print(f"{guid[:8]}: POSTED as {media_id} ({info.get('kind')})")
 
