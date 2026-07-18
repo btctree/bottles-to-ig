@@ -235,15 +235,36 @@ def gemini(prompt, img_bytes=None, retries=5):
 
 QUALIFY_PROMPT = """You check photos for an Instagram feed about alcohol bottles
 (sake, wine, whisky, beer, champagne, gin, shochu, umeshu — any alcoholic drink).
-The feed's signature style: ONE bottle HELD IN A HAND and clearly TILTED
-DIAGONALLY at roughly 45 degrees, close up, front label facing the camera.
 Answer in JSON: {"qualified": true/false, "reason": "..."}
 qualified=true ONLY if ALL hold:
 - exactly one alcohol bottle is the clear main subject
 - a hand is holding the bottle (not standing on a table/shelf/ice bucket)
-- the bottle is clearly tilted diagonally at roughly 45 degrees (about 25-65
-  degrees from vertical) — reject upright or only slightly leaning bottles
-- the label is readable enough to identify the drink"""
+- the visible label is the FRONT brand label, not the back label (reject if it
+  mainly shows ingredients 原材料名, alcohol %, legal text, barcode, contact info)
+- the label is readable enough to identify the drink
+(Do NOT judge the bottle's tilt angle — that is measured separately.)"""
+
+ANGLE_PROMPT = """The photo shows one bottle. Point to two locations:
+1) the center of the bottle's mouth/cap (very top of the bottle)
+2) the center of the bottle's base (very bottom of the bottle; if hidden behind
+   a hand, estimate where it is)
+Answer in JSON only: {"top": [y, x], "bottom": [y, x]}
+with y and x as integers 0-1000 normalized to image height and width (y grows
+downward, x grows rightward)."""
+
+
+def bottle_tilt_degrees(img_bytes):
+    """True tilt from vertical, computed from model-pointed cap/base coordinates."""
+    import math
+    img = ImageOps.exif_transpose(Image.open(io.BytesIO(img_bytes)))
+    w, h = img.size
+    p = gemini(ANGLE_PROMPT, img_bytes)
+    (y1, x1), (y2, x2) = p["top"], p["bottom"]
+    dx = abs(x1 - x2) / 1000 * w
+    dy = abs(y1 - y2) / 1000 * h
+    if dx == dy == 0:
+        return 0.0
+    return math.degrees(math.atan2(dx, dy))
 
 IDENTIFY_PROMPT = """Identify this bottle precisely from its label. Answer in JSON only.
 If it is SAKE (nihonshu):
@@ -482,6 +503,14 @@ def main():
                                   "reason": q.get("reason", "")}
             save_json(STATE_PATH, state)
             print(f"{guid[:8]}: not qualified ({q.get('reason','')[:60]})")
+            continue
+
+        tilt = bottle_tilt_degrees(raw)
+        if not (CONFIG.get("tilt_min", 25) <= tilt <= CONFIG.get("tilt_max", 65)):
+            photos_state[guid] = {"status": "disqualified", "phash": h,
+                                  "reason": f"tilt {tilt:.0f} deg, need ~45"}
+            save_json(STATE_PATH, state)
+            print(f"{guid[:8]}: not qualified (tilt {tilt:.0f} deg, need 25-65)")
             continue
 
         info = gemini(IDENTIFY_PROMPT, raw)
