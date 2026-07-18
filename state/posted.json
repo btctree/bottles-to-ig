@@ -105,6 +105,57 @@
    "phash": "f9f00bcdc8938aa6",
    "ig_media_id": "18189544606380556",
    "kind": "sake"
+  },
+  "90909236-E0C4-4F42-8860-AEE8A984995F": {
+   "status": "disqualified",
+   "phash": "fc551ee8611f3c81",
+   "reason": "The photo shows the back label (technical information and barcode) rather than the front label of the sake bottle."
+  },
+  "08B5EA3B-203F-4C9A-98DD-D60ABF98AC3C": {
+   "status": "disqualified",
+   "phash": "ab035e5d2665d1b8",
+   "reason": "The bottle is standing on a counter rather than being held in a hand."
+  },
+  "F06BEAEA-4203-4C35-8386-DFC34F622ECA": {
+   "status": "disqualified",
+   "phash": "8a3d5f1e202295fb",
+   "reason": "The bottle is standing on a counter rather than being held in a hand."
+  },
+  "1C241DA7-7A73-4BB2-8CB6-9291CA547FD2": {
+   "status": "skipped_already_on_ig",
+   "phash": "fbc09eb6a5252c29",
+   "match": "17943880529554803"
+  },
+  "1B1B193E-554A-4F5D-8400-0AD99726DD49": {
+   "status": "disqualified",
+   "phash": "d00acf5aa8ba6f34",
+   "reason": "The back label (containing the barcode, importer details, and technical information) is facing the camera instead of the front label."
+  },
+  "DBF57898-0763-4CAB-9893-F35A25F90D8E": {
+   "status": "disqualified",
+   "phash": "b52dc3e08031ddf3",
+   "reason": "The bottle is standing on a table rather than being held in a hand."
+  },
+  "8D6DE8E0-0FC6-44D9-9B31-4551C16DB318": {
+   "status": "skipped_already_on_ig",
+   "phash": "c7391cc03f30f94e",
+   "match": "17987179211054691"
+  },
+  "B0E66D64-D265-4EFF-B79D-AEF413B20FE5": {
+   "status": "skipped_already_on_ig",
+   "phash": "a6c0973863666cf9",
+   "match": "17846562825034421"
+  },
+  "5F9C9C59-F727-4BB7-8BDA-1180BEFB1BCA": {
+   "status": "disqualified",
+   "phash": "d624705b874b627d",
+   "reason": "The bottle is standing on a counter rather than being held in a hand."
+  },
+  "9FE7C07E-CAB6-4A08-B95D-34645C2F682C": {
+   "status": "posted",
+   "phash": "c7823c7d381b7529",
+   "ig_media_id": "18304781836303174",
+   "kind": "sake"
   }
  },
  "token_refreshed_at": 1783956500
