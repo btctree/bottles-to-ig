@@ -76,6 +76,98 @@
    "phash": "c7823c7d381b7529",
    "ig_media_id": "18304781836303174",
    "kind": "sake"
+  },
+  "5C5D7A90-DF25-42FD-878E-C2A87DD7B540": {
+   "status": "disqualified",
+   "phash": "9a046d636dd6639c",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "6005B7F1-7AD8-4AEA-80EB-E1E7202B0CE0": {
+   "status": "disqualified",
+   "phash": "945b2be32c86b993",
+   "reason": "The subject is a sake carton or box rather than a bottle."
+  },
+  "8F4E8B3F-56FD-4E3D-8AAF-1669361D24E7": {
+   "status": "disqualified",
+   "phash": "e1cc1be126d6299e",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "11BA4CBC-A39B-4B25-8D18-19028EDE75A2": {
+   "status": "disqualified",
+   "phash": "b1cc0bf126d628cf",
+   "reason": "The alcohol container is standing on a surface and is not being held by a hand."
+  },
+  "4CAC0A8A-9D5E-4B5B-BBB4-557790928C7A": {
+   "status": "disqualified",
+   "phash": "9bff2d013c0f340d",
+   "reason": "The visible label is a back label or technical specification label that mainly shows ingredients, alcohol percentage, and legal text."
+  },
+  "90909236-E0C4-4F42-8860-AEE8A984995F": {
+   "status": "disqualified",
+   "phash": "fc551ee8611f3c81",
+   "reason": "The visible label is the back label containing ingredients (原材料名), alcohol percentage, and manufacturer information, rather than the front brand label."
+  },
+  "08B5EA3B-203F-4C9A-98DD-D60ABF98AC3C": {
+   "status": "disqualified",
+   "phash": "ab035e5d2665d1b8",
+   "reason": "The bottle is standing on a counter rather than being held by a hand."
+  },
+  "F06BEAEA-4203-4C35-8386-DFC34F622ECA": {
+   "status": "disqualified",
+   "phash": "8a3d5f1e202295fb",
+   "reason": "The bottle is not being held by a hand; it is standing on a surface."
+  },
+  "1B1B193E-554A-4F5D-8400-0AD99726DD49": {
+   "status": "disqualified",
+   "phash": "d00acf5aa8ba6f34",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the main front brand label."
+  },
+  "DBF57898-0763-4CAB-9893-F35A25F90D8E": {
+   "status": "disqualified",
+   "phash": "b52dc3e08031ddf3",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "5F9C9C59-F727-4BB7-8BDA-1180BEFB1BCA": {
+   "status": "disqualified",
+   "phash": "d624705b874b627d",
+   "reason": "The bottle is standing on a counter and is not being held by a hand."
+  },
+  "7A5C3DA5-DAC5-40B4-8273-7E95718BD6F0": {
+   "status": "disqualified",
+   "phash": "d6e02d9f6482be83",
+   "reason": "The visible label is the back label, as it contains technical information such as ingredients (原材料名), alcohol percentage, manufacturer details, and a barcode."
+  },
+  "83122104-CAB8-4AAC-934F-0BAB0C0E50DC": {
+   "status": "disqualified",
+   "phash": "d11b1bdb2f1a0479",
+   "reason": "The image shows a glass, not an alcohol bottle, and it is standing on a table rather than being held by a hand."
+  },
+  "C19915FA-C449-4E93-900E-E57832881CDA": {
+   "status": "disqualified",
+   "phash": "fe2f21da87092369",
+   "reason": "The bottle is not being held by a hand, and the visible label is the back label containing ingredients, alcohol percentage, and legal information rather than the main front brand label."
+  },
+  "EA2CA476-030D-4833-A9FC-C685BD6584D4": {
+   "status": "disqualified",
+   "phash": "d612191f7f4270ad",
+   "reason": "The bottle is standing on a counter rather than being held by a hand, and the visible label is the back label containing ingredients, legal text, and a barcode instead of the front brand label."
+  },
+  "934C894A-FD68-4910-807A-9427A17C522D": {
+   "status": "disqualified",
+   "phash": "cc34376bc1ab3b50",
+   "reason": "The bottle is standing on a counter and is not being held by a hand."
+  },
+  "E970D9D3-A125-4EC0-BBF9-A157E0EF3E1E": {
+   "status": "disqualified",
+   "phash": "d3c12dc265966c9b",
+   "reason": "tilt 1 deg, need ~45"
+  },
+  "CA22DCD8-C3D9-4261-B47A-1BC1EC0FFF79": {
+   "status": "posted",
+   "phash": "c1366ce51993f427",
+   "ig_media_id": "18125268946733850",
+   "kind": "sake",
+   "name": "Nihon Sakari Nama Genshu Daiginjo mont-bell Edition"
   }
  },
  "token_refreshed_at": 1783956500
