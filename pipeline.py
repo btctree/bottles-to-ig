@@ -268,7 +268,10 @@ def bottle_tilt_degrees(img_bytes):
 
 IDENTIFY_PROMPT = """Identify this bottle precisely from its label. Answer in JSON only.
 If it is SAKE (nihonshu):
-{"kind":"sake","name_en":"","name_ja":"","type_en":"e.g. Junmai Daiginjo","type_ja":"e.g. 純米大吟醸",
+{"kind":"sake","name_en":"","name_ja":"",
+"name_parts_en":["brand e.g. Nihon Sakari","style e.g. Nama Genshu","grade e.g. Daiginjo","edition/collab e.g. montbell"],
+"name_parts_ja":["e.g. 日本盛","e.g. 生原酒","e.g. 大吟醸","e.g. モンベルボトル"],
+"type_en":"e.g. Junmai Daiginjo","type_ja":"e.g. 純米大吟醸",
 "polish_en":"e.g. polished to 50 percent -> write: ricepolishingratio50","polish_ja":"e.g. 精米歩合50",
 "rice_en":"e.g. yamadanishiki","rice_ja":"e.g. 山田錦","brewery_en":"","brewery_ja":"",
 "city_en":"","city_ja":"","flavor_en":"one word e.g. fruity","flavor_ja":"e.g. フルーティー"}
@@ -278,7 +281,10 @@ If it is any OTHER alcohol (whisky, beer, champagne, gin, shochu, umeshu, liqueu
 {"kind":"other","name_en":"","name_ja":"","category_en":"e.g. Scotch whisky","category_ja":"e.g. スコッチウイスキー",
 "maker_en":"","maker_ja":"","country_en":"","country_ja":"","region":"","age_or_vintage":"","flavor_en":"one word","flavor_ja":""}
 If you cannot identify it at all: {"kind":"unknown"}
-Rules: read fields from the label when visible (especially rice polishing ratio
+Rules: name_parts must split the product name into its meaningful components —
+brand, style words (each its own part: 生原酒, 大吟醸...), edition/collaboration —
+NOT the whole name as one string; 2-6 parts, same split in both languages.
+Read fields from the label when visible (especially rice polishing ratio
 精米歩合 and rice variety). If you have confidently identified the exact product,
 you may fill remaining fields (grapes, flavor, brewery, city, rice, polish) from
 well-established knowledge of that specific product. Leave a field as empty
@@ -293,12 +299,27 @@ def tagify(s):
 def build_caption(info):
     tags = []
     if info.get("kind") == "sake":
-        order = ["name_en", "name_ja", "type_ja", "type_en", "polish_ja", "polish_en",
+        parts = (info.get("name_parts_en") or []) + (info.get("name_parts_ja") or [])
+        if parts:
+            for p in parts:
+                tags.append(tagify(str(p)))
+        else:
+            tags += [tagify(str(info.get("name_en", ""))), tagify(str(info.get("name_ja", "")))]
+        pool_ja = "".join(str(p) for p in (info.get("name_parts_ja") or []))
+        pool_en = norm_name("".join(str(p) for p in (info.get("name_parts_en") or [])))
+        type_ja = str(info.get("type_ja", ""))
+        if type_ja and not all(ch in pool_ja for ch in type_ja):
+            tags.append(tagify(type_ja))
+        type_en = str(info.get("type_en", ""))
+        if type_en and not all(norm_name(w) in pool_en for w in type_en.split()):
+            tags.append(tagify(type_en))
+        order = ["polish_ja", "polish_en",
                  "rice_ja", "rice_en", "brewery_ja", "brewery_en", "city_ja", "city_en",
                  "flavor_ja", "flavor_en"]
         for k in order:
             tags.append(tagify(str(info.get(k, ""))))
-        tags += ["#japan", "#日本", "#日本酒", "#日本酒好き", "#日本酒好きな人と繋がりたい", "#sake", "#sakelover"]
+        tags += ["#nihonshu", "#日本酒", "#sake", "#清酒", "#japan", "#日本",
+                 "#日本酒好き", "#日本酒好きな人と繋がりたい", "#sakelover"]
         title = info.get("name_ja") or info.get("name_en") or ""
     elif info.get("kind") == "wine":
         for k in ["name", "country", "region", "village"]:
