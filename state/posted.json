@@ -168,6 +168,23 @@
    "ig_media_id": "18125268946733850",
    "kind": "sake",
    "name": "Nihon Sakari Nama Genshu Daiginjo mont-bell Edition"
+  },
+  "BFAFB9F5-438B-44E2-AB5C-83D173B6DAE9": {
+   "status": "skipped_already_on_ig",
+   "phash": "8de29293ec25e59c",
+   "match": "18386148490064070"
+  },
+  "55D88F6C-802F-4CDE-A712-485BC0E20D5E": {
+   "status": "disqualified",
+   "phash": "b0e565c66696c69a",
+   "reason": "The visible label is the back label, as it contains detailed technical information, grape varietals, alcohol percentage, and a barcode, rather than the main front brand label."
+  },
+  "C3629769-FEB2-48D7-A723-E00807E84294": {
+   "status": "posted",
+   "phash": "dff030cb3826dc91",
+   "ig_media_id": "18127740454629305",
+   "kind": "sake",
+   "name": "Chiyomusubi Assemblage ISSOU"
   }
  },
  "token_refreshed_at": 1783956500
