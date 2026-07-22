@@ -197,6 +197,28 @@
    "ig_media_id": "18102370061589376",
    "kind": "wine",
    "name": "Arnaud Aucoeur Juliénas Vieilles Vignes"
+  },
+  "A8AB3BE7-38C9-472D-99AA-54D3F715A50F": {
+   "status": "disqualified",
+   "phash": "bde025e125d32697",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and detailed legal/composition information."
+  },
+  "322906E4-75E5-4EC6-9440-9E08CF0A51C8": {
+   "status": "disqualified",
+   "phash": "b5f053c9c20de43e",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, volume, and other technical/legal information rather than being the main front brand label."
+  },
+  "16755FCB-73BE-404A-8566-2DF9E9D39FA7": {
+   "status": "disqualified",
+   "phash": "bdb468c3c38f2c8c",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "DDDD77A3-B498-43C2-9335-81C178BC0E5C": {
+   "status": "posted",
+   "phash": "bfe21292c63565ac",
+   "ig_media_id": "18101509972922967",
+   "kind": "wine",
+   "name": "Pavillon de Léoville Poyferré"
   }
  },
  "token_refreshed_at": 1783956500
