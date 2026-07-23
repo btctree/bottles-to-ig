@@ -219,6 +219,13 @@
    "ig_media_id": "18101509972922967",
    "kind": "wine",
    "name": "Pavillon de Léoville Poyferré"
+  },
+  "FA6DC16D-8778-4535-856A-98FDB5775299": {
+   "status": "posted",
+   "phash": "e1ea8af23684e539",
+   "ig_media_id": "17911268541441058",
+   "kind": "sake",
+   "name": "Kamonishiki Brilliance Banshu Aiyama"
   }
  },
  "token_refreshed_at": 1783956500
