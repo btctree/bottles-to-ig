@@ -226,6 +226,33 @@
    "ig_media_id": "17911268541441058",
    "kind": "sake",
    "name": "Kamonishiki Brilliance Banshu Aiyama"
+  },
+  "A13CE524-F6F4-4BBA-9F3E-2ADF0A4720ED": {
+   "status": "disqualified",
+   "phash": "b9dba5474aa52646",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and manufacturer information, rather than the front brand label."
+  },
+  "845CDE76-7B60-4AF7-805D-B162D5F5BDFA": {
+   "status": "skipped_already_on_ig",
+   "phash": "e06c8bf23cc3ec19",
+   "match": "18015989992635331"
+  },
+  "D779165F-B1B8-4FDE-BA0D-2A7E9B46715B": {
+   "status": "disqualified",
+   "phash": "9a29591e74f29563",
+   "reason": "The bottle is standing on a counter rather than being held by a hand."
+  },
+  "D68645B3-7600-4ABB-8F57-43800E90DB55": {
+   "status": "disqualified",
+   "phash": "b3547d0da20fc2f8",
+   "reason": "The bottle is standing on a surface rather than being held by a hand, and the visible label is the back label containing ingredients, barcode, and legal information instead of the front brand label."
+  },
+  "B6FBF4BD-C192-4131-92A2-642B726CEE9B": {
+   "status": "posted",
+   "phash": "c7381cc03f31f94e",
+   "ig_media_id": "18111821260759233",
+   "kind": "sake",
+   "name": "Matsu no Tsukasa Junmai Daiginjo Shojo no Mai"
   }
  },
  "token_refreshed_at": 1783956500
