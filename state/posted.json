@@ -260,6 +260,58 @@
    "ig_media_id": "18136475938596027",
    "kind": "sake",
    "name": "Chiyomusubi Assemblage SOU"
+  },
+  "8ECC0818-B7E4-4231-88E6-14B3298275C3": {
+   "status": "disqualified",
+   "phash": "bc3e3cc2c01f313d",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "02A13375-5FBA-41B8-967C-0F69AEA87BA1": {
+   "status": "disqualified",
+   "phash": "cc2c0a53b495f36b",
+   "reason": "The bottle is standing on a counter rather than being held by a hand."
+  },
+  "98C42A36-E8D0-4125-820E-33554C9DCDE9": {
+   "status": "skipped_already_on_ig",
+   "phash": "c13f36e42d19da26",
+   "match": "18068065357394920"
+  },
+  "ABC47348-F020-4ADA-9678-D58190633CCA": {
+   "status": "disqualified",
+   "phash": "997d660b8b728c35",
+   "reason": "The bottle is standing on a counter rather than being held by a hand."
+  },
+  "54C75712-C226-4942-8FB8-CF24FCDCCF12": {
+   "status": "skipped_already_on_ig",
+   "phash": "8ccf10e5833ec87b",
+   "match": "17854807262966928"
+  },
+  "D08B5748-E3A6-407D-8DA2-9FA91B5489D4": {
+   "status": "disqualified",
+   "phash": "f9f2a547a684c685",
+   "reason": "The visible label is the back label, as it mainly displays ingredients, alcohol percentage, volume, and manufacturer information rather than the front brand label."
+  },
+  "20058478-067D-4FF4-9BD3-5F00C017B42D": {
+   "status": "disqualified",
+   "phash": "dea107f8033e603f",
+   "reason": "The main subject is a box, not an alcohol bottle."
+  },
+  "49B3DFA7-A0D1-40F5-90B0-60139CB52C9B": {
+   "status": "skipped_already_on_ig",
+   "phash": "bac89a36a4a58d3d",
+   "match": "18063714838656366"
+  },
+  "95EC79E5-9F7E-4166-A311-985F34171BD6": {
+   "status": "disqualified",
+   "phash": "b47e27af0b1c5321",
+   "reason": "There is no hand holding a single alcohol bottle; instead, the image shows two sake barrels and a glass sitting on a counter."
+  },
+  "D40FB480-3DFE-4285-94CE-0E5AB7D66781": {
+   "status": "posted",
+   "phash": "d03827678c99e7d2",
+   "ig_media_id": "18213181744341807",
+   "kind": "sake",
+   "name": "Denshu Junmai Daiginjo Hyakuden"
   }
  },
  "token_refreshed_at": 1783956500
