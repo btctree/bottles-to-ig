@@ -312,6 +312,43 @@
    "ig_media_id": "18213181744341807",
    "kind": "sake",
    "name": "Denshu Junmai Daiginjo Hyakuden"
+  },
+  "C60A538D-9222-434F-9177-5A7D817D3867": {
+   "status": "disqualified",
+   "phash": "a3784ebf5e0b100f",
+   "reason": "The image does not contain an alcohol bottle being held by a hand; the main subject is a glass, and the background features sake barrels (komodaru) rather than a bottle."
+  },
+  "6D38D9E9-95C4-48C9-B4D8-0351AB782E8C": {
+   "status": "disqualified",
+   "phash": "e3e160988d196f6b",
+   "reason": "The visible label is the back label containing nutritional information, a barcode, and legal warnings, rather than the main front brand label."
+  },
+  "45B9D526-DA39-4658-A60A-4BC99844FE57": {
+   "status": "skipped_already_on_ig",
+   "phash": "c7daf2c01774994c",
+   "match": "18288412444133280"
+  },
+  "6E590CF2-1442-42BF-9AFB-7CA2138E361B": {
+   "status": "disqualified",
+   "phash": "b0e967c486969e72",
+   "reason": "The visible label is the back/information label containing ingredients, alcohol percentage, and distributor information, rather than the front brand label."
+  },
+  "3707C178-D19E-4CCF-A681-FFE902FAA4E0": {
+   "status": "skipped_already_on_ig",
+   "phash": "aae89ad23685ed25",
+   "match": "17843666954955449"
+  },
+  "F25D1BB1-8807-4CEE-9D4F-EC12CC2AA2A2": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe01a96f02d653c",
+   "match": "18451645783007859"
+  },
+  "8389973E-9D06-4806-9926-7EACFDB1643A": {
+   "status": "posted",
+   "phash": "b1ce13369da3258d",
+   "ig_media_id": "18059711492762061",
+   "kind": "sake",
+   "name": "Matsushima Hakugin no Tenshu Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1783956500
