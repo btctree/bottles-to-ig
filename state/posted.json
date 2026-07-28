@@ -349,6 +349,218 @@
    "ig_media_id": "18059711492762061",
    "kind": "sake",
    "name": "Matsushima Hakugin no Tenshu Junmai Daiginjo"
+  },
+  "0B8BF1EA-652E-4129-9BA3-842D8BDD53AE": {
+   "status": "disqualified",
+   "phash": "c78038d18f9f7827",
+   "reason": "tilt 18 deg, need ~45"
+  },
+  "5C323F89-FDF8-401D-B497-2110E2BBB68B": {
+   "status": "disqualified",
+   "phash": "ba0e6b7a76d4d081",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the visible label is the back label containing ingredients, a barcode, and legal information instead of the front brand label."
+  },
+  "0298A6B3-60F4-4F1F-A557-A4B454BEBB93": {
+   "status": "disqualified",
+   "phash": "fa7a29d2817a9668",
+   "reason": "The visible label is the back label, as it contains a barcode, legal text, and detailed technical information rather than being the main front brand label."
+  },
+  "9E16F821-5691-48F7-91A3-C20BB92C2AFA": {
+   "status": "skipped_already_on_ig",
+   "phash": "efc813b434e34c5a",
+   "match": "18010450183801741"
+  },
+  "FD7101D7-A233-4D59-869A-3F9BFA6FB901": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe81a92e425e49d",
+   "match": "18451645783007859"
+  },
+  "EB7F37C3-2580-4728-8E4D-BCF19CF296FB": {
+   "status": "disqualified",
+   "phash": "b7b2c8b742d5330c",
+   "reason": "The bottle is standing on a table mat rather than being held by a hand."
+  },
+  "32F468F5-BF56-4ECF-B98B-79C9B6C2CBD2": {
+   "status": "skipped_already_on_ig",
+   "phash": "e2ea98d236258dad",
+   "match": "18428297716035041"
+  },
+  "6B9493A1-860A-414A-89FD-0ECA533191C2": {
+   "status": "skipped_already_on_ig",
+   "phash": "e2eada92501d8da7",
+   "match": "18289971904187540"
+  },
+  "D80B4EDA-5A1A-44AC-90C6-96BDCFCECC68": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe01a96e525e519",
+   "match": "18034184101696269"
+  },
+  "AB42B235-2B94-4D2B-A8CC-F098249369A0": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe81a92bc25e43c",
+   "match": "18451645783007859"
+  },
+  "DE64F027-5BCA-42E9-AD3E-13A5B7B17363": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec0cf30c79d700e",
+   "match": "18098228872347287"
+  },
+  "522C42E9-1851-487C-8291-DBE84D0A5CD5": {
+   "status": "disqualified",
+   "phash": "d6e5251ee0d08e9e",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the visible label is the back label as it contains a barcode, alcohol percentage, and legal text."
+  },
+  "DC5BD5C6-D542-4887-900E-08C44D33F1F9": {
+   "status": "skipped_already_on_ig",
+   "phash": "faf89b863485cc19",
+   "match": "17961588035637942"
+  },
+  "3B5C9381-47A1-4550-8089-5F411C7AB9F1": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe81ac63435c52d",
+   "match": "18207060331286496"
+  },
+  "9C1E3DF2-4D5E-42EA-8C31-BFD17DB4307C": {
+   "status": "disqualified",
+   "phash": "80c3f52ee7906f34",
+   "reason": "There are multiple bottles instead of exactly one, and they are standing on a surface rather than being held by a hand."
+  },
+  "95A05747-85A8-47A1-999C-865DD8563B52": {
+   "status": "disqualified",
+   "phash": "ebb134e335c79086",
+   "reason": "The image shows the back label containing ingredients, alcohol percentage, and a barcode instead of the front brand label."
+  },
+  "EC0051AD-C354-42F9-8683-87ED5EE640B0": {
+   "status": "disqualified",
+   "phash": "a880d699e731d877",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "D750BAE6-E499-4B2D-A807-098648176DEF": {
+   "status": "disqualified",
+   "phash": "b54ba6d92a25ea0b",
+   "reason": "The bottle is standing on a surface rather than being held by a hand, and the visible label is the back label containing legal text, alcohol percentage, and a barcode."
+  },
+  "F3402906-9470-42BD-9139-4F008FEA58C0": {
+   "status": "skipped_already_on_ig",
+   "phash": "edd89bc096789564",
+   "match": "17976556655312896"
+  },
+  "7B57DE56-7103-4A00-BEDA-C726E1DF20A2": {
+   "status": "skipped_already_on_ig",
+   "phash": "e2ea98f23625cd0d",
+   "match": "18428297716035041"
+  },
+  "2928F08D-7CF0-43D1-97C4-88B8777B97BF": {
+   "status": "skipped_already_on_ig",
+   "phash": "afc89bb634a1ce28",
+   "match": "18371948350019695"
+  },
+  "AB0FD019-A4C8-4221-825C-571CE8066DCB": {
+   "status": "skipped_already_on_ig",
+   "phash": "bdc01a36d4276d2d",
+   "match": "18101783923332053"
+  },
+  "1570255D-EAC8-45E1-AFA7-F78340F5B044": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7ea9bd224258d8d",
+   "match": "17961020573682189"
+  },
+  "E1577EC5-D4FD-4281-93AF-189A1B0AFA07": {
+   "status": "disqualified",
+   "phash": "ebe744e565938684",
+   "reason": "The visible label is the back label, which contains a barcode, legal text, and production information, rather than the front brand label."
+  },
+  "A92B5D23-40C4-407E-ACF6-9A9FC387594E": {
+   "status": "disqualified",
+   "phash": "eae0609d4d93476d",
+   "reason": "The visible label is the back label, as it contains a barcode, nutritional information, alcohol percentage, and legal text."
+  },
+  "89D96F68-8F9A-4AA1-B32F-C42E7FCF9F8B": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe09a16f01d64e5",
+   "match": "18016866592948143"
+  },
+  "7668E3E2-2DC8-48E4-8D4B-394EE5E346AC": {
+   "status": "disqualified",
+   "phash": "a0d0ce6f3798e709",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "8D99ACCC-D553-46AD-A88F-931FF89393BA": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec09b33e403c6bc",
+   "match": "17942736545895677"
+  },
+  "5169BFB2-44A6-45CC-B92C-B72742A53D1C": {
+   "status": "disqualified",
+   "phash": "b9ec2d317c606566",
+   "reason": "The image shows the back label of the bottle, which contains technical information such as alcohol percentage, volume, legal text, and a barcode, rather than the main front brand label."
+  },
+  "C5A8356A-126F-4001-AD8C-5F98A6DBC93E": {
+   "status": "disqualified",
+   "phash": "b96035c327d387d2",
+   "reason": "The visible label is the back label as it contains a barcode, alcohol percentage, and legal warnings (sulfites), which are criteria for rejection."
+  },
+  "DA581DE0-D9FC-4055-ABBD-947F972F99D6": {
+   "status": "disqualified",
+   "phash": "add4027b70cf1b49",
+   "reason": "The visible label includes technical information such as ingredients (原材料名) and the manufacturing date (製造年月), which are characteristic of a back or side label rather than a clean front brand label."
+  },
+  "61010A70-0DF4-4936-867A-B5E0EE5EB665": {
+   "status": "disqualified",
+   "phash": "daa6d41b6620db3c",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding the bottle; they are standing on a surface."
+  },
+  "CA29F477-236F-4153-8BEC-127FAB9F717A": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe09a92b405e73c",
+   "match": "18451645783007859"
+  },
+  "9589CC3E-CE47-4744-B997-6E3B784FE6C3": {
+   "status": "disqualified",
+   "phash": "ea21759b659ea138",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, volume, and legal information rather than the primary front brand design."
+  },
+  "459EE34C-0292-40DB-92C1-C1A811486EAC": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3c89ab63730cd4d",
+   "match": "17947785590754324"
+  },
+  "BEC2BDC9-997C-4A7A-9AC9-905D89644E4D": {
+   "status": "disqualified",
+   "phash": "c8a3a12db6564b6b",
+   "reason": "The bottle is standing on a surface instead of being held by a hand, and there are multiple items (boxes) in the frame rather than exactly one bottle as the clear main subject."
+  },
+  "1FA225D0-7D5E-4854-ACFF-871692DB0D2E": {
+   "status": "skipped_already_on_ig",
+   "phash": "c7390cc037f0bbc6",
+   "match": "17987179211054691"
+  },
+  "089D6E79-A8F9-4490-A97A-84EEBE39E643": {
+   "status": "disqualified",
+   "phash": "b8f16139a7c99691",
+   "reason": "The visible label is a back label containing legal text, volume, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "AE0BDD4E-269F-42F2-BF8F-AFECA2183A58": {
+   "status": "skipped_already_on_ig",
+   "phash": "bcc89b32f421c73c",
+   "match": "17942736545895677"
+  },
+  "A2308334-5B57-4866-AAE3-77550E484EB6": {
+   "status": "skipped_already_on_ig",
+   "phash": "dbe85ab22da1ac25",
+   "match": "17992228238142939"
+  },
+  "CF4E9B25-CFDB-4B6D-B207-AD5F3264B389": {
+   "status": "skipped_already_on_ig",
+   "phash": "e3da39e28cb1e40d",
+   "match": "17926426889656374"
+  },
+  "CC0BA63C-3FFD-42B1-B3F1-5DCC5168A8A3": {
+   "status": "posted",
+   "phash": "e7f09897701de509",
+   "ig_media_id": "17948294223237184",
+   "kind": "wine",
+   "name": "Entremontes Vinho Tinto"
   }
  },
  "token_refreshed_at": 1783956500
