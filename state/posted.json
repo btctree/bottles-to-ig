@@ -561,6 +561,98 @@
    "ig_media_id": "17948294223237184",
    "kind": "wine",
    "name": "Entremontes Vinho Tinto"
+  },
+  "42691297-48B5-4CD2-B1B0-505359AC125E": {
+   "status": "disqualified",
+   "phash": "b9ed619487988769",
+   "reason": "The visible label is the back/informational label containing ingredients, legal warnings, and a barcode, rather than the main front brand label."
+  },
+  "7F4C88A3-E451-42C3-A6F7-7E761431B823": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7c89bf236a58ca1",
+   "match": "18284734372171083"
+  },
+  "94C196EB-4D91-4399-85EC-DC2AEC169959": {
+   "status": "disqualified",
+   "phash": "f97435ca268ec98a",
+   "reason": "The image shows the back label of the bottle, which contains a barcode, legal text, and detailed descriptions, rather than the main front brand label."
+  },
+  "1D4A0C9A-99B0-4239-8619-899CB20175B3": {
+   "status": "disqualified",
+   "phash": "b8c3d1186fa4db34",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding a bottle."
+  },
+  "502FB55F-7332-4827-B334-50ECC15A6635": {
+   "status": "skipped_already_on_ig",
+   "phash": "bdc89b36e427cc18",
+   "match": "17942736545895677"
+  },
+  "81C90E1C-5633-45F1-9FDF-63EC0EAC91F4": {
+   "status": "skipped_already_on_ig",
+   "phash": "c13f16e42d9b98a6",
+   "match": "18068065357394920"
+  },
+  "7B3BF648-3C10-4A59-85EF-47B9A5ED5178": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3ea9b923625cc8d",
+   "match": "18284734372171083"
+  },
+  "3D9A30A1-3FB0-405E-8EB0-1221AAFB391F": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7e89ad235a5ac29",
+   "match": "17961020573682189"
+  },
+  "D2A20988-C1D3-45EC-A132-169E20CEEDEA": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7e89bb234a5cc29",
+   "match": "17942736545895677"
+  },
+  "79109BE3-8FB3-43C1-B26E-9ED7E3D0B892": {
+   "status": "disqualified",
+   "phash": "c72438213cc77fc5",
+   "reason": "The image shows the back label of the bottle, which contains a barcode, health warnings, and descriptive text, rather than the front brand label."
+  },
+  "2744EBC0-834A-45FA-90BD-E9FD928787A2": {
+   "status": "disqualified",
+   "phash": "8d83f13ce7906b34",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding a bottle as they are standing on a surface."
+  },
+  "70544817-069C-4DAF-9482-1BB7071846CA": {
+   "status": "skipped_already_on_ig",
+   "phash": "a1cc9bb234e12ee9",
+   "match": "18320268205109800"
+  },
+  "514DF299-F7A2-4A12-8843-9A63F3C70CDF": {
+   "status": "disqualified",
+   "phash": "f8fc9788606a059f",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding the bottle as they are standing on a table."
+  },
+  "3880ADDB-3208-443D-8B88-D103301234F4": {
+   "status": "skipped_already_on_ig",
+   "phash": "a5c99b923525ec0f",
+   "match": "18113814706354928"
+  },
+  "A19BEB7C-BECA-4A8A-9E1C-468B6E53D35C": {
+   "status": "disqualified",
+   "phash": "e1e54496cf3a9668",
+   "reason": "The visible label is the back label, as it contains a barcode, importer information, and health warnings."
+  },
+  "220FD517-1A07-4D6C-A145-65055DBF288B": {
+   "status": "skipped_already_on_ig",
+   "phash": "e7e89b923625cc0d",
+   "match": "17961020573682189"
+  },
+  "2B017E9A-9446-4CF8-88A2-CFA7F7299EF9": {
+   "status": "disqualified",
+   "phash": "caa4f49b2460cf3e",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding a bottle as they are standing on a surface."
+  },
+  "C94D6E50-0473-4F48-ACA8-D6E07EC14BB4": {
+   "status": "posted",
+   "phash": "a7e9999234a7c43c",
+   "ig_media_id": "18070884617453910",
+   "kind": "sake",
+   "name": "Kamikokoro Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1783956500
