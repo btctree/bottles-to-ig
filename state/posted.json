@@ -653,6 +653,23 @@
    "ig_media_id": "18070884617453910",
    "kind": "sake",
    "name": "Kamikokoro Junmai Daiginjo"
+  },
+  "1FA7E594-F161-4D18-BBAA-E228BB31F036": {
+   "status": "disqualified",
+   "phash": "bcb469c9e426c2a7",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and manufacturer information, rather than the front brand label."
+  },
+  "BAE359BD-BA8A-4610-9F66-C33244FEF655": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7e89a92b427ed0c",
+   "match": "18386148490064070"
+  },
+  "F8E4E3A9-2AEA-4FF0-A87F-B98A76F26F44": {
+   "status": "posted",
+   "phash": "edd2330ed12d648e",
+   "ig_media_id": "17976959085096823",
+   "kind": "wine",
+   "name": "Casa Ferreirinha Vinha Grande Douro Vinho Tinto"
   }
  },
  "token_refreshed_at": 1783956500
