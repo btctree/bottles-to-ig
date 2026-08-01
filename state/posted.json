@@ -677,6 +677,13 @@
    "ig_media_id": "17974921905096289",
    "kind": "wine",
    "name": "M&S Barbera d'Asti Superiore"
+  },
+  "3C72CAD2-2AC1-4C8B-AA64-8C4223B26622": {
+   "status": "posted",
+   "phash": "afe39e30e60cec09",
+   "ig_media_id": "17938563360322728",
+   "kind": "wine",
+   "name": "Castelo de Arraiolos Reserva"
   }
  },
  "token_refreshed_at": 1783956500
