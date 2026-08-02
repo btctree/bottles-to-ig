@@ -684,6 +684,58 @@
    "ig_media_id": "17938563360322728",
    "kind": "wine",
    "name": "Castelo de Arraiolos Reserva"
+  },
+  "74E63F04-C095-404C-A48F-3139C8580E39": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec89b36e425ad0c",
+   "match": "17970398588543237"
+  },
+  "BDD4F834-AADE-469A-9EA4-37EAE84794BA": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfc09a32e42de52c",
+   "match": "17902255194000142"
+  },
+  "95AE1EA5-0024-44CA-9FCE-AB414A9B3145": {
+   "status": "skipped_already_on_ig",
+   "phash": "a6ec8bf23cc36c09",
+   "match": "18015989992635331"
+  },
+  "DCA31261-E562-4F30-8D49-26AD7321D435": {
+   "status": "skipped_already_on_ig",
+   "phash": "a9e89a96bd21e62c",
+   "match": "18386148490064070"
+  },
+  "4F72F4FC-DB19-45ED-9640-3AC7CA2F9669": {
+   "status": "disqualified",
+   "phash": "869eff90780ff840",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "844EF880-0DA3-419C-9138-CBEE48DB6517": {
+   "status": "disqualified",
+   "phash": "ebe06499cc678cb4",
+   "reason": "The visible label is the back label, as it contains a barcode, nutritional information, recycling symbols, and legal warnings."
+  },
+  "DE85D965-4927-4EEE-878A-796BA086E618": {
+   "status": "disqualified",
+   "phash": "af85adc18cc193e6",
+   "reason": "The image shows a large display of many bottles on shelves rather than exactly one bottle as the main subject, and there is no hand holding a bottle."
+  },
+  "A7318B19-2999-4DB4-AC4F-2FC319CA762E": {
+   "status": "skipped_already_on_ig",
+   "phash": "bac89ab6b4a58d29",
+   "match": "18063714838656366"
+  },
+  "54B0DE4A-91B1-4128-81DC-E55AE5DCCC41": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe81a867435c52d",
+   "match": "18207060331286496"
+  },
+  "C9ECFE0A-9522-4A32-8FF0-B944441796A5": {
+   "status": "posted",
+   "phash": "afe89ab62461899b",
+   "ig_media_id": "18103734464269370",
+   "kind": "wine",
+   "name": "Terre del Barolo Barolo"
   }
  },
  "token_refreshed_at": 1783956500
