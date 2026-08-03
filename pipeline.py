@@ -209,7 +209,13 @@ def gemini(prompt, img_bytes=None, retries=5):
         model = models[min(i // 2, len(models) - 1)]  # fall back after 2 tries
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
                f"{model}:generateContent?key={GEMINI_KEY}")
-        r = requests.post(url, json=body, timeout=120)
+        try:
+            r = requests.post(url, json=body, timeout=120)
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            last = f"{model} {type(e).__name__}"
+            print(f"  {last}, retry {i + 1}")
+            time.sleep(20 * (i + 1))
+            continue
         if r.status_code in (429, 500, 502, 503):
             last = f"{model} HTTP {r.status_code}"
             print(f"  {last}, retry {i + 1}")
@@ -492,94 +498,108 @@ def main():
 
     posted = 0
     checks = 0
-    for p in album:
-        if posted >= CONFIG["posts_per_day"] or checks >= CONFIG["max_vision_checks_per_run"]:
-            break
-        guid = p["guid"]
-        if guid in photos_state:
-            continue
+    try:
+        for p in album:
+            if posted >= CONFIG["posts_per_day"] or checks >= CONFIG["max_vision_checks_per_run"]:
+                break
+            guid = p["guid"]
+            if guid in photos_state:
+                continue
+            try:
+                url = asset_url(base, guid, p["checksum"])
+                raw = download(url)
+                variants = phash_variants(raw)
+                h = variants[0]
+            except Exception as e:
+                print(f"{guid[:8]}: fetch failed ({e}), retry next run")
+                continue
+
+            dup = is_duplicate(variants, ig_hashes, CONFIG["phash_threshold"])
+            if dup:
+                photos_state[guid] = {"status": "skipped_already_on_ig", "phash": h, "match": dup}
+                print(f"{guid[:8]}: already on IG -> skip")
+                continue
+
+            checks += 1
+            try:
+                q = gemini(QUALIFY_PROMPT, raw)
+            except Exception as e:
+                print(f"{guid[:8]}: vision unavailable ({e}) - stopping early, will retry next run")
+                break
+            if not q.get("qualified"):
+                photos_state[guid] = {"status": "disqualified", "phash": h,
+                                      "reason": q.get("reason", "")}
+                save_json(STATE_PATH, state)
+                print(f"{guid[:8]}: not qualified ({q.get('reason','')[:60]})")
+                continue
+
+            try:
+                tilt = bottle_tilt_degrees(raw)
+            except Exception as e:
+                print(f"{guid[:8]}: tilt check unavailable ({e}) - stopping early, will retry next run")
+                break
+            if not (CONFIG.get("tilt_min", 25) <= tilt <= CONFIG.get("tilt_max", 65)):
+                photos_state[guid] = {"status": "disqualified", "phash": h,
+                                      "reason": f"tilt {tilt:.0f} deg, need ~45"}
+                save_json(STATE_PATH, state)
+                print(f"{guid[:8]}: not qualified (tilt {tilt:.0f} deg, need 25-65)")
+                continue
+
+            try:
+                info = gemini(IDENTIFY_PROMPT, raw)
+            except Exception as e:
+                print(f"{guid[:8]}: identify unavailable ({e}) - stopping early, will retry next run")
+                break
+            caption = build_caption(info)
+            if not caption:
+                photos_state[guid] = {"status": "unidentified", "phash": h}
+                print(f"{guid[:8]}: could not identify bottle")
+                continue
+
+            cand_names = [info.get(k, "") for k in ("name", "name_en", "name_ja")]
+            dup_name = next((c for c in cand_names if c and norm_name(c) in known_names), None)
+            if dup_name:
+                photos_state[guid] = {"status": "skipped_same_bottle", "phash": h,
+                                      "name": str(dup_name)}
+                save_json(STATE_PATH, state)
+                print(f"{guid[:8]}: same bottle already posted ({dup_name}) -> skip")
+                continue
+
+            processed = apply_preset(raw)
+            os.makedirs(PHOTOS_DIR, exist_ok=True)
+            img_path = f"{PHOTOS_DIR}/{guid}.jpg"
+            with open(img_path, "wb") as f:
+                f.write(processed)
+            commit_push([img_path], f"photo {guid[:8]}")
+            image_url = f"{RAW_BASE}/{img_path}"
+            time.sleep(10)  # let raw.githubusercontent pick up the push
+
+            try:
+                media_id = ig_publish(uid, image_url, caption)
+            except Exception as e:
+                photos_state[guid] = {"status": "publish_failed", "phash": h, "error": str(e)[:300]}
+                print(f"{guid[:8]}: publish FAILED: {e}")
+                continue
+
+            ig_hashes[media_id] = {"media_id": media_id, "phash": phash(processed), "ts": ""}
+            photos_state[guid] = {"status": "posted", "phash": h, "ig_media_id": media_id,
+                                  "kind": info.get("kind"),
+                                  "name": next((c for c in cand_names if c), "")}
+            for c in cand_names:
+                if c:
+                    known_names.add(norm_name(c))
+            posted += 1
+            print(f"{guid[:8]}: POSTED as {media_id} ({info.get('kind')})")
+    finally:
         try:
-            url = asset_url(base, guid, p["checksum"])
-            raw = download(url)
-            variants = phash_variants(raw)
-            h = variants[0]
-        except Exception as e:
-            print(f"{guid[:8]}: fetch failed ({e}), retry next run")
-            continue
-
-        dup = is_duplicate(variants, ig_hashes, CONFIG["phash_threshold"])
-        if dup:
-            photos_state[guid] = {"status": "skipped_already_on_ig", "phash": h, "match": dup}
-            print(f"{guid[:8]}: already on IG -> skip")
-            continue
-
-        checks += 1
-        try:
-            q = gemini(QUALIFY_PROMPT, raw)
-        except Exception as e:
-            print(f"{guid[:8]}: vision unavailable ({e}) - stopping early, will retry next run")
-            break
-        if not q.get("qualified"):
-            photos_state[guid] = {"status": "disqualified", "phash": h,
-                                  "reason": q.get("reason", "")}
             save_json(STATE_PATH, state)
-            print(f"{guid[:8]}: not qualified ({q.get('reason','')[:60]})")
-            continue
-
-        tilt = bottle_tilt_degrees(raw)
-        if not (CONFIG.get("tilt_min", 25) <= tilt <= CONFIG.get("tilt_max", 65)):
-            photos_state[guid] = {"status": "disqualified", "phash": h,
-                                  "reason": f"tilt {tilt:.0f} deg, need ~45"}
-            save_json(STATE_PATH, state)
-            print(f"{guid[:8]}: not qualified (tilt {tilt:.0f} deg, need 25-65)")
-            continue
-
-        info = gemini(IDENTIFY_PROMPT, raw)
-        caption = build_caption(info)
-        if not caption:
-            photos_state[guid] = {"status": "unidentified", "phash": h}
-            print(f"{guid[:8]}: could not identify bottle")
-            continue
-
-        cand_names = [info.get(k, "") for k in ("name", "name_en", "name_ja")]
-        dup_name = next((c for c in cand_names if c and norm_name(c) in known_names), None)
-        if dup_name:
-            photos_state[guid] = {"status": "skipped_same_bottle", "phash": h,
-                                  "name": str(dup_name)}
-            save_json(STATE_PATH, state)
-            print(f"{guid[:8]}: same bottle already posted ({dup_name}) -> skip")
-            continue
-
-        processed = apply_preset(raw)
-        os.makedirs(PHOTOS_DIR, exist_ok=True)
-        img_path = f"{PHOTOS_DIR}/{guid}.jpg"
-        with open(img_path, "wb") as f:
-            f.write(processed)
-        commit_push([img_path], f"photo {guid[:8]}")
-        image_url = f"{RAW_BASE}/{img_path}"
-        time.sleep(10)  # let raw.githubusercontent pick up the push
-
-        try:
-            media_id = ig_publish(uid, image_url, caption)
+            save_json(IG_HASH_PATH, ig_hashes)
+            commit_push([STATE_PATH, IG_HASH_PATH],
+                        f"state: +{posted} posted, {checks} checked")
+            print(f"Done. posted={posted} vision_checks={checks}")
         except Exception as e:
-            photos_state[guid] = {"status": "publish_failed", "phash": h, "error": str(e)[:300]}
-            print(f"{guid[:8]}: publish FAILED: {e}")
-            continue
-
-        ig_hashes[media_id] = {"media_id": media_id, "phash": phash(processed), "ts": ""}
-        photos_state[guid] = {"status": "posted", "phash": h, "ig_media_id": media_id,
-                              "kind": info.get("kind"),
-                              "name": next((c for c in cand_names if c), "")}
-        for c in cand_names:
-            if c:
-                known_names.add(norm_name(c))
-        posted += 1
-        print(f"{guid[:8]}: POSTED as {media_id} ({info.get('kind')})")
-
-    save_json(STATE_PATH, state)
-    save_json(IG_HASH_PATH, ig_hashes)
-    commit_push([STATE_PATH, IG_HASH_PATH], f"state: +{posted} posted, {checks} checked")
-    print(f"Done. posted={posted} vision_checks={checks}")
+            print(f"could not save state: {e}")
+            raise
 
 
 if __name__ == "__main__":
