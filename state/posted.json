@@ -736,6 +736,168 @@
    "ig_media_id": "18103734464269370",
    "kind": "wine",
    "name": "Terre del Barolo Barolo"
+  },
+  "E6C11F33-6DA3-4B9E-B7D7-A4D6E969F6A0": {
+   "status": "skipped_already_on_ig",
+   "phash": "a6d99af01f649f40",
+   "match": "17966538242616072"
+  },
+  "D9EA4ABC-7C41-4660-8C29-E3A49B11C802": {
+   "status": "skipped_already_on_ig",
+   "phash": "efc09f224439e31e",
+   "match": "17964903644461850"
+  },
+  "F235410B-8901-41AE-907C-ABC568CACF46": {
+   "status": "disqualified",
+   "phash": "eaa5a585cf962296",
+   "reason": "The image shows the back label containing technical information such as ingredients, alcohol percentage, barcode, and legal warnings, rather than the main front brand label."
+  },
+  "34AB478F-CC49-4D66-B0F6-AF9DAE5B3D19": {
+   "status": "disqualified",
+   "phash": "ebe6049c659c969a",
+   "reason": "The visible label is the back label, as it contains descriptive text, legal information, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "7345B2E3-A9E6-43AD-BF44-187007F93FE9": {
+   "status": "disqualified",
+   "phash": "e1e56594e592c669",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, legal warnings, and importer information, rather than the main front brand label."
+  },
+  "99BE83EF-BEBF-478F-9554-4DE83CACD28D": {
+   "status": "skipped_already_on_ig",
+   "phash": "a2ea9ad635a09ee4",
+   "match": "17896795211925914"
+  },
+  "A24CA62D-3E31-4A48-8781-CC2189E85DC3": {
+   "status": "skipped_already_on_ig",
+   "phash": "a5d906fc631bc84e",
+   "match": "18009091486831901"
+  },
+  "BFC8927C-46C1-40E7-BC3A-991E68180826": {
+   "status": "disqualified",
+   "phash": "c49dbb21ec9a4b4a",
+   "reason": "tilt 12 deg, need ~45"
+  },
+  "880D7704-0AD9-4367-A751-CDE591419C41": {
+   "status": "disqualified",
+   "phash": "baf169906596c59c",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and legal text, rather than the main front brand label."
+  },
+  "D4A4C594-BA39-4697-B19B-1875075219AC": {
+   "status": "disqualified",
+   "phash": "bde065c22696d38e",
+   "reason": "The visible label is the back label, as it contains a barcode, importer information, volume, alcohol percentage, and legal text regarding sulphites."
+  },
+  "82BC4D8F-AB9C-414A-95D8-14602E51B641": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec29a36f405e52c",
+   "match": "17970398588543237"
+  },
+  "8284AEFA-FFBC-4174-A603-2972C6EF73C9": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfc68c33c618e70c",
+   "match": "17875527281950848"
+  },
+  "A91DEED9-9044-4EBF-B2CC-4441AE86F3E2": {
+   "status": "skipped_already_on_ig",
+   "phash": "efe89bb624218e98",
+   "match": "17923071680656730"
+  },
+  "D79553E4-48DC-49BC-9083-9009561F2CC8": {
+   "status": "disqualified",
+   "phash": "bbe561846d92ce98",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and legal information."
+  },
+  "26F092D3-D708-4DCA-8FC0-E44EE6753694": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3e89af63485cc2b",
+   "match": "17942736545895677"
+  },
+  "6052DA3B-FC6C-4EC5-B76B-045311EED8DB": {
+   "status": "disqualified",
+   "phash": "bdf870d321876564",
+   "reason": "The visible label is the back label, as it contains a barcode, legal warnings, alcohol percentage, and importer information."
+  },
+  "D8982060-B7EF-4476-812D-4F9EEB1E10C8": {
+   "status": "disqualified",
+   "phash": "e542a9aa67da8c65",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the image shows the back label (containing the barcode, alcohol percentage, and technical details) instead of the front brand label."
+  },
+  "72E5F4FE-278F-4F7B-8819-BD990D49FA83": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7e89a963525cc2b",
+   "match": "17961020573682189"
+  },
+  "292BBB3C-E825-4B28-AEBC-14301F8C4B6C": {
+   "status": "disqualified",
+   "phash": "e44098e0a8df5ff8",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the image shows the back label containing the barcode and legal information instead of the front brand label."
+  },
+  "5F0D8197-906A-4614-8A1E-74FACE3201C1": {
+   "status": "disqualified",
+   "phash": "cbbd3cc2748b609c",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and production date, rather than the front brand label."
+  },
+  "E998CD81-8388-45B4-9217-1241256058B9": {
+   "status": "disqualified",
+   "phash": "b0ec70328fd3f2c4",
+   "reason": "The bottle is standing in a refrigerator shelf rather than being held by a hand."
+  },
+  "991884A3-0B26-4483-BF43-FC72ABCD9B72": {
+   "status": "skipped_already_on_ig",
+   "phash": "afc812d6bd256499",
+   "match": "18006570803162333"
+  },
+  "274F1530-3C80-4446-98D4-25058B985DE7": {
+   "status": "disqualified",
+   "phash": "e3e16f9ac4939431",
+   "reason": "The visible label is the back label, as it contains ingredients, alcohol percentage, manufacturer contact information, and a barcode."
+  },
+  "78D94A73-A28E-4E96-8768-3D9B160316C8": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3c81a367731cd4d",
+   "match": "17947785590754324"
+  },
+  "D01F20E1-C20E-4C45-B80E-97187C1E11B5": {
+   "status": "skipped_already_on_ig",
+   "phash": "e2ea9a9634a18fe8",
+   "match": "17896795211925914"
+  },
+  "70D2C241-4EFD-43B9-BE1C-7F92CCFAC358": {
+   "status": "skipped_already_on_ig",
+   "phash": "add0bacc3467b449",
+   "match": "17903974856768316"
+  },
+  "46C3BE45-5DBE-44F2-B374-BA8619174C8D": {
+   "status": "skipped_already_on_ig",
+   "phash": "9f2fc1805e9f914a",
+   "match": "18277148905202923"
+  },
+  "A7B32A95-117F-4591-B98B-B2EA624DF9DE": {
+   "status": "skipped_already_on_ig",
+   "phash": "a2ca9a3234a7b5ad",
+   "match": "18272857786178337"
+  },
+  "76C82DC6-2756-48F7-9EB2-EC59E24B868F": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfc09a32e52de498",
+   "match": "17902255194000142"
+  },
+  "5A86D231-B5DD-4BEE-B38B-F46382EAF40C": {
+   "status": "disqualified",
+   "phash": "abfd783d21d20392",
+   "reason": "The image shows the back label of the bottle, which contains a barcode, legal warnings, and importer information, rather than the main front brand label."
+  },
+  "E6DC4E84-CD98-40FC-9ECC-B391172E3905": {
+   "status": "skipped_already_on_ig",
+   "phash": "c7f89e923134e12d",
+   "match": "18093355210417763"
+  },
+  "D76CC3B1-0251-4CB2-9257-E27A3BF53CE7": {
+   "status": "posted",
+   "phash": "f0e71cf0243de02f",
+   "ig_media_id": "17962072296169993",
+   "kind": "sake",
+   "name": "Oze no Yukidoke Daiginjo"
   }
  },
  "token_refreshed_at": 1783956500
