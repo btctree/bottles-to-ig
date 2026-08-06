@@ -905,6 +905,33 @@
    "ig_media_id": "18092500835089193",
    "kind": "wine",
    "name": "Joseph Drouhin Rully"
+  },
+  "010DE4D1-39A5-4279-84A5-69A5E9D2F15C": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7c89a96f427e90c",
+   "match": "17976397292467129"
+  },
+  "D5747577-239A-462E-A61F-C353EE347FEA": {
+   "status": "disqualified",
+   "phash": "ae93d108f5cca173",
+   "reason": "The bottle is standing on a surface rather than being held by a hand."
+  },
+  "6D5B9D87-FEC6-4194-814E-5C3DEB9C47E9": {
+   "status": "skipped_already_on_ig",
+   "phash": "a5c99b923734e48d",
+   "match": "18113814706354928"
+  },
+  "D96F9C9F-2DB0-43F1-B05A-A38B018EFA5F": {
+   "status": "skipped_already_on_ig",
+   "phash": "c58bcbf01fc4c28b",
+   "match": "17929998908724619"
+  },
+  "1E459496-0E2B-4E85-9EEA-59A5E83C2D02": {
+   "status": "posted",
+   "phash": "ade01bd3f424e718",
+   "ig_media_id": "17943039171296869",
+   "kind": "wine",
+   "name": "Cune Reserva"
   }
  },
  "token_refreshed_at": 1783956500
