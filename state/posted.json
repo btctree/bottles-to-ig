@@ -932,6 +932,133 @@
    "ig_media_id": "17943039171296869",
    "kind": "wine",
    "name": "Cune Reserva"
+  },
+  "D0DF28EA-5442-44BF-9655-599E9ADF5A5C": {
+   "status": "skipped_already_on_ig",
+   "phash": "bdc01a36e42d6dac",
+   "match": "18101783923332053"
+  },
+  "EA4FA29D-07C9-41AC-BF04-C728F575EC26": {
+   "status": "disqualified",
+   "phash": "b9ed466735003ace",
+   "reason": "The visible label is the back label as it contains a barcode, legal warnings, and manufacturer information rather than the main front brand label."
+  },
+  "3C0A4A1C-9F38-4304-A856-7DFAA44569E7": {
+   "status": "disqualified",
+   "phash": "a99bd2464cfd40ba",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "138406C2-2017-4FD0-97A3-C033B848AC78": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec29b32e4078e3c",
+   "match": "17942736545895677"
+  },
+  "580414E8-F191-4FC1-BD52-88EC598E2332": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7c89bf236a58ca1",
+   "match": "18284734372171083"
+  },
+  "A9F3EFA8-C551-4A4B-9B24-A3FB12C9BA89": {
+   "status": "disqualified",
+   "phash": "abfd616965888729",
+   "reason": "The image shows the back label of the bottle, which contains legal warnings, nutritional information, a barcode, and importer details, rather than the front brand label."
+  },
+  "4AE7E20A-E1ED-4B31-863E-9C84B2466E01": {
+   "status": "disqualified",
+   "phash": "b8c6c7516c25da65",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding a bottle as they are standing on a surface."
+  },
+  "115DCC37-0039-445A-AF3B-F8F7D95346D5": {
+   "status": "disqualified",
+   "phash": "9e7d796420969596",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and manufacturer information, rather than the front brand label."
+  },
+  "F6E51AA4-F0BD-4E1A-AA24-366B6DC9D130": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe09a92e425e53c",
+   "match": "18451645783007859"
+  },
+  "19727F7D-2DB1-4604-B4B9-34C7B3ACE14D": {
+   "status": "skipped_already_on_ig",
+   "phash": "a2ea9ad635a19e85",
+   "match": "17896795211925914"
+  },
+  "B3B63E06-A4BF-4204-A596-84EC6F402615": {
+   "status": "skipped_already_on_ig",
+   "phash": "bbca89323485e53d",
+   "match": "17942736545895677"
+  },
+  "7668695C-BDD0-4F18-B53E-4CA701DE34AC": {
+   "status": "disqualified",
+   "phash": "e9e106c66716cd66",
+   "reason": "The image shows the back label of the bottle, which contains the barcode, alcohol percentage, and legal information, rather than the main front brand label."
+  },
+  "AC6FE03D-7C95-4638-AC0D-E70D4F323453": {
+   "status": "skipped_already_on_ig",
+   "phash": "bdc09b32e405ef1c",
+   "match": "17970398588543237"
+  },
+  "E9F85A5F-954C-4A63-A706-397A82D018C0": {
+   "status": "disqualified",
+   "phash": "a2f1cc4ef30cf12c",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "C1BE2278-30DD-4DCF-AFE6-80731633E7FF": {
+   "status": "disqualified",
+   "phash": "b986c7517c25da61",
+   "reason": "There are multiple bottles instead of exactly one, and they are standing on a shelf rather than being held by a hand."
+  },
+  "B8D2A65C-9B45-403D-A6AB-002926B3363F": {
+   "status": "skipped_already_on_ig",
+   "phash": "afe01a16f13d6465",
+   "match": "18016866592948143"
+  },
+  "E33805BE-678C-42BC-8638-DEC2FA487C6E": {
+   "status": "disqualified",
+   "phash": "bae961e16195e196",
+   "reason": "The visible label is the back label, as it contains a barcode, QR code, alcohol percentage, and legal information."
+  },
+  "059C69F4-35F8-45E2-86E6-A1CA9CB2C00E": {
+   "status": "skipped_already_on_ig",
+   "phash": "bec09a36f485e52c",
+   "match": "17970398588543237"
+  },
+  "EAFF0218-8E63-4983-9AC2-E6D7699951DE": {
+   "status": "skipped_already_on_ig",
+   "phash": "bbca9b323485a43d",
+   "match": "18063714838656366"
+  },
+  "B80A57C3-B21E-4060-BAEE-632C5CDA0CCB": {
+   "status": "skipped_already_on_ig",
+   "phash": "afc812d2bd656499",
+   "match": "18006570803162333"
+  },
+  "DF7139C3-0C2D-4C2B-89B9-C194740BBCA1": {
+   "status": "disqualified",
+   "phash": "bb2d659ee09e803c",
+   "reason": "The visible label is the back label, which primarily shows ingredients, alcohol percentage, manufacturer information, and legal warnings rather than the main brand label."
+  },
+  "22533B9D-2385-4984-83FD-E05ABC11926C": {
+   "status": "disqualified",
+   "phash": "bcf021b764d227d2",
+   "reason": "The visible label is a back label containing nutritional information, legal text, and a barcode, rather than the front brand label."
+  },
+  "3E3E61EE-B499-44F9-979B-A6312C29E341": {
+   "status": "skipped_already_on_ig",
+   "phash": "a1ca9ab23d25e70d",
+   "match": "17911008575711921"
+  },
+  "82177E28-015B-407D-A200-030814051124": {
+   "status": "disqualified",
+   "phash": "858568c37ac59f27",
+   "reason": "tilt 20 deg, need ~45"
+  },
+  "E402C46F-025A-44F0-BB3E-DD4CDD48F986": {
+   "status": "posted",
+   "phash": "cfe03287c83de21e",
+   "ig_media_id": "18016236074919922",
+   "kind": "wine",
+   "name": "Fita da Fitapreta"
   }
  },
  "token_refreshed_at": 1783956500
