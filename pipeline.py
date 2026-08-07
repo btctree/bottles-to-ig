@@ -27,6 +27,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 os.chdir(HERE)
 
 CONFIG = json.load(open("config.json", encoding="utf-8"))
+
+# 16x16 DCT -> 256-bit hashes. At 64 bits this feed is inseparable: every photo
+# is the same hand, wall and crop, so a confirmed duplicate pair and two totally
+# different bottles both landed at the same distance. Measured over the 27
+# published photos at 256 bits: confirmed duplicate 48/256 (18.8%), nearest
+# genuinely-distinct pair 72/256 (28.1%).
+HASH_SIZE = 16
+HASH_BITS = HASH_SIZE * HASH_SIZE
+
 STATE_PATH = "state/posted.json"
 IG_HASH_PATH = "state/ig_hashes.json"
 PHOTOS_DIR = "photos"
@@ -59,17 +68,31 @@ def git(*args, check=True):
 
 
 def commit_push(paths, msg):
+    """True when the change reached origin. Never raises: a push that dies here
+    after a photo has already gone live would otherwise kill the run before the
+    'posted' record is written, and the same photo would be posted again
+    tomorrow. The caller decides what a False means."""
     if not GIT_PUSH:
         print(f"[dry] would commit: {msg}")
-        return
+        return True
     git("add", *paths)
     r = git("-c", "user.name=bottles-bot",
             "-c", "user.email=actions@users.noreply.github.com",
             "commit", "-m", msg, check=False)
-    if r.returncode == 0:
-        git("push")
-    elif "nothing to commit" not in (r.stdout + r.stderr):
+    if r.returncode != 0:
+        if "nothing to commit" in (r.stdout + r.stderr):
+            return True
         print(f"git commit failed: {(r.stderr or r.stdout)[:200]}")
+        return False
+    p = git("push", check=False)
+    if p.returncode != 0:
+        print("  push rejected, rebasing on origin and retrying")
+        git("pull", "--rebase", check=False)
+        p = git("push", check=False)
+    if p.returncode != 0:
+        print(f"git push FAILED: {(p.stderr or p.stdout)[:200]}")
+        return False
+    return True
 
 
 # ---------------------------------------------------------------- iCloud album
@@ -126,12 +149,32 @@ def download(url):
 
 def phash(img_bytes):
     import imagehash
-    return str(imagehash.phash(Image.open(io.BytesIO(img_bytes)).convert("RGB")))
+    return str(imagehash.phash(Image.open(io.BytesIO(img_bytes)).convert("RGB"),
+                               hash_size=HASH_SIZE))
 
 
 def hash_distance(h1, h2):
+    """None when the two hashes were built at different sizes, i.e. one of them
+    predates the 256-bit rebuild and the comparison would be meaningless."""
     import imagehash
-    return imagehash.hex_to_hash(h1) - imagehash.hex_to_hash(h2)
+    if not h1 or not h2 or len(h1) != len(h2):
+        return None
+    # int(): imagehash returns numpy.int64, which json.dump cannot serialise -
+    # it would truncate state/posted.json mid-write when a distance is recorded
+    return int(imagehash.hex_to_hash(h1) - imagehash.hex_to_hash(h2))
+
+
+def nearest(variants, pool):
+    """(key, distance) of the closest entry in pool. pool maps key -> hex hash."""
+    best_key, best_dist = None, None
+    for key, h in pool.items():
+        dists = [d for d in (hash_distance(v, h) for v in variants) if d is not None]
+        if not dists:
+            continue
+        d = min(dists)
+        if best_dist is None or d < best_dist:
+            best_key, best_dist = key, d
+    return best_key, best_dist
 
 
 def phash_variants(img_bytes):
@@ -149,14 +192,12 @@ def phash_variants(img_bytes):
         canvas.paste(img, ((int(h * 0.8) - w) // 2, 0))
     else:
         canvas = img
-    return [str(imagehash.phash(v)) for v in (img, square, canvas)]
+    return [str(imagehash.phash(v, hash_size=HASH_SIZE)) for v in (img, square, canvas)]
 
 
-def is_duplicate(variants, ig_hashes, threshold):
-    for k, v in ig_hashes.items():
-        if min(hash_distance(hv, v["phash"]) for hv in variants) <= threshold:
-            return k
-    return None
+def dup_threshold():
+    """Bits of difference below which two photos count as the same shot."""
+    return int(HASH_BITS * CONFIG.get("phash_threshold_pct", 24) / 100)
 
 
 def apply_preset(img_bytes):
@@ -386,6 +427,27 @@ def norm_name(s):
     return re.sub(r"[^0-9a-z぀-ヿ㐀-鿿]", "", str(s).lower())
 
 
+def closest_name(cand_names, known_names):
+    """(candidate, matched, ratio) for the best fuzzy match against known_names.
+
+    Exact matching missed the duplicate that started all this: Gemini read the
+    same label 一双 as "ISSOU" one day and "SOU" the next, which normalise to
+    chiyomusubiassemblageissou vs chiyomusubiassemblagesou - 0.96 similar, but
+    not equal. Genuinely different bottles score 0.27-0.44, so the gap is wide.
+    """
+    import difflib
+    best = (None, None, 0.0)
+    for c in cand_names:
+        n = norm_name(c)
+        if not n:
+            continue
+        for k in known_names:
+            ratio = difflib.SequenceMatcher(None, n, k).ratio()
+            if ratio > best[2]:
+                best = (c, k, ratio)
+    return best
+
+
 def posted_bottle_names(uid):
     """First line of every existing IG caption, normalized — so the same bottle
     photographed again is never posted twice."""
@@ -489,12 +551,33 @@ def main():
     print(f"Album photos: {len(album)}, already tracked: {len(photos_state)}")
 
     uid = ig_user_id()
-    if not ig_hashes:
-        sync_ig_hashes(uid, ig_hashes)
+    if state.get("hash_bits") != HASH_BITS:
+        print(f"rebuilding the IG index at {HASH_BITS} bits (one time, this run will be slow)")
+        ig_hashes.clear()
+        state["hash_bits"] = HASH_BITS
+    # every run, not just the first: anything posted from the phone by hand was
+    # never indexed before, so the pipeline could not know it existed
+    added = sync_ig_hashes(uid, ig_hashes)
+    if added:
         save_json(IG_HASH_PATH, ig_hashes)
-        commit_push([IG_HASH_PATH], "index existing IG posts")
+        commit_push([IG_HASH_PATH], f"index {added} IG posts at {HASH_BITS}-bit")
+
     known_names = posted_bottle_names(uid)
-    print(f"Known bottle names on IG: {len(known_names)}")
+    for s in photos_state.values():
+        n = norm_name(s.get("name", ""))
+        if n:
+            known_names.add(n)
+    print(f"Known bottle names: {len(known_names)}")
+
+    # two pools, each compared like with like: album photos are hashed raw, so
+    # they are matched against other raw album hashes; the IG index holds the
+    # rendition Instagram serves, so the candidate is matched against it only
+    # after the same preset has been applied.
+    ig_pool = {k: v["phash"] for k, v in ig_hashes.items() if v.get("phash")}
+    album_pool = {g: s["phash"] for g, s in photos_state.items() if s.get("phash")}
+    thr = dup_threshold()
+    print(f"Dedup: {len(ig_pool)} IG hashes, {len(album_pool)} album hashes, "
+          f"threshold {thr}/{HASH_BITS} bits")
 
     posted = 0
     checks = 0
@@ -510,14 +593,28 @@ def main():
                 raw = download(url)
                 variants = phash_variants(raw)
                 h = variants[0]
+                processed = apply_preset(raw)
+                proc_variants = phash_variants(processed)
             except Exception as e:
                 print(f"{guid[:8]}: fetch failed ({e}), retry next run")
                 continue
 
-            dup = is_duplicate(variants, ig_hashes, CONFIG["phash_threshold"])
-            if dup:
-                photos_state[guid] = {"status": "skipped_already_on_ig", "phash": h, "match": dup}
-                print(f"{guid[:8]}: already on IG -> skip")
+            ig_key, ig_dist = nearest(proc_variants, ig_pool)
+            album_key, album_dist = nearest(variants, album_pool)
+            print(f"{guid[:8]}: nearest IG {ig_dist}, nearest album {album_dist} "
+                  f"(dup at <= {thr})")
+
+            if ig_dist is not None and ig_dist <= thr:
+                photos_state[guid] = {"status": "skipped_already_on_ig", "phash": h,
+                                      "match": ig_key, "distance": ig_dist}
+                album_pool[guid] = h
+                print(f"{guid[:8]}: already on IG ({ig_dist} bits from {ig_key}) -> skip")
+                continue
+            if album_dist is not None and album_dist <= thr:
+                photos_state[guid] = {"status": "skipped_same_shot", "phash": h,
+                                      "match": album_key, "distance": album_dist}
+                album_pool[guid] = h
+                print(f"{guid[:8]}: same shot as {album_key[:8]} ({album_dist} bits) -> skip")
                 continue
 
             checks += 1
@@ -529,6 +626,7 @@ def main():
             if not q.get("qualified"):
                 photos_state[guid] = {"status": "disqualified", "phash": h,
                                       "reason": q.get("reason", "")}
+                album_pool[guid] = h
                 save_json(STATE_PATH, state)
                 print(f"{guid[:8]}: not qualified ({q.get('reason','')[:60]})")
                 continue
@@ -541,6 +639,7 @@ def main():
             if not (CONFIG.get("tilt_min", 25) <= tilt <= CONFIG.get("tilt_max", 65)):
                 photos_state[guid] = {"status": "disqualified", "phash": h,
                                       "reason": f"tilt {tilt:.0f} deg, need ~45"}
+                album_pool[guid] = h
                 save_json(STATE_PATH, state)
                 print(f"{guid[:8]}: not qualified (tilt {tilt:.0f} deg, need 25-65)")
                 continue
@@ -553,24 +652,32 @@ def main():
             caption = build_caption(info)
             if not caption:
                 photos_state[guid] = {"status": "unidentified", "phash": h}
+                album_pool[guid] = h
                 print(f"{guid[:8]}: could not identify bottle")
                 continue
 
             cand_names = [info.get(k, "") for k in ("name", "name_en", "name_ja")]
-            dup_name = next((c for c in cand_names if c and norm_name(c) in known_names), None)
-            if dup_name:
+            cand, matched, ratio = closest_name(cand_names, known_names)
+            cutoff = CONFIG.get("name_similarity", 0.90)
+            print(f"{guid[:8]}: closest known name {ratio:.2f} (dup at >= {cutoff})")
+            if cand and ratio >= cutoff:
                 photos_state[guid] = {"status": "skipped_same_bottle", "phash": h,
-                                      "name": str(dup_name)}
+                                      "name": str(cand), "match": matched,
+                                      "similarity": round(ratio, 3)}
+                album_pool[guid] = h
                 save_json(STATE_PATH, state)
-                print(f"{guid[:8]}: same bottle already posted ({dup_name}) -> skip")
+                print(f"{guid[:8]}: same bottle already posted ({cand} ~ {matched}) -> skip")
                 continue
 
-            processed = apply_preset(raw)
             os.makedirs(PHOTOS_DIR, exist_ok=True)
             img_path = f"{PHOTOS_DIR}/{guid}.jpg"
             with open(img_path, "wb") as f:
                 f.write(processed)
-            commit_push([img_path], f"photo {guid[:8]}")
+            if not commit_push([img_path], f"photo {guid[:8]}"):
+                # Instagram pulls the image from raw.githubusercontent, so there
+                # is nothing to publish. No status written - retry next run.
+                print(f"{guid[:8]}: photo did not reach GitHub, not publishing")
+                continue
             image_url = f"{RAW_BASE}/{img_path}"
             time.sleep(10)  # let raw.githubusercontent pick up the push
 
@@ -578,13 +685,18 @@ def main():
                 media_id = ig_publish(uid, image_url, caption)
             except Exception as e:
                 photos_state[guid] = {"status": "publish_failed", "phash": h, "error": str(e)[:300]}
+                album_pool[guid] = h
                 print(f"{guid[:8]}: publish FAILED: {e}")
                 continue
 
-            ig_hashes[media_id] = {"media_id": media_id, "phash": phash(processed), "ts": ""}
+            # Deliberately not indexed here from the local bytes - that stored a
+            # hash of something Instagram never serves, so later candidates were
+            # compared against the wrong image. Next run's sync picks up the real
+            # rendition from media_url.
             photos_state[guid] = {"status": "posted", "phash": h, "ig_media_id": media_id,
                                   "kind": info.get("kind"),
                                   "name": next((c for c in cand_names if c), "")}
+            album_pool[guid] = h
             for c in cand_names:
                 if c:
                     known_names.add(norm_name(c))
@@ -594,8 +706,10 @@ def main():
         try:
             save_json(STATE_PATH, state)
             save_json(IG_HASH_PATH, ig_hashes)
-            commit_push([STATE_PATH, IG_HASH_PATH],
-                        f"state: +{posted} posted, {checks} checked")
+            if not commit_push([STATE_PATH, IG_HASH_PATH],
+                               f"state: +{posted} posted, {checks} checked"):
+                raise RuntimeError("state did not reach GitHub - a posted photo "
+                                   "may be unrecorded and could be posted again")
             print(f"Done. posted={posted} vision_checks={checks}")
         except Exception as e:
             print(f"could not save state: {e}")

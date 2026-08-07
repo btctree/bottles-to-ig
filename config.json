@@ -1,7 +1,8 @@
 {
   "posts_per_day": 1,
   "max_vision_checks_per_run": 20,
-  "phash_threshold": 8,
+  "phash_threshold_pct": 24,
+  "name_similarity": 0.9,
   "order": "newest_first",
   "gemini_model": "gemini-3-flash-preview",
   "tilt_min": 25,
