@@ -1059,7 +1059,38 @@
    "ig_media_id": "18016236074919922",
    "kind": "wine",
    "name": "Fita da Fitapreta"
+  },
+  "EBE3083A-6832-4271-9F49-C9942A410CAA": {
+   "status": "disqualified",
+   "phash": "bab4f6a16bd06a8762c98816637e946dcd7a92f895a8796292c170959ab5635b",
+   "reason": "The visible label is the back label, as it contains legal warnings, allergy advice, a barcode, and detailed importer information."
+  },
+  "03772AE9-A39C-479A-9458-33BCFC033DEA": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7dec8509b6db6d83496a72ccc7919c2534c761142f71c89c3bb3332c670bcc7",
+   "match": "18371948350019695",
+   "distance": 0
+  },
+  "01EE1353-F737-4C17-BE05-66408ED92A66": {
+   "status": "skipped_already_on_ig",
+   "phash": "c755e8aa1b7cce40328e22778c886e75998e2954fa6fa74869d19f9ae5443731",
+   "match": "18027364234607296",
+   "distance": 2
+  },
+  "AE756A6A-DCCE-4EAA-BFB4-295BFC49396D": {
+   "status": "skipped_already_on_ig",
+   "phash": "ae2cc8fa9740387673fe66806c7fb9c09191d32f1272fec4490d6ddaec0005bf",
+   "match": "17846562825034421",
+   "distance": 4
+  },
+  "26691307-D929-44F4-BCC9-68C52B4D841C": {
+   "status": "posted",
+   "phash": "a7fee8009bf192ff368025becc200f69e10b1b42c2767e1758d5d8b47737c330",
+   "ig_media_id": "18110648849009877",
+   "kind": "wine",
+   "name": "Estancia Vineyards Pinot Noir"
   }
  },
- "token_refreshed_at": 1783956500
+ "token_refreshed_at": 1783956500,
+ "hash_bits": 256
 }
