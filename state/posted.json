@@ -1089,6 +1089,46 @@
    "ig_media_id": "18110648849009877",
    "kind": "wine",
    "name": "Estancia Vineyards Pinot Noir"
+  },
+  "CB4CF996-18FD-4311-8368-EC5C77C128C0": {
+   "status": "skipped_already_on_ig",
+   "phash": "bf37c0139fd532c2e49885bfed242cda63921a36d23c5e6144cf1d98d8b39326",
+   "match": "17970398588543237",
+   "distance": 2
+  },
+  "AF089A78-ED79-4C90-B351-97F1E1E32B9A": {
+   "status": "skipped_already_on_ig",
+   "phash": "b5f3c12ccb21137bf65c25d3c72e6c49c9bb1862e384863594e4bcc1c18f3b3a",
+   "match": "18058205830437196",
+   "distance": 2
+  },
+  "289614E3-0F7A-44DD-9E4C-269B02FF2730": {
+   "status": "disqualified",
+   "phash": "a76ec3a8c2c12dc5f3180c3633ed760c8df266916330bcd1c9c673dd3e33434e",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "0CDEA781-BE4C-4EEC-9BF5-AE79951154CA": {
+   "status": "skipped_already_on_ig",
+   "phash": "f093eaf41a46f2193df2a503a56ca7598853b884e3b51a07caf84ee75308737e",
+   "match": "17941675229571625",
+   "distance": 2
+  },
+  "0D461361-AED2-4305-A35B-E8DD894F5C59": {
+   "status": "disqualified",
+   "phash": "ba5ae16b65af9eb4672933878695614f9eb461d39a70612f616567bc84909694",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, legal warnings, and a barcode."
+  },
+  "74681DCE-6A07-4809-A825-7DE53AA84543": {
+   "status": "disqualified",
+   "phash": "bcebc308f4160feba799d8266ffcb4095be724949329582ea4d17b38cec63013",
+   "reason": "There are multiple bottles instead of exactly one, and they are standing on a surface rather than being held by a hand."
+  },
+  "2B2D3A2D-6F43-40DA-9C15-C962033F576B": {
+   "status": "posted",
+   "phash": "cfeed80137dac2f29c052dfde0c01e1fd1e59c350587763830634bcad85b839e",
+   "ig_media_id": "17977070574080942",
+   "kind": "wine",
+   "name": "Tapada das Lebres Premium"
   }
  },
  "token_refreshed_at": 1783956500,
