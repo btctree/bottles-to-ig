@@ -1136,6 +1136,88 @@
    "ig_media_id": "18348202351220059",
    "kind": "sake",
    "name": "Denshu Premium Junmai Daiginjo"
+  },
+  "C7396BBC-6063-42C6-A4B8-3F37B5B66D55": {
+   "status": "disqualified",
+   "phash": "fa17f817617a696ae07e9791d3ac234a611bc83c96c4a0e7cf2860db9cd3cce0",
+   "reason": "The visible label is the back label, as it mainly shows ingredients (原材料名), alcohol percentage, and legal text."
+  },
+  "3C25E769-58C0-4BDE-84C1-76A83863F6F5": {
+   "status": "disqualified",
+   "phash": "b9888f61c7c719e86c7a8787da2c25d29a6d6b6c84997766c82d9b66a492396c",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding a bottle."
+  },
+  "655A199F-D9E5-451D-A1DB-425F92CF1946": {
+   "status": "skipped_already_on_ig",
+   "phash": "addcd2159ee2409a96216c7e8d87ad79580b33e46e67528869fb9e8746741917",
+   "match": "18037570603548360",
+   "distance": 0
+  },
+  "18FD7EB4-4E22-4364-9600-1574178A6816": {
+   "status": "disqualified",
+   "phash": "b9888e6ac7e751c17c6ea5d2da2d6595b4147b66cc19b3c425905a4ac3e51cbb",
+   "reason": "There are multiple bottles standing on a surface, and none of them are being held by a hand."
+  },
+  "43B37C73-87C6-4846-B91F-3CF0F4114704": {
+   "status": "disqualified",
+   "phash": "d278671961a58e5866719e5a96789b67187161c779a76796980ec698999b8ef0",
+   "reason": "The visible label is the back label, as it contains a barcode, legal text, alcohol percentage, and detailed technical information such as grape varietals and vinification details."
+  },
+  "9D96BA5B-176D-47A7-9ABE-3917D2C6E0B7": {
+   "status": "skipped_already_on_ig",
+   "phash": "bff4c3fe9a82b6f231bd87218c4f3990c306391de261aecd0c9b2192cf3238e6",
+   "match": "18051090433467428",
+   "distance": 2
+  },
+  "BA8D5FF3-17BB-407A-995B-897B6954B15C": {
+   "status": "skipped_already_on_ig",
+   "phash": "dff0f25f1800c3f7380567793cc7e1968ce43f09c06b3dcac70338eec71a3c42",
+   "match": "18014455174678722",
+   "distance": 4
+  },
+  "CD4C5972-3697-4AD3-809A-330A35765186": {
+   "status": "disqualified",
+   "phash": "b92fec0f213c39b074f0c0a466fb92d2e4d086c2e4db9d996cf03d3965b131b9",
+   "reason": "The visible label is the back label, as it contains legal text, alcohol percentage, volume, a barcode, and allergy advice."
+  },
+  "2EFD8B3F-2A7A-452C-B852-4FCDA0099078": {
+   "status": "disqualified",
+   "phash": "ed2bb0f93db492d0d0f06f0730e8cf8630d1cf9a70c79f4ac69c6b699886641e",
+   "reason": "The image shows the back label of the bottle, which contains legal text, nutritional information, and a barcode, rather than the front brand label."
+  },
+  "67F33B9A-B336-40C5-961E-D73A6A70384D": {
+   "status": "disqualified",
+   "phash": "ed69e1e030a4c70763939b17c38638b4ccd6268e9a46ce1a31b7133877979b7c",
+   "reason": "The visible label is the back label, as it contains a barcode, legal text, and detailed product information instead of being the primary front brand label."
+  },
+  "20A4CCA6-0A14-4770-92F7-A53FE7E1E625": {
+   "status": "disqualified",
+   "phash": "9a5e17e969699dd565a8da1485f7da208647396ad60960df1da4c2b66db49a52",
+   "reason": "The visible label is the back label, as it contains a barcode, QR code, alcohol percentage, and legal information."
+  },
+  "E273E33E-41DA-4298-884A-3CD801429475": {
+   "status": "disqualified",
+   "phash": "ac03f96c327c94d9529bc5b39296bf494fa07a4287a9b497cd2b493444da07f9",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the visible label is the back label containing ingredients, alcohol percentage, and a barcode instead of the front brand label."
+  },
+  "E5153260-B44C-49D1-B935-B6DF414C7967": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfa0c06f9ad936f0e4840d2dcc6b39dac3763e0ce4f11986cb0c7a39666384cf",
+   "match": "18348202351220059",
+   "distance": 54
+  },
+  "64C64FF9-AC70-4F89-B915-D45FA0B20ED8": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7d9c0279b2492df7682877ed9c76f3960671b88c67b1c6461913c86c7349b61",
+   "match": "18053010424788396",
+   "distance": 2
+  },
+  "2117BA34-062B-4E04-B7C0-AB7342C6505D": {
+   "status": "posted",
+   "phash": "af84e83f9ab8b2c7348085bced63394ac3523f54e2dd1cc3c39e5c3443e3722c",
+   "ig_media_id": "18118583899923186",
+   "kind": "wine",
+   "name": "Morrisons The Best Vinho Verde Loureiro"
   }
  },
  "token_refreshed_at": 1783956500,
