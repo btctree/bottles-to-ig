@@ -1218,6 +1218,23 @@
    "ig_media_id": "18118583899923186",
    "kind": "wine",
    "name": "Morrisons The Best Vinho Verde Loureiro"
+  },
+  "9E8DC270-7949-4BE0-9D45-32C1AA0857EF": {
+   "status": "disqualified",
+   "phash": "ed4bf4bc60f487c3d68782d723527cadc2d6931ace4b619c383a67909b49c64a",
+   "reason": "The visible label is the back label, as it contains ingredients, alcohol percentage, legal warnings, a barcode, and manufacturer contact information instead of the main front brand label."
+  },
+  "8662FC1B-9D50-46C9-8215-813FAF91370D": {
+   "status": "disqualified",
+   "phash": "ba56f47861699f92e1681a3ca782783e93d5384886bf69e89e0f6df32100d66b",
+   "reason": "The visible label is the back label, as it contains a barcode, ingredients/nutrition information, and legal warnings."
+  },
+  "E4919481-45E5-445C-91A1-D26590E9A099": {
+   "status": "posted",
+   "phash": "8edbe2811aa7f2acc48035bba762bd4ca972af4e2c59a3569ec59a1d02f46e92",
+   "ig_media_id": "18021555551698906",
+   "kind": "wine",
+   "name": "The Best Soave Classico"
   }
  },
  "token_refreshed_at": 1783956500,
