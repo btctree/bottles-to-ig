@@ -1235,8 +1235,61 @@
    "ig_media_id": "18021555551698906",
    "kind": "wine",
    "name": "The Best Soave Classico"
+  },
+  "99890C96-240E-493E-B44E-D416F036A760": {
+   "status": "disqualified",
+   "phash": "b97df4b422d69f4b31e43b426592992c93c3381b93cd3901c69d64d13cc3cb4f",
+   "reason": "The visible label is the back label, as it primarily displays ingredients (原材料名), alcohol percentage, a barcode, and manufacturer information instead of the main front brand label."
+  },
+  "FF58A2E5-40A8-4D86-ABEB-8CD0E92CAB70": {
+   "status": "disqualified",
+   "phash": "b8f0caa5694b4ad469e19652a5af959a96b599e596946b45695261968b4b65bc",
+   "reason": "No hand is visible holding the bottle, and the image shows the back label (containing a barcode, alcohol percentage, and legal information) instead of the front brand label."
+  },
+  "C80B193B-1CEA-4F9C-9764-18164C059E52": {
+   "status": "disqualified",
+   "phash": "9f75b5d6288ab55772a28a28e4c6da21319bf1ce6a6635d3cf390a229dd9688c",
+   "reason": "The image shows a wooden box rather than an alcohol bottle, and there is no hand holding the subject."
+  },
+  "1157EAA6-6723-4B83-9F98-4F1B601B44A2": {
+   "status": "disqualified",
+   "phash": "bd80f61f70fb3258f3e59b68c7a5c9690e04c1e55b0691a772c20f07e331cb33",
+   "reason": "The visible part of the label primarily shows manufacturer information and legal warnings, which are characteristic of a back or side label rather than the main front brand label."
+  },
+  "63932D4B-6F8C-4D81-B699-59F4E79302F4": {
+   "status": "disqualified",
+   "phash": "ea54a1c3656b9f0fe7af9e14e62f39f8c60d21a496346709987867a439798615",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "9BB2D255-9922-4D9A-AAD1-CD384F3BE678": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7dde8049b75d2c9349aa5b6cd20296b991a1372e6750ed1d89d5e3163331f86",
+   "match": "17961020573682189",
+   "distance": 4
+  },
+  "2E008747-68AF-4D51-B5F1-1C5C46FF736E": {
+   "status": "disqualified",
+   "phash": "ed2f34b034f0e1c33896c787339ec70e3394c60e399698da66869b1b66c69f1c",
+   "reason": "The visible label is the back label, as it contains a barcode, importer information, and legal text like sulfite warnings."
+  },
+  "7A852DEB-D151-4CCB-9C90-464FB5FC48E1": {
+   "status": "disqualified",
+   "phash": "fad7e8f478f4cf0368d195aba783985d878a38307a1d63f03320674396a8c73c",
+   "reason": "The visible label is the back label, as it contains a barcode, QR code, alcohol percentage, and legal/importer information."
+  },
+  "C7C69990-0059-4BAD-9738-09641C18180A": {
+   "status": "disqualified",
+   "phash": "e096a34b4f2b9c3c67c91cb5cc3c63419c376b0db4f18f1770b4674b9a614d16",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and detailed legal/bottling information."
+  },
+  "682A7765-D429-4BBD-B528-662FD0BF63F8": {
+   "status": "posted",
+   "phash": "f4ff38001f3170e766841dbd72214ece621b1ce2639ec731216c9ccfe5e0b43b",
+   "ig_media_id": "18113937563069405",
+   "kind": "sake",
+   "name": "Azumaichi Honjozo Reishu"
   }
  },
- "token_refreshed_at": 1783956500,
+ "token_refreshed_at": 1786614091,
  "hash_bits": 256
 }
