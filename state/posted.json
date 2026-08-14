@@ -1288,6 +1288,18 @@
    "ig_media_id": "18113937563069405",
    "kind": "sake",
    "name": "Azumaichi Honjozo Reishu"
+  },
+  "BABFA9B4-5BA5-425C-89ED-32FDAC3063DF": {
+   "status": "disqualified",
+   "phash": "96db42925cb62cbd9c1dfd3c403a9a728b52a155ba475a7742fe425c2d146d95",
+   "reason": "The bottle is standing on a table and is not being held by a hand."
+  },
+  "FEB6B43A-3F82-4BD1-8348-DA9FDCF5D94C": {
+   "status": "posted",
+   "phash": "b7ebca07992437f9668a392e03614ed07c9e13b571e787098c7b7cc233c0703e",
+   "ig_media_id": "18008128499952344",
+   "kind": "sake",
+   "name": "Koshi no Bairi Daiginjo Koshitanrei 35"
   }
  },
  "token_refreshed_at": 1786614091,
