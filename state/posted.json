@@ -1300,6 +1300,29 @@
    "ig_media_id": "18008128499952344",
    "kind": "sake",
    "name": "Koshi no Bairi Daiginjo Koshitanrei 35"
+  },
+  "2FDDDD2E-CABF-47FE-8D3B-D5AF4AE26242": {
+   "status": "skipped_already_on_ig",
+   "phash": "cfede8011ad793909c272def65603c4fc9519974331f26f276644d89599ace0a",
+   "match": "18034184101696269",
+   "distance": 60
+  },
+  "6AA4A351-F4B0-4302-8EDA-946BFAA359CC": {
+   "status": "disqualified",
+   "phash": "f8d4c9c169c3e1d34f8f716396bdb7199271b73473633b70630a610f84b8860d",
+   "reason": "tilt 1 deg, need ~45"
+  },
+  "221292E8-E853-45BB-9FF2-A953CB07E529": {
+   "status": "disqualified",
+   "phash": "f30d3799af182a4cff6632274ee66c6a84c2599bb9508ed55ee6982281aed5c8",
+   "reason": "The main bottle is standing on a table rather than being held by a hand, and there are two bottles visible in the frame instead of exactly one."
+  },
+  "AFCC4A4B-0896-45DB-B512-2DC58C712219": {
+   "status": "posted",
+   "phash": "aaa0c2bf9a89b3f9e4273580857a3d4ae1d22b165651d0df1e8462b67c3fc3e2",
+   "ig_media_id": "18428262007198045",
+   "kind": "sake",
+   "name": "Machida Shuzo Junmai Ginjo 55 Omachi Jikagumi"
   }
  },
  "token_refreshed_at": 1786614091,
