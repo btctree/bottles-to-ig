@@ -1323,6 +1323,39 @@
    "ig_media_id": "18428262007198045",
    "kind": "sake",
    "name": "Machida Shuzo Junmai Ginjo 55 Omachi Jikagumi"
+  },
+  "37B20A02-EB20-4459-8DBD-425A670DC84C": {
+   "status": "disqualified",
+   "phash": "ba85f817697a1ac9685a1adf69ea9a1461eb9f12c7a1d25a96a568789e85493a",
+   "reason": "The image shows the back label of the bottle, which contains detailed descriptive text, alcohol percentage, volume, and a barcode, rather than the main front brand label."
+  },
+  "B37B5ADB-F74B-447B-A277-49110FB21455": {
+   "status": "disqualified",
+   "phash": "a05224ee7eabc30397bbdf482a045d6ec6c4a82c9b1f31780a3d57d2dc84a75f",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "29DA95E5-B8C1-467B-8466-01819ABDDA8A": {
+   "status": "disqualified",
+   "phash": "d9f5a36bc69c6d9c32cb1973923d249c6c64c30b33923c69cfe7789610798323",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "3E3402D3-15BC-45D9-B488-826AC1C452DD": {
+   "status": "skipped_already_on_ig",
+   "phash": "9dede20b129392b4c5242def654a8e5e9b549963c21f76d836c6cc3c49b95983",
+   "match": "18101509972922967",
+   "distance": 54
+  },
+  "3B24C2B0-EADE-4867-872D-B25EDA253840": {
+   "status": "publish_failed",
+   "phash": "bb4cc8559b9332dae4c205a6ec2c39e9c3331e66c8f55ac162995a33cff63984",
+   "error": "400 Client Error: Bad Request for url: https://graph.instagram.com/v23.0/17841445544801941/media_publish"
+  },
+  "8378EC0F-EA67-40E9-8603-21CA47003C53": {
+   "status": "posted",
+   "phash": "a4fedb0016bfe2583c96a12dfc430fd064271bc4d87b9e0963bb3cce65929266",
+   "ig_media_id": "18127781788679690",
+   "kind": "sake",
+   "name": "Shinsen Jungin no Shiro"
   }
  },
  "token_refreshed_at": 1786614091,
