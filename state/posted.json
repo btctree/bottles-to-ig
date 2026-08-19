@@ -1376,6 +1376,23 @@
    "ig_media_id": "17959919424214183",
    "kind": "other",
    "name": "Umenoyado 10-Year Aged Umeshu"
+  },
+  "D2EDCE75-CA31-4564-903C-917D00E915E9": {
+   "status": "disqualified",
+   "phash": "ca55a38538c363d378c4635263a6e71e63ca863c658c8c79c72a98f3971b98e7",
+   "reason": "The visible label is the back label, as it contains a barcode, legal warnings, alcohol percentage, and detailed production/import information."
+  },
+  "C824F12B-A7C4-4B60-B151-52189A6B19F6": {
+   "status": "disqualified",
+   "phash": "a6607766d36608187f99a19999b3fe6680ce6ecc581189b7dfa32c1ec4ecd981",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "EAA0A076-3297-4222-A3CD-51F1DCA9D00C": {
+   "status": "posted",
+   "phash": "ee98eaf79a25b6d864038d78a9cf3302db7c6e4944fb199ad3a03427c3a038cd",
+   "ig_media_id": "18192591400383452",
+   "kind": "sake",
+   "name": "Dassai 23 Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1786614091,
