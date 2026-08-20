@@ -1393,6 +1393,41 @@
    "ig_media_id": "18192591400383452",
    "kind": "sake",
    "name": "Dassai 23 Junmai Daiginjo"
+  },
+  "A1D44413-F3E2-49D7-930D-D11E3486350A": {
+   "status": "disqualified",
+   "phash": "e339a791367bca69856571a699d6318aca58a71c70e49b69a6964976a78f30c6",
+   "reason": "The visible label is the back label, which primarily displays ingredients, alcohol percentage, legal warnings, and manufacturer information instead of the main front brand label."
+  },
+  "FB9BC314-1FD0-47FF-8437-99B2D00AE8B5": {
+   "status": "skipped_same_shot",
+   "phash": "e2dfea809ab190df37802537ed6d0d48e15b1b52c3d466715ed3509c5c87c333",
+   "match": "26691307-D929-44F4-BCC9-68C52B4D841C",
+   "distance": 52
+  },
+  "42D536E6-430D-4731-B7FB-496DD81F4DB0": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfe9e0099ef63296f2200d6fed203ccec34b9b42d87e4e9264863e3dc3a159a2",
+   "match": "18451645783007859",
+   "distance": 56
+  },
+  "3907CE93-A4B4-4082-B7D3-76AB21284AD7": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfe9c0299adc3693e4940f2de54b3ddac916ab1db073865471872c3847b97183",
+   "match": "17902255194000142",
+   "distance": 56
+  },
+  "0AF09B02-C13B-4E2F-BD26-EA21D29C42FC": {
+   "status": "disqualified",
+   "phash": "e972c1c3c78f3c9cc14b6be8960f616b9e1c618d98786785987da78569e0261f",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and legal information regarding sulfites."
+  },
+  "0B2200D5-81F8-4114-8564-882FF6068443": {
+   "status": "posted",
+   "phash": "aa5ae1018e92307566284dabfdaab97ec24d7e5a86f27496e12da520a96fbb48",
+   "ig_media_id": "18067833629719292",
+   "kind": "other",
+   "name": "Nicolas Feuillatte Millésime 2018 Blanc de Blancs"
   }
  },
  "token_refreshed_at": 1786614091,
