@@ -1428,6 +1428,34 @@
    "ig_media_id": "18067833629719292",
    "kind": "other",
    "name": "Nicolas Feuillatte Millésime 2018 Blanc de Blancs"
+  },
+  "6BB28698-FC4A-4C20-ACE6-02910F2A1A7F": {
+   "status": "disqualified",
+   "phash": "e346cad73c3ddbf060c03e1e4de0390ecc9f236996d2983c69e09869e64e69f2",
+   "reason": "The visible label is the back label, as it contains tasting notes, health warnings, importer information, and a barcode, rather than the main front brand label."
+  },
+  "3CC2898E-B4C1-4E99-B598-1B4554146EFF": {
+   "status": "disqualified",
+   "phash": "b852e5eb67859696c79e9e90e61e64e89e38330b987867839878660f98e19a3d",
+   "reason": "The visible label is the back label, as it contains ingredients, alcohol percentage, legal text, and a barcode."
+  },
+  "6B69FFCA-B7D7-4C96-9B31-836B65FFF4EA": {
+   "status": "skipped_already_on_ig",
+   "phash": "bdede20112d69296c63435ed65692c5aa15a9b42c95ec35a36d366e466bc49a7",
+   "match": "18101509972922967",
+   "distance": 0
+  },
+  "52E99F2F-B41E-4595-8970-CFD64EEE072B": {
+   "status": "disqualified",
+   "phash": "ea0d8a9d9740d52bb0f85e1562503caae35594cccb3ab2e16d1d72f469abe45c",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and technical/legal information rather than being the main front brand label."
+  },
+  "47AA9F5C-8E15-4946-8FE0-06F16258EAFB": {
+   "status": "posted",
+   "phash": "bbfde0008ef3324ef0000d9eed203c69d1399b86e69c6eb17be7db04c93ca634",
+   "ig_media_id": "18068326130733775",
+   "kind": "other",
+   "name": "Daishichi Kimoto Umeshu Gokujo-hin"
   }
  },
  "token_refreshed_at": 1786614091,
