@@ -1456,6 +1456,45 @@
    "ig_media_id": "18068326130733775",
    "kind": "other",
    "name": "Daishichi Kimoto Umeshu Gokujo-hin"
+  },
+  "F1C41CCF-F33D-4C0A-8BA6-B20A98D15CAC": {
+   "status": "disqualified",
+   "phash": "bf45f02630fc93c8f0b78b4393c93c25c7d2342fcb40f21f890f83da7da5201f",
+   "reason": "The visible label is the back label, as it contains technical details such as ingredients, alcohol percentage, a barcode, and manufacturer contact information instead of the main front brand design."
+  },
+  "2D0F32FE-7938-4D6D-90F9-C30C5B268472": {
+   "status": "skipped_already_on_ig",
+   "phash": "a799c0679b2416fd72820778c9e76f28e07f3bc8c61a3c6663993887c63c9b61",
+   "match": "18053010424788396",
+   "distance": 46
+  },
+  "8CCC6D4C-BD15-4E89-85C8-AFE892D080E9": {
+   "status": "disqualified",
+   "phash": "b969e5a66f96f61a67a69a5ae5a99a59f70a90f96782207fc7c0280b9a782183",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, volume, and legal/nutritional information."
+  },
+  "894831A4-4B5A-45CD-8B73-E9DF1CF0863B": {
+   "status": "disqualified",
+   "phash": "be18f94331ef96fc71b59a49929098b3c3b06963cb9861938f787381c83be7c0",
+   "reason": "The visible label contains technical and legal information such as ingredients (原材料名), alcohol percentage, and manufacturer details, which classifies it as a back label according to the instructions."
+  },
+  "0586CFD9-E290-4E10-B69E-7C38C2401373": {
+   "status": "disqualified",
+   "phash": "d879698321960b1818718e6399f5cd867187d389f30bdb79ee1cb991269d32b9",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, volume, importer information, and legal text."
+  },
+  "3A52CBF3-9324-468C-A93F-674E13FA7414": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfb1c8141b4932d2e49725b4e56dbc4bc1723b4e665944f35ec5589d533253e0",
+   "match": "17959919424214183",
+   "distance": 52
+  },
+  "37F6CD77-2AAF-4141-A991-260F0B17F199": {
+   "status": "posted",
+   "phash": "e54fbd669f3ecc9633a77249d218c2b6b8952ffda5091c620ceb1d1263cc0c23",
+   "ig_media_id": "18084371966266854",
+   "kind": "sake",
+   "name": "Matsunoi Junmai Muroka Genshu Shokoku Ryohin"
   }
  },
  "token_refreshed_at": 1786614091,
