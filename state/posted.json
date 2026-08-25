@@ -1509,6 +1509,33 @@
    "ig_media_id": "17910388017462191",
    "kind": "wine",
    "name": "Cidade Branca Alentejo DOC"
+  },
+  "C8C470CC-BC61-42DB-8AC4-BEC7FBA977DD": {
+   "status": "disqualified",
+   "phash": "ebd4e85a786ae9a0615f97b061a09687d5f88e0f97dd787a8781717886a361a1",
+   "reason": "The image shows the back label of the bottle, which includes a barcode, importer information, and descriptive text, rather than the front brand label."
+  },
+  "1A0F9331-DED9-4711-84DB-685749135E38": {
+   "status": "disqualified",
+   "phash": "dd28b12261b0883cb05b8db0878450f1537c31e18f7bf34fd47a37c75fc37225",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the visible label is the back label containing ingredients, alcohol percentage, and a barcode instead of the front brand label."
+  },
+  "D6AA283C-6EC0-40D3-8A35-EB9A8D0EA970": {
+   "status": "disqualified",
+   "phash": "ea43e55765a894a564e71aa788d69ad696b6698684ec6b1e9cb1631e98c0673e",
+   "reason": "The image shows the back label of the bottle, which contains a barcode, nutritional information, and legal warnings, rather than the front brand label."
+  },
+  "6346546F-AD32-4487-89AD-F28685A80323": {
+   "status": "disqualified",
+   "phash": "a969b4b476d2c3c9c6cbc349316bda2f3341c249c6cd580f313f3926f349ec64",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, importer information, and descriptive text rather than the main front brand label."
+  },
+  "5B087EAC-1C4B-4EF0-9623-19AE9D5364E1": {
+   "status": "posted",
+   "phash": "a29dea949977b24a35ab24b7ccc48f5df82219cfe216663040fb1989d2f9b217",
+   "ig_media_id": "18091256321394413",
+   "kind": "sake",
+   "name": "Musashi Togen Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1786614091,
