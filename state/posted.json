@@ -1536,6 +1536,29 @@
    "ig_media_id": "18091256321394413",
    "kind": "sake",
    "name": "Musashi Togen Junmai Daiginjo"
+  },
+  "70EC4B99-85E2-4F76-A5F7-A261E6EE7F2D": {
+   "status": "disqualified",
+   "phash": "eaa089c3858758be61d75d1ea35c9c3a871c79eb961ed6e5291c31c3967c48e1",
+   "reason": "The visible label appears to be the back label as it contains significant legal text (contient des sulfites), alcohol percentage, volume, and contact information (website and producer address)."
+  },
+  "6BF6C416-469D-40AE-8B10-1EBAD532EB3E": {
+   "status": "skipped_same_shot",
+   "phash": "e3fdea051af9d2ff348025bded692d4ae95a1b44e2511c97cfa450ac533918e0",
+   "match": "24B499EF-2AE0-4C50-9452-90F02E3E430C",
+   "distance": 54
+  },
+  "B854853A-5D49-4AF5-9523-82A20F469D93": {
+   "status": "disqualified",
+   "phash": "fcb6a16d63e1834361a592d7e787587c27843869c69629e7961e69659c5869a5",
+   "reason": "The visible label is the back label, as it contains ingredients, alcohol percentage, legal text, and a barcode."
+  },
+  "F1F25779-6892-45C6-8C53-743BD29CA8C8": {
+   "status": "posted",
+   "phash": "b3fee2009a6d127f748005b6e7253dc9c05b1b76e3442c7de651e3c198dfc312",
+   "ig_media_id": "17966770098170291",
+   "kind": "other",
+   "name": "Drappier Carte d'Or Brut"
   }
  },
  "token_refreshed_at": 1786614091,
