@@ -1559,6 +1559,72 @@
    "ig_media_id": "17966770098170291",
    "kind": "other",
    "name": "Drappier Carte d'Or Brut"
+  },
+  "DCC8B9C3-73FE-4BA1-BAF3-A3552889805D": {
+   "status": "disqualified",
+   "phash": "ebc2e14e610a9ab587383b8094bd634a98a7e73d98f3873b39cc692787bc6431",
+   "reason": "The visible label is the back label, as it mainly displays technical information such as ingredients, alcohol percentage, manufacturer contact info, and a barcode."
+  },
+  "649CAD3C-C282-4597-8AFD-662F6068B4B2": {
+   "status": "disqualified",
+   "phash": "e52be1d76634e63966739ca390c79ca7c61c3ad6614a9ad6c538634a24f17686",
+   "reason": "The visible label is the back label, which primarily displays ingredients, alcohol percentage, legal warnings, and importer information rather than the main brand label."
+  },
+  "24B99999-357F-4C17-8987-B809F46894B8": {
+   "status": "skipped_same_shot",
+   "phash": "bffec0009b9936fff48425b7ed483d5ac1733f44e21f323044e44c8f73b61230",
+   "match": "3A52CBF3-9324-468C-A93F-674E13FA7414",
+   "distance": 60
+  },
+  "99CDAFC3-D279-40FD-8A1C-96402F9A4991": {
+   "status": "skipped_already_on_ig",
+   "phash": "e3e77e1399fef23b3682e53a8d60094ff9520b76e21d1cc9c3f7172070231c03",
+   "match": "18035623619475817",
+   "distance": 60
+  },
+  "039903D2-0D99-4E86-ABE8-287A6B991A24": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7dde8049b75b2c9349225becd69096bf31a1bd0e6650e95d98c1e31e3703d0e",
+   "match": "17961020573682189",
+   "distance": 42
+  },
+  "879A3D3F-3547-4364-AE51-CEF6E51C1AFA": {
+   "status": "disqualified",
+   "phash": "e561d685625adc788635da79867973879c6963308ce7ee1c39e7ce0028dedc21",
+   "reason": "The visible label is the back label, as it contains a barcode, legal warnings, alcohol percentage, and importer information, rather than the front brand label."
+  },
+  "C0F07DF3-2CA4-4231-9D1E-EDA509833535": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfd4c8529b4c365ff49025b6c62d3869c1ce4f137a5ec2d44ce1539d33328672",
+   "match": "17942736545895677",
+   "distance": 38
+  },
+  "F5E0959C-6D41-4281-9C75-0877288C6E7E": {
+   "status": "disqualified",
+   "phash": "e4d097a73ae9cf1c934bcc3630d36cd226cf9a2dc70c98703c6530d36794e64b",
+   "reason": "The visible label is the back label, as it contains detailed descriptions, ingredients, alcohol percentage, legal icons, and a barcode."
+  },
+  "5D79BD62-D74B-42C7-9AE9-A828818B7B63": {
+   "status": "disqualified",
+   "phash": "b6678b329cdb4ccc73999c3663cb3498c36434b3872670e38e3c71cb9c3823cd",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "714D9F04-34F8-4859-91EC-6B1111CC2936": {
+   "status": "disqualified",
+   "phash": "a660e6be8b24b8106199cb751fac93e3b507984fe22e9ea574f0558a666a9cab",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "AF59F44F-BDEB-4086-99B6-11CE1F4FA568": {
+   "status": "disqualified",
+   "phash": "ba9461526ad2a787a17a97a7b14a96ba694a6e9f615a968d918b9e5261ab1a53",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "34C99A9A-62C6-4EA2-8171-006FB019E995": {
+   "status": "posted",
+   "phash": "c2b0cbe08b1ef27034bce506276c0c69e94b03f6f6088e7bf0c69e98c2bfbf22",
+   "ig_media_id": "17943930756293966",
+   "kind": "wine",
+   "name": "Morrisons the Best Petit Chablis"
   }
  },
  "token_refreshed_at": 1786614091,
