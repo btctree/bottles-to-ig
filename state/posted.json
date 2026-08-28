@@ -1625,6 +1625,34 @@
    "ig_media_id": "17943930756293966",
    "kind": "wine",
    "name": "Morrisons the Best Petit Chablis"
+  },
+  "35E1C6E4-9C65-4C0B-AB52-08D2F9DEE788": {
+   "status": "disqualified",
+   "phash": "b493f0d131e3c3463f1cc98736dbd92d934b0c18b307265ec3cc3259cf2c338f",
+   "reason": "The visible label is the back label, as it contains the barcode, alcohol percentage, legal warnings, and nutritional information."
+  },
+  "67F5A73B-2271-471C-98D8-58250128B4A6": {
+   "status": "disqualified",
+   "phash": "e1cb87ad4e389651c66b1a73c469398f98b4674e92e4251ccce2659e99e1e63c",
+   "reason": "The visible label is the back label, as it prominently displays a barcode, alcohol percentage, legal symbols, and detailed production information."
+  },
+  "3EFAB12A-4651-430E-9CD0-3326545FAE32": {
+   "status": "disqualified",
+   "phash": "e72d91f01a52e1f01a49c31e35e1e61e37e16d1cc6e9256c4ed4b569da94b169",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "02563328-1D76-49B2-9930-F872A8820D4B": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3dfca009b7792dd36c0a4b78db8c56039070318ee73478558f93cc7c3331e3e",
+   "match": "18284734372171083",
+   "distance": 4
+  },
+  "36CE5EF7-84B4-48A6-948C-D581F1DB6FE4": {
+   "status": "posted",
+   "phash": "a256e8d39f1c9267368184bfed263b29d84b075ac2d31894c3b57fa4c12d3c67",
+   "ig_media_id": "18122464069658631",
+   "kind": "sake",
+   "name": "Tatenokawa Junmai Daiginjo Seiryu"
   }
  },
  "token_refreshed_at": 1786614091,
