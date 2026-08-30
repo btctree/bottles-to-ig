@@ -1660,6 +1660,18 @@
    "ig_media_id": "18098478218370302",
    "kind": "wine",
    "name": "Morrisons The Best Bianco Sicilia"
+  },
+  "3BB2D3A2-FAED-4682-9184-8536E4A7CD60": {
+   "status": "disqualified",
+   "phash": "b16de7966e1ec698524b9678ca439a69ce619b6918656ce139a7996465969b64",
+   "reason": "The image shows the back label of the bottle, as it contains the barcode, alcohol percentage, legal warnings, and importer information."
+  },
+  "97D96D95-D522-4679-82AF-1AC15DE21305": {
+   "status": "posted",
+   "phash": "adf4e0051a5f93d9e49324bee721196bc94a6b42725fd6f042874caccba93333",
+   "ig_media_id": "18618905434038074",
+   "kind": "wine",
+   "name": "Mimo Moutinho Portuguito Edição Limitada"
   }
  },
  "token_refreshed_at": 1786614091,
