@@ -1672,6 +1672,54 @@
    "ig_media_id": "18618905434038074",
    "kind": "wine",
    "name": "Mimo Moutinho Portuguito Edição Limitada"
+  },
+  "77C793C7-273F-402B-9EB9-77C1E4D901F7": {
+   "status": "disqualified",
+   "phash": "dc1d2dc976948b4a36e1ce0e71f12d2cd3cc9cb353cc64d3910e76d9891974d8",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "24E115B0-CCDD-40AA-B2DD-C39627025FF8": {
+   "status": "disqualified",
+   "phash": "e4925b61326cc747132fce36cd723c30e4f330c048cfe7c78c8fce6c367c8c38",
+   "reason": "The image shows the back label of the bottle, which contains ingredients, alcohol percentage, and a barcode, rather than the main front brand label."
+  },
+  "E033FD55-EB2D-4685-93BA-CFD01A20434B": {
+   "status": "disqualified",
+   "phash": "b96bb4ad24b4b0f8678593f992cfc86c9b9261351de464e665e4c31361a59a4e",
+   "reason": "The visible label is a back label because it contains a barcode and legal information such as alcohol percentage, volume, and sulfite warnings."
+  },
+  "E487C69A-362F-43AC-8DE8-DC19832AE012": {
+   "status": "disqualified",
+   "phash": "e952a50c65ad967294e79cd7348c64c69c9c66ce9cd2939a92ce6d8863189edb",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and extensive legal text such as sulfite warnings and recycling information."
+  },
+  "B16E7C95-214B-4079-8CA1-BE59E95EF6D6": {
+   "status": "disqualified",
+   "phash": "bb42f44b602d8bf4740b9b0321ff9e03d0d73d2dd2d26c2dc3c3293cd6c124b7",
+   "reason": "The visible label is the back label, as it contains a barcode, legal warnings, and descriptive text rather than the main front brand label."
+  },
+  "1508168C-2A4A-43D8-AC79-0CB3A663437B": {
+   "status": "disqualified",
+   "phash": "bbc7e50944119cdec43c90ec316369c9348565be96b5674e9e17c64a99d325bc",
+   "reason": "The visible label is the back label, as it contains a barcode, legal warnings, alcohol percentage, and contact information, rather than being the primary front brand label."
+  },
+  "602F1668-FC3B-45D1-82FF-8CE12028C8C4": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7f5c8049b7936df749025becd293d6bc14e1f40e25c1cd749c45b1dd9823662",
+   "match": "17942736545895677",
+   "distance": 58
+  },
+  "C8DC61EF-AAE3-4396-978C-EEAB18A65BFE": {
+   "status": "disqualified",
+   "phash": "e96b61eb3f1c86bc3630873c36f49e1665a5969066bc9e7064b39a5166969863",
+   "reason": "The visible label is the back label, as it contains legal warnings, alcohol percentage, a barcode, and detailed product information rather than the main front brand label."
+  },
+  "3E7D495F-3781-4A8D-A9B6-B62FABEA6264": {
+   "status": "posted",
+   "phash": "afe9e00f12f09696c4073978e7433d5e98709f07709c56b066af49ebcf0a930e",
+   "ig_media_id": "18103160147367902",
+   "kind": "wine",
+   "name": "Villa Cafaggio Chianti Classico"
   }
  },
  "token_refreshed_at": 1786614091,
