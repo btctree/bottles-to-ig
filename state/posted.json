@@ -1720,6 +1720,23 @@
    "ig_media_id": "18103160147367902",
    "kind": "wine",
    "name": "Villa Cafaggio Chianti Classico"
+  },
+  "89095CF5-BD3F-4685-89F1-3CB4D6C33B23": {
+   "status": "disqualified",
+   "phash": "fa3d80b871c29e2f61f038d1630b78f2c69d63e21e1f630c66b6cd09677e9581",
+   "reason": "The visible label is the back label, as it contains descriptive text, importer information, alcohol percentage, and a barcode, rather than the main front brand label."
+  },
+  "045CFF09-52AD-447E-8268-E3FF93437BAF": {
+   "status": "disqualified",
+   "phash": "fe52ed4f7cadcfd0704b92b62134d24b38796f0664669e57c3c1985b660d2c24",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, legal warnings, and a barcode."
+  },
+  "263F0B32-A6AE-4374-9766-4DCF9AE8DC07": {
+   "status": "posted",
+   "phash": "bfd2c05699043779e403258ec7251c6941db7e124e57f0dd1d80e5af353af760",
+   "ig_media_id": "17959951212079977",
+   "kind": "sake",
+   "name": "Saimon Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1786614091,
