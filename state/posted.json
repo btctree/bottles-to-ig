@@ -1737,6 +1737,23 @@
    "ig_media_id": "17959951212079977",
    "kind": "sake",
    "name": "Saimon Junmai Daiginjo"
+  },
+  "DF37F0CE-4172-4A70-96B3-D74451C047BB": {
+   "status": "disqualified",
+   "phash": "fc0f0c0bb2d2cbb497cf7efb75b4705f895fa057604a3494ba0bad4142947550",
+   "reason": "The bottle is standing on a surface rather than being held by a hand, and the visible label is the back label containing technical information (ingredients, alcohol %, manufacturer) instead of the main front brand label."
+  },
+  "E5CE7419-AC60-4E45-A19A-32C30CD0638C": {
+   "status": "disqualified",
+   "phash": "fd25f0e6b2d203c1db0d0b0f8e252f3c8a3439348bb631988cf362ab4cfb87cb",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "C78BE8ED-ECD5-4D7C-868A-95D02517657E": {
+   "status": "posted",
+   "phash": "a2ffea019aa494bf3680a53fcd6b2d4869133bd4c2539e12d1bc7ca566a8133b",
+   "ig_media_id": "18099101129365732",
+   "kind": "wine",
+   "name": "Louis Jadot Beaujolais-Quincié"
   }
  },
  "token_refreshed_at": 1786614091,
