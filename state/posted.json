@@ -1754,6 +1754,18 @@
    "ig_media_id": "18099101129365732",
    "kind": "wine",
    "name": "Louis Jadot Beaujolais-Quincié"
+  },
+  "4104FA9A-CE5B-4674-BE44-2DCE8DB2A3DA": {
+   "status": "disqualified",
+   "phash": "f9b048a6c46e56726473ec33f1e56cf0e6056539390d3905961bed7e695233b0",
+   "reason": "There are two bottles instead of one, and neither bottle is being held by a hand."
+  },
+  "6F6D4D59-8F34-438F-B6CB-4E7A88888F2A": {
+   "status": "posted",
+   "phash": "c6effa0019bac1bf3720b0ff98400f62691f29d1e673361690e41c07679b7c3b",
+   "ig_media_id": "18025861949904083",
+   "kind": "wine",
+   "name": "Famille Perrin Cairanne Peyre Blanche"
   }
  },
  "token_refreshed_at": 1786614091,
