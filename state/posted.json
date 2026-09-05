@@ -1773,6 +1773,46 @@
    "ig_media_id": "18083042036322114",
    "kind": "sake",
    "name": "Tengumai Hyakumangoku no Shiro Junmai Daiginjo"
+  },
+  "5F5843BA-5E1E-4938-AA93-650EE9DD503F": {
+   "status": "skipped_already_on_ig",
+   "phash": "e4d7dbe09b58552637abac22cb7503391a69b3d1461119ef74d9a70ae0cd1c66",
+   "match": "18029841389393141",
+   "distance": 56
+  },
+  "638C6470-B680-4157-8844-8155BC127279": {
+   "status": "disqualified",
+   "phash": "e92da78276968618d6930e399e7831c79e7921a798e1661e39e18618ef679a71",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "18092CCE-F6B7-43EF-B8A5-C38F8F49C223": {
+   "status": "skipped_already_on_ig",
+   "phash": "8febe0091ab69686f42d2d7be54a2c5a82569b64da1d4eb374e6768d47295922",
+   "match": "18101509972922967",
+   "distance": 60
+  },
+  "9660BB4E-447C-4DD4-8FBC-B572B79BF59E": {
+   "status": "disqualified",
+   "phash": "f43ab1ed53859216931acb7dcf0d3968ce3561a1993467969843869669f99b19",
+   "reason": "The visible label is the back label, as it contains the barcode, alcohol percentage, volume, and legal warnings, rather than the main front brand label."
+  },
+  "A6C7B9A3-B251-4E9A-BFB3-2B33E199FC9D": {
+   "status": "disqualified",
+   "phash": "eb55a51a94a9d4a1661698e266d69186ce72639e9c71739898dae71d18ee6719",
+   "reason": "The visible label is the back label, which contains technical information, a barcode, and legal text, rather than the front brand label."
+  },
+  "26F0C105-AF24-431A-9594-8B080D7A3A93": {
+   "status": "skipped_already_on_ig",
+   "phash": "bbd9c8479b3436cdb49385a62c0c79d9cb165264566d1cc9419b3f36e67438c5",
+   "match": "18063714838656366",
+   "distance": 2
+  },
+  "BBCFB7AA-67FA-49E7-BAFB-BCA1F04CC93D": {
+   "status": "posted",
+   "phash": "93f7ca1418dd67f4cc81313f8568a50a987e8fd86f43781cc2f95ec5403173ae",
+   "ig_media_id": "17909859375288839",
+   "kind": "other",
+   "name": "Old Pulteney 12 Year Old"
   }
  },
  "token_refreshed_at": 1786614091,
