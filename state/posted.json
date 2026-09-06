@@ -1813,6 +1813,42 @@
    "ig_media_id": "17909859375288839",
    "kind": "other",
    "name": "Old Pulteney 12 Year Old"
+  },
+  "CAB5F8A6-DC75-44D6-9BA8-8C49531863CD": {
+   "status": "skipped_already_on_ig",
+   "phash": "abdfea109bdd921736b0a5af8d69216b790a0b7ec2441addd0951e97c3b01e26",
+   "match": "17921488484586052",
+   "distance": 56
+  },
+  "B11164FE-E925-4EBB-B83C-848F71129EFC": {
+   "status": "skipped_same_bottle",
+   "phash": "b795e805987e33de24022dfec7003c5bc3733f84e01dcef13986883faf70a10f",
+   "name": "Nicolas Feuillatte Millésime 2018 Blanc de Blancs",
+   "match": "nicolasfeuillattemillsime2018blancdeblancs",
+   "similarity": 1.0
+  },
+  "F0A2FC67-67A0-41FD-BC84-64E798D5C17E": {
+   "status": "skipped_already_on_ig",
+   "phash": "fcff79001f3170c7268039bd70214fce621318c6639e6f31616c1dcde5693c1f",
+   "match": "18026772071444170",
+   "distance": 2
+  },
+  "9B821D72-EB77-45B5-BCBB-DF4F9DCA9ED9": {
+   "status": "disqualified",
+   "phash": "9555956748cab31c62640cb3b31c6ccc8cf3f64c489bb336cd93266c9dcc4db3",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "ED8465FA-2FE5-464C-BDC9-8B47A717F205": {
+   "status": "disqualified",
+   "phash": "ef2be95a60d887a5a50b850fd7a73a1458d5683e83acd785832a9e9d697c1a46",
+   "reason": "The visible label is the back/informative label containing detailed specifications, ingredients, and alcohol percentage, rather than the main front brand label."
+  },
+  "8DDCA9BE-196E-46CB-8A83-8ECDBC46F01B": {
+   "status": "posted",
+   "phash": "e7bce8071869f3da24062df8cf601b0bc3f21ec4c63918ff3d88c3633f58a2c6",
+   "ig_media_id": "17928329088271146",
+   "kind": "wine",
+   "name": "Gabriel Meffre Côtes du Rhône Saint-Vincent"
   }
  },
  "token_refreshed_at": 1786614091,
