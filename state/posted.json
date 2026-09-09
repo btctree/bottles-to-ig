@@ -1863,6 +1863,35 @@
    "ig_media_id": "18100911944343349",
    "kind": "sake",
    "name": "Hakurakusei Junmai Daiginjo Tojo District Special Grade Yamada Nishiki"
+  },
+  "355F1CCA-C8F9-45D7-92CD-72FF16B8C13E": {
+   "status": "skipped_same_bottle",
+   "phash": "a3f9c8071adc36d23487893ccd4968da93669a19ccb36ca6730c9b3bcf603ccd",
+   "name": "Daishichi Kimoto Umeshu Gokuhin 2022",
+   "match": "daishichikimotoumeshugokujohin",
+   "similarity": 0.903
+  },
+  "2085FF82-A825-427A-AAD5-AEEE26349144": {
+   "status": "disqualified",
+   "phash": "f4abe3d46f15a77aa56a9c2a946a98e164a598a566d694858e3690c66ed6339c",
+   "reason": "The visible label is the back label, as it contains ingredients, alcohol percentage, legal information, a QR code, and a barcode."
+  },
+  "EF5B0B18-3962-4B5D-A0E0-2A60EB7EF682": {
+   "status": "disqualified",
+   "phash": "98730bf2658f6838a58c7a9043cb3405d25b7f93dbf270be9d61704b8d2276a3",
+   "reason": "The bottle is standing on a counter rather than being held by a hand, and the visible label primarily shows technical information such as ingredients and manufacturer details instead of the main front brand label."
+  },
+  "543E6C5C-C399-4AFD-A17B-8BAF5F3A2D22": {
+   "status": "disqualified",
+   "phash": "b532d344030fcf314cf04d3334b330cbcf8bdc6c634c3134cf9a3ce6932c79b3",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "F8A02DF6-B4DC-41EE-A115-5BD077BDB9B7": {
+   "status": "posted",
+   "phash": "a794c8579b49b6dee4b625a5ed29196a635a1e1272e44e8d4e8671b81f23ec64",
+   "ig_media_id": "18127537070503240",
+   "kind": "sake",
+   "name": "Suigei Akiagari Junmai Daiginjo Koiku No. 54"
   }
  },
  "token_refreshed_at": 1786614091,
