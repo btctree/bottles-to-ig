@@ -1892,6 +1892,25 @@
    "ig_media_id": "18127537070503240",
    "kind": "sake",
    "name": "Suigei Akiagari Junmai Daiginjo Koiku No. 54"
+  },
+  "2854F333-4603-42D8-A716-6674D1F35E81": {
+   "status": "skipped_already_on_ig",
+   "phash": "8ccf68e81b8fd3d084833cbf63600e4fd958cbc1724f369c64b15caf4988fa63",
+   "match": "17943039171296869",
+   "distance": 56
+  },
+  "E0E104A3-515F-45D2-8015-C01E067F01EF": {
+   "status": "skipped_already_on_ig",
+   "phash": "bbf5c8049bdb32d3f49427a5e4092d3b89643b49e613bb708cc92d9b65b63930",
+   "match": "18100911944343349",
+   "distance": 60
+  },
+  "1427DE83-5F86-4DCC-853B-5BB5FE129903": {
+   "status": "posted",
+   "phash": "e44bdd8a8f17d2e137f10e16eda40bf2e8616373a3268c61ccedb10ca9f35232",
+   "ig_media_id": "17928926028405994",
+   "kind": "sake",
+   "name": "Shiratsuyu Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1786614091,
