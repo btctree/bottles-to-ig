@@ -1911,6 +1911,124 @@
    "ig_media_id": "17928926028405994",
    "kind": "sake",
    "name": "Shiratsuyu Junmai Daiginjo"
+  },
+  "87473C21-2B4A-4B6C-9CFF-EDE40DEC15FC": {
+   "status": "skipped_already_on_ig",
+   "phash": "e3afca209ab9e2df3690b03f8d242d69680b2dd6e31c9b4198f73cc0e5983c1f",
+   "match": "17974921905096289",
+   "distance": 60
+  },
+  "D4FB8C08-DB61-44DB-ABCF-DE109A36B51D": {
+   "status": "disqualified",
+   "phash": "f878f5a561a59f5866819e59879439c3669671e29e1e694e9a78670732726709",
+   "reason": "The visible label is the back label as it mainly shows ingredients (原材料名), alcohol percentage, and a barcode."
+  },
+  "5216CEE9-6888-4208-8C02-1A6F398E0B51": {
+   "status": "disqualified",
+   "phash": "b596f06353f1c9a0c3830d93e49b3e9bd9dd3604c9fc2678d9a4998e66c3cc18",
+   "reason": "The visible label is the back label, as it contains detailed information such as ingredients (原材料名), alcohol percentage, and manufacturer details."
+  },
+  "DAD85DE3-C9C8-476C-87B4-A8838A6E8416": {
+   "status": "disqualified",
+   "phash": "fc155b0343c22d1eb36beedaab1480f1cfdc22ef8de9720a580263033cd19f6e",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the visible label is the back label containing ingredients, barcode, and manufacturer information instead of the front brand label."
+  },
+  "CA90023F-17E5-4857-AB6F-94C8CF2FBADB": {
+   "status": "disqualified",
+   "phash": "e325e661261e9e7669613827e1a692f6c79e29f8969121699c3861e59a5ac7a7",
+   "reason": "The visible label is the back label as it contains ingredients, legal warnings, alcohol percentage, and importer information."
+  },
+  "5813D736-7B69-4858-AB5F-ADD13B9DD853": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3ffca049a65d2df368025b6cd2d2d69b14f3f48c652385789d07897c71630f4",
+   "match": "17974921905096289",
+   "distance": 56
+  },
+  "DE5C3720-3337-48E0-A46F-20438CBECDA5": {
+   "status": "skipped_same_shot",
+   "phash": "bf21c2ef9a9a36a2e5ad2d28ec4b39d283543a5de6f00ca6138d5c38472155ef",
+   "match": "E5153260-B44C-49D1-B935-B6DF414C7967",
+   "distance": 52
+  },
+  "E29B5489-8AE4-4732-A5E7-AFF506B3DFF9": {
+   "status": "disqualified",
+   "phash": "ed6d863c32919c52669c9a43a62a32d69c6b66ce984e6ce933cc9a6b26cdda4c",
+   "reason": "The visible label is the back label, as it contains extensive legal text, ingredients, alcohol percentage, and a barcode."
+  },
+  "51093D59-E442-4862-A783-138A97840881": {
+   "status": "disqualified",
+   "phash": "f052e787652dc538242596309e3596798ea198f666a16c2766f306679ef29e96",
+   "reason": "The visible label includes a barcode, alcohol percentage, and legal text (sulfite warnings), which classifies it as a back label rather than the front brand label."
+  },
+  "6DECEB46-25BC-4E57-8B0B-9CE8E413E935": {
+   "status": "skipped_already_on_ig",
+   "phash": "a1fbe9009b2fb26d34d885b6cd2429f958434bd662371ce4c46d358bb1ba3c36",
+   "match": "17923071680656730",
+   "distance": 58
+  },
+  "D55627A4-76E1-4402-AFBD-DF30E4C2615C": {
+   "status": "skipped_same_shot",
+   "phash": "ab9cca279a8992feb48625bdec6f2d49e17a3b04c2751e5d2391589e47b043a6",
+   "match": "6BF6C416-469D-40AE-8B10-1EBAD532EB3E",
+   "distance": 60
+  },
+  "AF081A3D-E051-4F85-8A06-4D70A35F4FF6": {
+   "status": "publish_failed",
+   "phash": "e780c02d9b33e7b2649f8f60c8493f12e1d43e11c6e539adcf8d49bbe63230ca",
+   "error": "400 Client Error: Bad Request for url: https://graph.instagram.com/v23.0/17841445544801941/media_publish"
+  },
+  "D0AF2AA8-2445-45E8-B863-D9856B1B8A0D": {
+   "status": "disqualified",
+   "phash": "fa5aa1e925a5c79721ea9e96e11696dace066d3a92d86716d2fa9710124f9a58",
+   "reason": "The visible label is the back label, as it contains a barcode, health warnings, alcohol percentage, and legal information rather than the main front brand label."
+  },
+  "9C48AA8E-FB38-4A3E-96FE-D8E6AC1747ED": {
+   "status": "disqualified",
+   "phash": "b0d2e1ad67259a16c7ad9a98c6366e720c5379eb9a58e72998666636396b348c",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "4E94B438-1A57-437A-AAE4-32032AFE3059": {
+   "status": "disqualified",
+   "phash": "b732e73f0c7dbc4a60cc93ec1e289aa234dfd87c72b06ca166c04cea6a6e3171",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "1A0AC80D-A1B6-4451-B294-805252799A82": {
+   "status": "disqualified",
+   "phash": "da78785661e56e9661a7638465a763e1618fce31678e861ee69296189e479a71",
+   "reason": "The visible label is a back label as it contains a barcode, alcohol percentage, volume, and legal information."
+  },
+  "F7715065-FCCC-4783-AD66-F629BAE761D3": {
+   "status": "disqualified",
+   "phash": "ed243ec536d923d7c3c963c9cb0db34f3e2e8c46f2e6cd24839436185e0f3485",
+   "reason": "The visible label is the back label containing technical information such as ingredients, alcohol percentage, and manufacturer details, rather than the main front brand label."
+  },
+  "684D037D-9FD8-4E73-93D6-810EBFC6C55C": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfdec8529b4c325ff4d005b6c4213de9c18e1f23725e46f14cc5539d72b20e32",
+   "match": "17942736545895677",
+   "distance": 2
+  },
+  "471C6C64-C62D-49D4-B799-9A81951F90A5": {
+   "status": "disqualified",
+   "phash": "f62d2b19a1728ea7689c3858968a8d0636f633c75d675d9a969174669e2462d7",
+   "reason": "The bottle is standing on a counter and is not being held by a hand."
+  },
+  "87FBA4A7-AC18-4BCF-A1A4-187BD605042E": {
+   "status": "disqualified",
+   "phash": "a228d67b8fe2fd8471989839bc7b417e41bc9818b4194da71e60a7caeb8e18fc",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "0D53B000-A069-4449-9220-9E85293C5976": {
+   "status": "disqualified",
+   "phash": "e52766a9b60f962560e319c2bf1f983e643c7840dff119c14c3fe1ee9c206715",
+   "reason": "The visible label is the back label, as it primarily displays ingredients, alcohol percentage, manufacturer details, and a barcode instead of the main brand design."
+  },
+  "71C0AEFD-7BEB-46B7-830E-7DBE61D7E4CF": {
+   "status": "posted",
+   "phash": "affde8011af692d6f49425bde5618d4ba1da1d1ac35b02623cc6849c74fd4e23",
+   "ig_media_id": "18207325000365055",
+   "kind": "wine",
+   "name": "the Best Douro"
   }
  },
  "token_refreshed_at": 1786614091,
