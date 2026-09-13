@@ -2036,6 +2036,18 @@
    "ig_media_id": "18007978661976841",
    "kind": "wine",
    "name": "Cantina del Nebbiolo Nebbiolo d'Alba"
+  },
+  "B6C68A9A-A250-4E72-B0C2-66026E4B5FBA": {
+   "status": "disqualified",
+   "phash": "bf81317f60dc92d172cbd6c92b4fdb2f312c9a3487ecc81fc7806d6ab2343124",
+   "reason": "The visible label is the back label containing ingredients, alcohol content, and manufacturer information, rather than the front brand label."
+  },
+  "4B82AAA0-B072-4D94-81B2-1A7CD0BA3D41": {
+   "status": "posted",
+   "phash": "cffdc40032da82f2dc0319ffe0400edfe35c9a75c185d6bc742507e9f96f090a",
+   "ig_media_id": "18113705030046254",
+   "kind": "wine",
+   "name": "Tapada das Lebres Signature"
   }
  },
  "token_refreshed_at": 1789215502,
