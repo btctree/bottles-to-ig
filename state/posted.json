@@ -2048,6 +2048,41 @@
    "ig_media_id": "18113705030046254",
    "kind": "wine",
    "name": "Tapada das Lebres Signature"
+  },
+  "B7530667-EF5E-457B-BA98-3A7BD2E38DCE": {
+   "status": "skipped_same_shot",
+   "phash": "fbbfea0518c9f3fda40031bfed602d4ae15e3b44c21118b737a450af47ba7222",
+   "match": "6BF6C416-469D-40AE-8B10-1EBAD532EB3E",
+   "distance": 44
+  },
+  "DB1E5D39-1B47-4CEB-ADC9-71B6D89595DE": {
+   "status": "disqualified",
+   "phash": "b25863c53345cf3c9e34787224b761e3cb4ab49fc95834c92de1d3ca8c368a3e",
+   "reason": "The visible label is the back label, as it primarily displays technical information such as ingredients (原材料名), alcohol percentage, manufacturer details, and a barcode."
+  },
+  "37875786-933A-4B4C-B08F-2C145FD72B05": {
+   "status": "disqualified",
+   "phash": "ea50614e650b96b5873401a165ad617d96bd96f89cd5670a98ff663498bced21",
+   "reason": "The visible label is the back label, as it contains ingredients, alcohol percentage, legal warnings, and a barcode, rather than the front brand label."
+  },
+  "FBF8F103-F163-4BF3-881A-D396F20A6A2B": {
+   "status": "skipped_already_on_ig",
+   "phash": "a2afeaa09a2cd27b369225b2ed6c2d69b14b9b57e334365d9cc348da791a430a",
+   "match": "17974921905096289",
+   "distance": 60
+  },
+  "8B51AA02-0477-4184-A538-23025DBF54C5": {
+   "status": "skipped_same_shot",
+   "phash": "d278671961a58e5866719e5a96789b67187161c779a76796980ec698999b8ef0",
+   "match": "43B37C73-87C6-4846-B91F-3CF0F4114704",
+   "distance": 0
+  },
+  "BFC059C4-561E-46D0-9A34-1FF52FF85282": {
+   "status": "posted",
+   "phash": "ba9cc2a218a731ace461bdcfbd70a34629dc6a53421c5af15ea754bcd489173b",
+   "ig_media_id": "17988056112012990",
+   "kind": "wine",
+   "name": "Lustau Moscatel de Alejandría"
   }
  },
  "token_refreshed_at": 1789215502,
