@@ -2083,6 +2083,18 @@
    "ig_media_id": "17988056112012990",
    "kind": "wine",
    "name": "Lustau Moscatel de Alejandría"
+  },
+  "FA083D03-B823-434B-8ACF-ECDA80EDB0D0": {
+   "status": "disqualified",
+   "phash": "bd2de0f025a1e1872592d38f26d6968b46de9e0bc6de9c20c65f6ca632da6598",
+   "reason": "The image shows the back label of the wine bottle, which contains technical information, legal text, and a barcode, rather than the front brand label."
+  },
+  "2B2637B4-70A6-4573-9646-275CBFA2D3B4": {
+   "status": "posted",
+   "phash": "87f0c8071be1e7ff3c0321f8cf4b08c362f61e84c0fd1ca767a0283f8fc89673",
+   "ig_media_id": "18108233354623953",
+   "kind": "sake",
+   "name": "Tatenokawa Junmai Ginjo 55"
   }
  },
  "token_refreshed_at": 1789215502,
