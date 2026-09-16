@@ -2095,6 +2095,49 @@
    "ig_media_id": "18108233354623953",
    "kind": "sake",
    "name": "Tatenokawa Junmai Ginjo 55"
+  },
+  "AAB224AD-EE50-4968-934F-AE67014A1FAD": {
+   "status": "disqualified",
+   "phash": "bd1c882fa0f98fb2f74705ff0b1f2009cc00b5e0b4d880bd52ffdf02e80f2d6d",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "2A9C7B07-CE5F-4863-A211-951DD6EAFA02": {
+   "status": "disqualified",
+   "phash": "e5b2d6ce1a496f3110e66f87981aa6f099096ce7f98c20cef711c86bf9c4888f",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "854F3625-FE86-4653-9CF8-59F2FE7DAA85": {
+   "status": "disqualified",
+   "phash": "bf43f4b434f431c230dd83c37282834fc3c39d2fc2493cb4770d30fc930733f3",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, manufacturer details, and a barcode."
+  },
+  "4310054F-87D9-4FCA-8EC0-11F974CFB9F2": {
+   "status": "disqualified",
+   "phash": "d1c3f1cc8fdd8e714e314386394f8759713438e6cf9c333330e38e8ce3119c63",
+   "reason": "The bottle is standing on a table, not being held by a hand."
+  },
+  "AA07E7CF-C780-4F2D-B479-06A513884ACC": {
+   "status": "disqualified",
+   "phash": "ee1c6f5a642b9de5cc6191ad6cc6939c948763949d876b5894c7673090de6e60",
+   "reason": "The visible label is the back label, as it contains a barcode, legal text, alcohol percentage, and nutritional information."
+  },
+  "BC766AC1-E151-41FD-B101-763DF852CAF0": {
+   "status": "disqualified",
+   "phash": "bac6c656c1acd5a93ef99c866f852edaa8546272a0771674714b17839da9c88b",
+   "reason": "There are three bottles instead of exactly one, and they are standing on a surface rather than being held by a hand."
+  },
+  "2600C4BC-3F6D-43E1-A6CC-82A1DB016DC9": {
+   "status": "skipped_already_on_ig",
+   "phash": "87ce183bfa30c6ef31812774e4670f99e97a3a42c37c9e1910c2e6be1f92d0b4",
+   "match": "18102370061589376",
+   "distance": 0
+  },
+  "91686A22-DADF-4E26-A2FF-20867E293101": {
+   "status": "posted",
+   "phash": "eefdc2819ab632b6e6802dbfe5202c4ba95a2b40ea5f92d1b697248e4df85b03",
+   "ig_media_id": "18093540647131969",
+   "kind": "wine",
+   "name": "Almocreve Tinto Reserva"
   }
  },
  "token_refreshed_at": 1789215502,
