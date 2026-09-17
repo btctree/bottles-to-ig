@@ -2138,6 +2138,57 @@
    "ig_media_id": "18093540647131969",
    "kind": "wine",
    "name": "Almocreve Tinto Reserva"
+  },
+  "EF466F14-6184-4BD5-870A-349577BA5D4E": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7fdea001bf69097369025af8d298d4be91a1b76f25d1ec1c2de1c9161b84e36",
+   "match": "18092500835089193",
+   "distance": 52
+  },
+  "9B6AB6CA-8456-403D-92AC-70BCBD9C6564": {
+   "status": "disqualified",
+   "phash": "e34ec5286631646566a364f14ce79cb56cc396966ce698c66dac92d698966766",
+   "reason": "The image shows the back label of the bottle, which contains legal text, barcode, and nutritional information, rather than the front brand label."
+  },
+  "7FC3123A-757C-45ED-8E44-2852999069B4": {
+   "status": "skipped_already_on_ig",
+   "phash": "a961ca0d1ad292b635b425a9252d9de2cd0e3959c363371eccf16cc74e9cc33b",
+   "match": "18104492422429089",
+   "distance": 50
+  },
+  "926211DF-AAE5-4BD1-BD9A-AED1CC239E05": {
+   "status": "skipped_already_on_ig",
+   "phash": "afede0051af0d692c42f3de8e70b3d5a9870db0762dc56b066a749e9cf08930e",
+   "match": "18103160147367902",
+   "distance": 18
+  },
+  "18C7EC73-EAE2-4F83-8ABF-2AF8FFF570C5": {
+   "status": "skipped_already_on_ig",
+   "phash": "a2ffea0099f7b2d83682a1ae8d602dcb791b1be6c2241ef3609c2e83e33d9b2c",
+   "match": "18428297716035041",
+   "distance": 56
+  },
+  "5285CC0A-E097-4ED3-A5A9-2467824FC411": {
+   "status": "disqualified",
+   "phash": "f8f0616b6bcb851d67a89e0561f8929e656f9ab0e78f18dcc48569499c946969",
+   "reason": "The visible label is the back label, as it contains legal text, nutritional information, alcohol percentage, and a barcode."
+  },
+  "5E63E5B5-B291-4D08-9C48-A5693ABA4B14": {
+   "status": "disqualified",
+   "phash": "b333823399a76d9c64d9986d64c6989ece4974868e4e79e6a61b61e49a796592",
+   "reason": "The bottle is not being held by a hand, and the visible label is a back label containing ingredients and legal information."
+  },
+  "BDDBEE4A-0AE9-49E0-B323-A057E69AA297": {
+   "status": "disqualified",
+   "phash": "b0f0c70d652fc7b1661e96309e169e701e739a69696b79618649616796678727",
+   "reason": "The image shows the back label of the bottle, which contains legal warnings, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "9850B415-00C4-45F8-AB78-B3C87A178037": {
+   "status": "posted",
+   "phash": "a3fde8049a6792d9768225b6e4350d61e1da3916c774a4752785b8cdcc0d63bb",
+   "ig_media_id": "18183609316415032",
+   "kind": "sake",
+   "name": "Otaru Takaragawa Premium Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1789215502,
