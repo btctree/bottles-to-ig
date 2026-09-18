@@ -2189,6 +2189,30 @@
    "ig_media_id": "18183609316415032",
    "kind": "sake",
    "name": "Otaru Takaragawa Premium Junmai Daiginjo"
+  },
+  "3AC71F55-5E4F-427C-90CA-63604ACF378F": {
+   "status": "disqualified",
+   "phash": "d858359f358bda988a5cdd591e3d61a9d6a027c19752e4d6b975271039e08bd3",
+   "reason": "The bottle is standing on a surface rather than being held by a hand, and the visible label is the back label containing ingredients and legal information."
+  },
+  "8F151E3E-D320-45F1-B9DC-8459C74F4AFC": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfeee02b9aab92ba348605bdec61294ae9521b46e25d3cd3cb96b83403b13b23",
+   "match": "18118583899923186",
+   "distance": 48
+  },
+  "19A8D6B2-DA94-4C00-A8D8-8A40FBA9080E": {
+   "status": "skipped_already_on_ig",
+   "phash": "e5bded201b6392df368021b7cc254f49e93f1b84e27d363387d238cec7124332",
+   "match": "18183609316415032",
+   "distance": 60
+  },
+  "A830F673-5C6C-4ED2-A926-9F2F8CFDB885": {
+   "status": "posted",
+   "phash": "a894ca551a69b5fa641b0de4d90b4e6273de3711c4ff1f9193243c39c7e4382d",
+   "ig_media_id": "18117284821750188",
+   "kind": "sake",
+   "name": "Kiso Sansen Musashi Togen Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1789215502,
