@@ -2213,6 +2213,35 @@
    "ig_media_id": "18117284821750188",
    "kind": "sake",
    "name": "Kiso Sansen Musashi Togen Junmai Daiginjo"
+  },
+  "4BA6E1A1-3D64-4274-B67D-E1B17683480A": {
+   "status": "disqualified",
+   "phash": "832ea23fa7319f242ae148b3754fc1d352ae285ef7348ae1437430e39d3a57e8",
+   "reason": "The bottle is standing on a table, not being held by a hand."
+  },
+  "9DECF2ED-7EEB-4359-B5F4-3E0214491080": {
+   "status": "skipped_already_on_ig",
+   "phash": "aefde8019b3596dfb48205becc6c3b49c3731ec4c6b91cb3c3a4583ce307a071",
+   "match": "18348202351220059",
+   "distance": 56
+  },
+  "6E084D72-1960-4F03-9AAB-7CA1749B394D": {
+   "status": "disqualified",
+   "phash": "e0f2adc7254dfe9bc094552402be29f5ad4a348adab5d7dabd2862512cd58a17",
+   "reason": "The bottle is standing on a table and is not being held by a hand."
+  },
+  "32FDD9B5-AB66-4F86-B917-076B36E1C1A5": {
+   "status": "skipped_same_shot",
+   "phash": "a2fbe9828b7e924937d2a4b6ec6425ddb8911bf6e3343e65c0e93c09c18b193a",
+   "match": "6DECEB46-25BC-4E57-8B0B-9CE8E413E935",
+   "distance": 60
+  },
+  "7D2F6BE8-5DDA-4391-B199-0226755F6995": {
+   "status": "posted",
+   "phash": "aebfca209ae892dff49425b5ad098d7be9420b12f2766a4d06e3f08e1d9ac13a",
+   "ig_media_id": "18068224292497167",
+   "kind": "sake",
+   "name": "Suigei Geikai Suiko Junmai Daiginjo Akiagari"
   }
  },
  "token_refreshed_at": 1789215502,
