@@ -2249,6 +2249,29 @@
    "ig_media_id": "18115502566961933",
    "kind": "wine",
    "name": "Royal Tokaji Late Harvest"
+  },
+  "165FF155-2623-4F39-A0E3-BAE1D3598ECE": {
+   "status": "disqualified",
+   "phash": "cc0cb0ce56f4061583f147e84fc669437bad34bd38dc684a4a6be6f579a0e84b",
+   "reason": "The bottle is standing on the table rather than being held by a hand."
+  },
+  "AD4B8499-B995-4750-906C-CB84519B7876": {
+   "status": "skipped_already_on_ig",
+   "phash": "e3bdea049a69d2db369021b78de48dc9a92a3b68e1492e59e6763989c1db2e32",
+   "match": "18092500835089193",
+   "distance": 56
+  },
+  "00503510-73A6-4A4E-BB78-A821DB626346": {
+   "status": "disqualified",
+   "phash": "e6780c66f4a6c7ac9e3988ae5d8521b9b5c118b9bd9855992971d053cf7c0d63",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "E7072BE4-EC9A-4F79-ABF0-323724A98588": {
+   "status": "posted",
+   "phash": "a7bfea209a6392db34902535ed4d2d5be17639dcc791ce76529819c34c264738",
+   "ig_media_id": "17938663020373745",
+   "kind": "sake",
+   "name": "Nito Junmai Yamadanishiki 65"
   }
  },
  "token_refreshed_at": 1789215502,
