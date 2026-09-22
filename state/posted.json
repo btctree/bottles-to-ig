@@ -2272,6 +2272,48 @@
    "ig_media_id": "17938663020373745",
    "kind": "sake",
    "name": "Nito Junmai Yamadanishiki 65"
+  },
+  "19C03606-2E29-4389-8AEB-3F3BD78F0186": {
+   "status": "disqualified",
+   "phash": "8762732eb466b2e1f78e98359370966b8cc7971c23716727a4c059cb693a8e63",
+   "reason": "The bottle is standing on the table and is not being held by a hand."
+  },
+  "EE1C3976-339B-459A-B102-49BE3FA9E5B8": {
+   "status": "disqualified",
+   "phash": "c78721a5b83887c30c6ef3993831ece24cc692794f1c38588af7fc2603f1fd3c",
+   "reason": "There are two bottles instead of one, and they are standing on a table rather than being held by a hand."
+  },
+  "E525779A-E025-49BD-B17E-313248E6704A": {
+   "status": "disqualified",
+   "phash": "ea56781e3a5c397a3c2ae3f49d28c0e09ffdc380183f3a523c2d63db6078e3e0",
+   "reason": "The visible label is the back label as it contains ingredients, alcohol percentage, legal text, and a barcode."
+  },
+  "668E41E1-DBE9-4F53-8E66-8545F4E6918A": {
+   "status": "disqualified",
+   "phash": "d01089c2b6cd2166fc3607c3d80dd03d0f1ef7c0993836fd8c0f197c3e7f435e",
+   "reason": "The bottle is standing on a table and is not being held by a hand."
+  },
+  "739E5D7E-032C-4B00-85DB-F30190E4B5AB": {
+   "status": "disqualified",
+   "phash": "f60d8902b697089b7f1dd0790d62f00d4f63f0391fc3286cb2f07f223ff0960f",
+   "reason": "The bottle is standing on a table and is not being held by a hand."
+  },
+  "87BD3338-80DB-4417-9319-67C89E7B059E": {
+   "status": "disqualified",
+   "phash": "fb52a838682bc5d035a1d2eb67e59b0b61e52c2d73d33c25c7809925c64f69ec",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, a barcode, and manufacturer information."
+  },
+  "ECFD11CB-01E6-4A7D-B670-1036E24DF8BF": {
+   "status": "disqualified",
+   "phash": "b83cf0b02de7f0b42fdbd20360f8df0330fd9d0060bf3ce0638397f8c24b35b8",
+   "reason": "The image shows the back label of the bottle, which contains detailed descriptions, alcohol percentage, legal text, and a barcode, rather than the front brand label."
+  },
+  "542C1BA7-C366-4987-9C8C-898B6C3BB5B8": {
+   "status": "posted",
+   "phash": "bbd4c2559a1533f5e446ad98a5333968c349725b5ed0d8b61384f2251e6dc3cb",
+   "ig_media_id": "17933691894398162",
+   "kind": "sake",
+   "name": "Daishichi Myoka Rangyoku Grande Cuvée"
   }
  },
  "token_refreshed_at": 1789215502,
