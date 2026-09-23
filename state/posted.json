@@ -2314,6 +2314,139 @@
    "ig_media_id": "17933691894398162",
    "kind": "sake",
    "name": "Daishichi Myoka Rangyoku Grande Cuvée"
+  },
+  "D691BF24-914E-42F8-AAD7-B58159E6645E": {
+   "status": "disqualified",
+   "phash": "9755cdd64c8be692336c99b491c766692a36ed926e3866cc99661963b1996661",
+   "reason": "The image shows a box rather than an alcohol bottle, and it is standing on a surface instead of being held by a hand."
+  },
+  "213FDA26-9DAC-4194-9379-76403445FDE4": {
+   "status": "skipped_same_shot",
+   "phash": "affde8051a69b6df348225bccd69394ac3521a9446d544a75dacd9a970601f2f",
+   "match": "039903D2-0D99-4E86-ABE8-287A6B991A24",
+   "distance": 56
+  },
+  "7F042566-41C8-452D-B7C3-AFF4ECBF5CC7": {
+   "status": "skipped_already_on_ig",
+   "phash": "ba5dc29118f5328fe6b1b4a7b539a5622d5aed432b5ec8700f12e0f696c432bc",
+   "match": "18028858781550815",
+   "distance": 0
+  },
+  "901D7969-D922-428E-B50A-FE5F40474CA8": {
+   "status": "disqualified",
+   "phash": "e53cf6c592dbce3891696865cbb625a69b1a30d3ce3874cf4c7993046d71131a",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "EEAEF254-D72B-40AB-8B88-F0BA0282F2DD": {
+   "status": "disqualified",
+   "phash": "cc98c1652d8743f83c8c46983164569d31e4d41f21e4f47eb2ec8d3e53678bf6",
+   "reason": "No hand is holding the bottle, and the visible label is a descriptive tag rather than the main brand label."
+  },
+  "F6FCD9CD-47EE-4D63-818E-1A804117534E": {
+   "status": "skipped_same_shot",
+   "phash": "eef5ca051bcdd2db369025bcbd298d4ba15e3b50c0570ec643b8193b43e25e66",
+   "match": "EF466F14-6184-4BD5-870A-349577BA5D4E",
+   "distance": 60
+  },
+  "BF7302C0-E3BD-4C99-8C71-19D7A4D792F5": {
+   "status": "skipped_already_on_ig",
+   "phash": "ba5de29108f1308fe638b4e5bd3ea1622d4e6a534b465afc5e9110bed6e416ac",
+   "match": "18028858781550815",
+   "distance": 44
+  },
+  "D40BF84B-8545-4B1E-85DF-23B1B2A8EE91": {
+   "status": "disqualified",
+   "phash": "e326db32bc31e1f645dc8d2425cf48eb4a4cab4f8a514b4930ee9c68b269b0fb",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "A68FC79A-9692-4C0A-A87C-2A0B82C292EB": {
+   "status": "skipped_already_on_ig",
+   "phash": "aebeca231aea92bf2521a57dad49ab5ae1561bc4c25d1c83d1b85caec3221e6c",
+   "match": "18099101129365732",
+   "distance": 56
+  },
+  "A71D3E35-2130-48BD-8E91-436EA4AECE1C": {
+   "status": "skipped_same_shot",
+   "phash": "efe5e8851afad3929c2f2dade561355e89589942225e26d032744f3f4989583b",
+   "match": "2FDDDD2E-CABF-47FE-8D3B-D5AF4AE26242",
+   "distance": 52
+  },
+  "93DC4839-3759-4980-A265-405FB16BFE50": {
+   "status": "disqualified",
+   "phash": "ba8fe87e68f42fe1705487abe95895a1a17b962069539ab563643a9165ef9842",
+   "reason": "The visible label is the back label, as it contains a barcode, legal warnings, importer information, and nutritional details."
+  },
+  "76E2DA99-C326-4969-951D-217D3090401F": {
+   "status": "disqualified",
+   "phash": "bf70b4bd68d2c3d2c30bcf4f6c2d8c2dc0d238c934c338efc6c364e0964f31cc",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "F1261091-FB1B-4A1D-A761-8704AC438FAF": {
+   "status": "disqualified",
+   "phash": "bc3e2c34eb619a79cf3e13642698f09233e48d9ee71674cc60c3279a8bb6dc44",
+   "reason": "The bottle is not being held by a hand, and the visible label is the back label containing technical information such as ingredients and alcohol percentage rather than the main front brand label."
+  },
+  "DE8CDDD8-6E2D-4653-BFDE-A9504CB84EF3": {
+   "status": "skipped_already_on_ig",
+   "phash": "a6c5c8159a35b2cc749b8db2cd6e3b09c1da3e52c6f71895c7a5742dc1893ce2",
+   "match": "18122464069658631",
+   "distance": 54
+  },
+  "59975D34-1150-4404-A52D-395BAD1BB2C1": {
+   "status": "disqualified",
+   "phash": "e0c2a5adc79d361686703e5ac87b334b985b662db0c36c3d9349cc9c23c79c7c",
+   "reason": "The visible label is the back label, which primarily displays ingredients, alcohol percentage, and legal information rather than the front brand label."
+  },
+  "F5F98EE0-753C-4828-B6A5-78C359E6DAE2": {
+   "status": "disqualified",
+   "phash": "c980259376f68e7970e3ccc831c78e79a7073cfc23869875a78b38ff268c9861",
+   "reason": "The visible label is the back label, which contains legal text, a barcode, and descriptive paragraphs, rather than the front brand label."
+  },
+  "580E92FB-99B0-4DF5-AC40-05B09055349F": {
+   "status": "skipped_already_on_ig",
+   "phash": "afede0059eda92d2f0102dafed203c4fc3ca9b61c11f36f266c6661cc9f10933",
+   "match": "18451645783007859",
+   "distance": 6
+  },
+  "03AB5677-A8C0-4E9E-977C-9CCA6623897C": {
+   "status": "skipped_already_on_ig",
+   "phash": "a961ca0d1ad2d29437b465a9342d85e2ad0c3979e3633b1ee4f33ccd84fc3393",
+   "match": "18104492422429089",
+   "distance": 0
+  },
+  "7F2CE197-5071-4E2A-89B4-58CA5649E0CC": {
+   "status": "disqualified",
+   "phash": "f8f9b4d334d2cb49754dda2fa15fa4ba43855d409f02a0f5c97e6d2d8c167240",
+   "reason": "The bottle is standing on a table and is not being held by a hand."
+  },
+  "432E91CB-7B07-42F4-A246-CC9F7AEE720D": {
+   "status": "disqualified",
+   "phash": "ada4f4da30dae040b2fbd349cb6122f3cf2533cd3c9fc3c0304fcb073365cc07",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "3813C01C-A0B1-4896-AE13-05C6221BDDC4": {
+   "status": "disqualified",
+   "phash": "b54ccd114c92dcc76b6a970c78f1136f6ce5db940ccb6a74a58c3169b48638f3",
+   "reason": "The bottle is sitting inside a wooden box on a surface, not being held by a hand."
+  },
+  "CBB84222-A2D5-4CC9-B372-3FB64258FA41": {
+   "status": "skipped_same_bottle",
+   "phash": "cdec60cc36fa16c2485e3cfe63842efdda54da91d0d7d714f26761586d02218b",
+   "name": "Villa Cafaggio Chianti Classico",
+   "match": "villacafaggiochianticlassico",
+   "similarity": 1.0
+  },
+  "DC20EE31-709D-4E18-A7CE-1C1631FCE08A": {
+   "status": "disqualified",
+   "phash": "c4da84c8fadd44dd5931eb3392ee000ea4016db0dbb2f376016de4df99133ea6",
+   "reason": "The bottle is standing on a table and is not being held by a hand."
+  },
+  "102FD477-D5E5-408F-8C15-E4444F97A536": {
+   "status": "posted",
+   "phash": "afdbc8129964326df49335b6c5241dc9e93b7bc6621c4e75d9c91983253a2732",
+   "ig_media_id": "18087481547678549",
+   "kind": "sake",
+   "name": "Bunkichi Itoh VIII Junmai Ginjo Genshu Wisteria Yeast"
   }
  },
  "token_refreshed_at": 1789215502,
