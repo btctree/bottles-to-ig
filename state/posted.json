@@ -2447,6 +2447,24 @@
    "ig_media_id": "18087481547678549",
    "kind": "sake",
    "name": "Bunkichi Itoh VIII Junmai Ginjo Genshu Wisteria Yeast"
+  },
+  "B7B9259C-170D-491F-ADE9-FBFC8E6CF1C6": {
+   "status": "skipped_same_shot",
+   "phash": "bffee0209ac912fff49025b7ed213d4bc15b1b46265cfc518dd6d0947b144330",
+   "match": "26691307-D929-44F4-BCC9-68C52B4D841C",
+   "distance": 54
+  },
+  "C41DCE36-ADB8-4E86-B73D-DA26118EC561": {
+   "status": "disqualified",
+   "phash": "a9c3f610c69cc6b794707ad3da6b2163da8f25a798454ebe310c9e5873a1984f",
+   "reason": "The visible label is the back label containing technical information such as ingredients, alcohol percentage, and manufacturer details, rather than the front brand label."
+  },
+  "6B42A793-6EAF-4DA0-AAD5-32AC89364BB0": {
+   "status": "posted",
+   "phash": "f3b9ca041af9f2b13484a5bdad68a15b8946ab50c8573fd4f0371f88573b580e",
+   "ig_media_id": "18147970774589482",
+   "kind": "wine",
+   "name": "La Terrasse Chablis"
   }
  },
  "token_refreshed_at": 1789215502,
