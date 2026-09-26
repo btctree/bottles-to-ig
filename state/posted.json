@@ -2472,6 +2472,36 @@
    "ig_media_id": "18101074937027122",
    "kind": "sake",
    "name": "Shishi no Sato Junmai Ginjo Premium"
+  },
+  "88A00939-17F6-417B-9B70-58DE12457038": {
+   "status": "disqualified",
+   "phash": "fe07e07c71e897e3253cc68d2df4da1465bc2f50c6aab85ac619786a98c3612b",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "AE27C339-97DF-4133-9BB6-CA9041962E07": {
+   "status": "skipped_already_on_ig",
+   "phash": "afade0259adab29ae4302dafe7213c4ac39a9b26727d66c174864c3cc9b91b43",
+   "match": "18386148490064070",
+   "distance": 56
+  },
+  "0938DED4-E016-4750-B4C6-625DE18D2F07": {
+   "status": "skipped_same_shot",
+   "phash": "bde9e20b16b390b4c3242d6f6d4aac72890fb939c0733792f2d64e6443b9599a",
+   "match": "3E3402D3-15BC-45D9-B488-826AC1C452DD",
+   "distance": 50
+  },
+  "9214E50A-6C05-4CF2-8263-1586D8C1E974": {
+   "status": "skipped_already_on_ig",
+   "phash": "aadfea109aff929f36a0a5af8d692d4be9121bd6c2451ed1c09b1e82c2b21e36",
+   "match": "18320268205109800",
+   "distance": 52
+  },
+  "A1185D31-32C8-4781-9D88-3E7E26077A2E": {
+   "status": "posted",
+   "phash": "bcffe2019b8c337fe462259ee524bc49c15b33c2e61c2c5267f41c85d0bd1a39",
+   "ig_media_id": "17869877715646533",
+   "kind": "other",
+   "name": "Lanson Le Black Création 258"
   }
  },
  "token_refreshed_at": 1789215502,
