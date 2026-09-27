@@ -2502,6 +2502,35 @@
    "ig_media_id": "17869877715646533",
    "kind": "other",
    "name": "Lanson Le Black Création 258"
+  },
+  "8CC746D3-0FD4-45FF-90C6-0CEE86CB85AE": {
+   "status": "skipped_already_on_ig",
+   "phash": "ba9bca811aa432b7a589a529a57ebd40a94e2d5bea521b7cdb2144ee749e43b2",
+   "match": "18098478218370302",
+   "distance": 14
+  },
+  "F894596E-2258-43D0-8E16-6E8AED948F28": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7bce8259a69b6d274962d3ccd693d5ba3d61e14c62570e8599a4b227272960f",
+   "match": "18007978661976841",
+   "distance": 30
+  },
+  "9E32989C-0E50-44C1-9D4D-41664D2794D2": {
+   "status": "disqualified",
+   "phash": "f3c7614f6b78912d47e0981d65f29e0560784b42fc3d63e8942772b896c3665e",
+   "reason": "The visible label is the back label, as it contains a barcode, legal warnings, alcohol percentage, and contact information."
+  },
+  "3264FC13-DE32-41C3-897A-E970F875AE58": {
+   "status": "disqualified",
+   "phash": "fc2da43c5ec6e12931bc6d9731e83b8923c734e08e136c676c349b493678cf26",
+   "reason": "The visible label is the back label, as it contains a barcode, legal text, UK excise duty stamp, and units of alcohol information."
+  },
+  "85D941CA-D465-42DD-8AFC-F5D2483DE158": {
+   "status": "posted",
+   "phash": "bde96029c6c21afef0b005a765ad3c6989cf8b483b17e05a36d1a6c7ecf46930",
+   "ig_media_id": "17876265687567980",
+   "kind": "wine",
+   "name": "Terra Lenta Premium"
   }
  },
  "token_refreshed_at": 1789215502,
