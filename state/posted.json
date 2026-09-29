@@ -2531,6 +2531,18 @@
    "ig_media_id": "17876265687567980",
    "kind": "wine",
    "name": "Terra Lenta Premium"
+  },
+  "29E81567-9801-495C-9EFF-2EDA8F85413B": {
+   "status": "disqualified",
+   "phash": "ad5af03c01f8f4a1202d8be13c8769ef34a0981563fa9f85e1a79cb6275d4979",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, legal text, and a barcode."
+  },
+  "300DFA72-215A-4567-BB5B-D78582C67CC3": {
+   "status": "posted",
+   "phash": "a3bfc8001ae2f23fa4802d3ef8678bc8ce177ab073a14e8fde383368398b85f8",
+   "ig_media_id": "18074143259727693",
+   "kind": "sake",
+   "name": "Asahiyama Junmai Ginjo"
   }
  },
  "token_refreshed_at": 1789215502,
