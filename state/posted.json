@@ -2543,6 +2543,35 @@
    "ig_media_id": "18074143259727693",
    "kind": "sake",
    "name": "Asahiyama Junmai Ginjo"
+  },
+  "4DE87A64-5E39-48C0-B6A1-161F050CF85C": {
+   "status": "disqualified",
+   "phash": "e58d96d8da499da5cb06b9ec6796785a8631624726337b93872c98cce5969949",
+   "reason": "tilt 0 deg, need ~45"
+  },
+  "32F4C80E-5EE9-4485-8FBD-7F08150BA6EE": {
+   "status": "skipped_already_on_ig",
+   "phash": "aaddca409b7792dd3680a5a78d3c8f6079471b98c6705e87c1993ce3c3929e3a",
+   "match": "18284734372171083",
+   "distance": 46
+  },
+  "31CCBA5F-A4ED-415D-BE6A-58E37855B13C": {
+   "status": "skipped_already_on_ig",
+   "phash": "ba9bca811aa4b2b6a589a52ba56ebd40095e6f1b6256127cd6a764ec74ba53b2",
+   "match": "18098478218370302",
+   "distance": 36
+  },
+  "059A7FFA-1273-4669-9400-515F64757942": {
+   "status": "disqualified",
+   "phash": "e71db2f832c7c30f323ccf3c9830cf2731c23c3de3c3cc3ea3831878cf0b68e0",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, and legal/manufacturer information rather than the main front brand design."
+  },
+  "EB36F1D6-FFCC-4FE4-AA0F-16D4B982D715": {
+   "status": "posted",
+   "phash": "cfe5e2351adf9381e4243dace501bc4aa1da8b527a7f4ecd6ec274b0138ed0e0",
+   "ig_media_id": "17974030482131225",
+   "kind": "other",
+   "name": "Glenfiddich 15 Year Old Our Solera Fifteen"
   }
  },
  "token_refreshed_at": 1789215502,
