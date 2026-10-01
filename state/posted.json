@@ -2572,6 +2572,18 @@
    "ig_media_id": "17974030482131225",
    "kind": "other",
    "name": "Glenfiddich 15 Year Old Our Solera Fifteen"
+  },
+  "1805B43F-928E-4269-9BBB-E14814DC07AE": {
+   "status": "disqualified",
+   "phash": "d369a2a6bc56dd6b64d78d1c95893a94274ce0e3cd1c0c91cb397673ce6c30cc",
+   "reason": "The bottle is standing on a counter and is not being held by a hand."
+  },
+  "062DBD48-8767-41FF-B5D7-B35D6A2A4A4E": {
+   "status": "posted",
+   "phash": "b3f3ea168e5c32d734c185bf87203ce9e5db2d66330988694ce7678698c8323b",
+   "ig_media_id": "18178138324439240",
+   "kind": "wine",
+   "name": "Chassaux et Fils Sauternes"
   }
  },
  "token_refreshed_at": 1789215502,
