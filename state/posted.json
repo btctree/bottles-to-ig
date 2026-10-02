@@ -2584,6 +2584,43 @@
    "ig_media_id": "18178138324439240",
    "kind": "wine",
    "name": "Chassaux et Fils Sauternes"
+  },
+  "AAFA9209-2391-43AE-8C51-FB4ADFBD7908": {
+   "status": "disqualified",
+   "phash": "e94ae1e835a58797979e9e1e64589e789391187b66993861c68ec4e19a1b71e3",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, legal text, and a barcode."
+  },
+  "0C4CAFC0-C75D-4224-BFCE-3CD5417052FD": {
+   "status": "disqualified",
+   "phash": "b1e0c39d4f1e927963251b61c43761e2981f63c59e5ad60f6cf8b30798fc6704",
+   "reason": "The visible label is the back label, as it contains extensive technical information, legal text, alcohol percentage, and a barcode."
+  },
+  "35A507D6-8348-4791-8E61-E239701F2637": {
+   "status": "disqualified",
+   "phash": "fa94a0f57deb987a614b5cc6630e59c1c71f38f2c635938e8cb5658c98c3630c",
+   "reason": "The visible label is the back label, as it contains ingredients (原材料名), alcohol percentage, manufacturer details, and a barcode."
+  },
+  "066BD8FD-2FB0-4899-9413-AB9423D0E34D": {
+   "status": "disqualified",
+   "phash": "ed0d95a130d4cf1ec7873c1ec75a34e1123ce5c3325ac695cd4a3259cdb533cc",
+   "reason": "The visible label is the back label, as it contains extensive legal text, alcohol percentage, volume, and a barcode."
+  },
+  "285A9240-8304-45AA-A7E3-1CABF1B54156": {
+   "status": "disqualified",
+   "phash": "e635a56b6c2394c49cae3694d9ee6f1a90fc24c3929cec73630a98ce8770998f",
+   "reason": "The visible label is the back label, as it contains a barcode, volume (500ml), alcohol percentage (11%vol), and legal information like 'Contains Sulphites'."
+  },
+  "62CDFF41-A243-45E2-81ED-46237079498B": {
+   "status": "disqualified",
+   "phash": "f408ed6a785ed44581d58fd5d781201587bf63f72a35c7e3f2129a25637a3034",
+   "reason": "The bottle is not being held by a hand, and the visible label is the back label containing ingredients, alcohol percentage, and a barcode instead of the front brand label."
+  },
+  "01996A6F-40E1-4214-A504-C59B7039C74A": {
+   "status": "posted",
+   "phash": "bf58c0520916337df6c905bfcd26396c437b73424e5cccf339963187a63ea460",
+   "ig_media_id": "18627316276013745",
+   "kind": "wine",
+   "name": "Alberto Nani Prosecco DOC Organic Vegan Extra Dry"
   }
  },
  "token_refreshed_at": 1789215502,
