@@ -2621,6 +2621,93 @@
    "ig_media_id": "18627316276013745",
    "kind": "wine",
    "name": "Alberto Nani Prosecco DOC Organic Vegan Extra Dry"
+  },
+  "0AAA7F48-1A5B-4AC9-82C3-0916FFE3094D": {
+   "status": "skipped_already_on_ig",
+   "phash": "bff7c0049bd932fff48425b5e52d3d48e1733f40e25f3a5042f04c87719a5330",
+   "match": "17869877715646533",
+   "distance": 60
+  },
+  "606D6ECA-282F-4661-A487-C324EB928EB5": {
+   "status": "skipped_already_on_ig",
+   "phash": "bbffe2108fc431bfe62004cde5b93926c36c3a494ada589203b6fc2405edf4e9",
+   "match": "17933691894398162",
+   "distance": 54
+  },
+  "62B88953-F601-404B-98CC-1E281EBD22B4": {
+   "status": "disqualified",
+   "phash": "ef8b80fc3c74c82321c1a42ec79e39939e28e5c778b19b4d61d68cbc634e38d3",
+   "reason": "The visible label is the back label, as it contains a barcode, nutritional information, and legal warnings."
+  },
+  "ADE6BFFD-CDAC-42ED-8295-F550253647B8": {
+   "status": "skipped_already_on_ig",
+   "phash": "cfb4e00433fb8741c82e3dfee3c01e7e9a32978634df670c606109efcd1a30da",
+   "match": "18016236074919922",
+   "distance": 0
+  },
+  "7B1458A6-8FBF-4DB3-A1BB-8DF7C9655C5E": {
+   "status": "disqualified",
+   "phash": "9f20b7803492a936749b4a69314d9492ba5fcd6b52a5cd52b1ae24947f4a6eed",
+   "reason": "The bottle is standing on a table and is not being held by a hand."
+  },
+  "E43C927B-34C1-409C-9E38-1368A7E29EAA": {
+   "status": "disqualified",
+   "phash": "b67eb3357b82eefbc89b3780c0cb3900e6e8c9993664e48d1b37e00ccdfb4046",
+   "reason": "The visible label is a back label containing ingredients (原材料名), alcohol percentage, and legal information, which is not permitted."
+  },
+  "290EAF03-EA7C-4548-8270-A7B18509B216": {
+   "status": "disqualified",
+   "phash": "e14b87a3661c965986b07a73c25a70e39a4b60e79d6d669c99e89e0f62f99862",
+   "reason": "The visible label is the back label, as it mainly displays technical information such as ingredients (原材料名), alcohol percentage, and manufacturer details."
+  },
+  "5244BAFB-5678-4F47-8DF5-5762EDB89C49": {
+   "status": "disqualified",
+   "phash": "b5b4f69662da9e690683606993279861de6c24e7cc593367983c67a69964669e",
+   "reason": "The image shows the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "C54ED685-45F7-43C1-BF51-272179E170FB": {
+   "status": "disqualified",
+   "phash": "c7d0e62e3c1fc634343a9ef060399ff1d0e09e0798e33c0fcbc7783e878561e0",
+   "reason": "The image shows the back label of the bottle, which contains a barcode, alcohol percentage, and legal text, rather than the front brand label."
+  },
+  "78B8896D-3F29-4AEB-82ED-98281C1EB579": {
+   "status": "skipped_already_on_ig",
+   "phash": "e1dfee109a75f26736c0849be526392cd92b0f4a66481ed3c397588546f53237",
+   "match": "17911268541441058",
+   "distance": 0
+  },
+  "7A16539C-F00E-4D3F-AE24-D492B8257AA4": {
+   "status": "disqualified",
+   "phash": "93d06928210b96bc46bc99956538dab5873c38f296b5695e8eb1739198f36733",
+   "reason": "The image shows the back label of the bottle, which contains legal warnings, a barcode, alcohol percentage, and importer information, rather than the main front brand label."
+  },
+  "C6D5F869-9E94-42B4-BFBD-500F5B78EF86": {
+   "status": "disqualified",
+   "phash": "de117c31d0758d61d31365cf34d7125fa585a9a4ed249ed3186b741c75b59921",
+   "reason": "The bottle is standing on the table and is not being held by a hand."
+  },
+  "6E24E6B2-3934-4E56-B494-8E71AA9949D0": {
+   "status": "skipped_already_on_ig",
+   "phash": "d36ce118966c94db761643fc78834ee8f12d9b25c4d92e53e3d6195cc7053865",
+   "match": "17903034593749173",
+   "distance": 60
+  },
+  "A0F9BACD-3CB9-46D6-B57E-1284748816A2": {
+   "status": "disqualified",
+   "phash": "9ad9299959091eb074c6f24f95f4638869809f19bcb5767a68e7d6b10d95055b",
+   "reason": "The bottle is standing on a counter and is not being held by a hand."
+  },
+  "4963F1BF-AD07-43FA-984C-A2C2CE951B4C": {
+   "status": "disqualified",
+   "phash": "dd91e0dfc8dda7c562c5c92570a2caeb23c924ca090a8d3426b2dedabdcb5c8b",
+   "reason": "The bottle is standing in an ice bucket, not being held by a hand."
+  },
+  "F8F29BB6-E30F-4EB8-BF6E-B163C8CB1491": {
+   "status": "posted",
+   "phash": "bdffc0009b6e32fbe48005fde7441c79d0c313907627646d1cebd18e9d1a6372",
+   "ig_media_id": "17990190021027106",
+   "kind": "wine",
+   "name": "Baron Maxime Brut Gold Reserve Blanc de Blancs"
   }
  },
  "token_refreshed_at": 1789215502,
