@@ -2708,6 +2708,76 @@
    "ig_media_id": "17990190021027106",
    "kind": "wine",
    "name": "Baron Maxime Brut Gold Reserve Blanc de Blancs"
+  },
+  "1B2B6A22-C7B7-45B1-B1DE-6CD612641564": {
+   "status": "skipped_same_shot",
+   "phash": "fb52a838682bc5d035a1d2eb67e59b0b61e52c2d73d33c25c7809925c64f69ec",
+   "match": "87BD3338-80DB-4417-9319-67C89E7B059E",
+   "distance": 0
+  },
+  "006B6F1B-A185-4C7F-AC4D-7B76DA6A2A67": {
+   "status": "skipped_same_shot",
+   "phash": "ea56781e3a5c397a3c2ae3f49d28c0e09ffdc380183f3a523c2d63db6078e3e0",
+   "match": "E525779A-E025-49BD-B17E-313248E6704A",
+   "distance": 0
+  },
+  "4AE618E7-A9FB-476C-85B7-12E2249E47B6": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7bfea209a6392db34902535ed4d2d5be17639dcc791ce76529819c34c264738",
+   "match": "17938663020373745",
+   "distance": 0
+  },
+  "4750BDB8-2716-4339-A554-F7574C56F3CF": {
+   "status": "skipped_already_on_ig",
+   "phash": "e3bdea049a69d2db369021b78de48dc9a92a3b68e1492e59e6763989c1db2e32",
+   "match": "18092500835089193",
+   "distance": 56
+  },
+  "D57BCCE8-43D8-47E2-BD53-9D634D3003B8": {
+   "status": "skipped_same_shot",
+   "phash": "fe07e07c71e897e3253cc68d2df4da1465bc2f50c6aab85ac619786a98c3612b",
+   "match": "88A00939-17F6-417B-9B70-58DE12457038",
+   "distance": 0
+  },
+  "68EA33D3-CED5-4DD8-AFE9-0DD6BE345194": {
+   "status": "skipped_same_shot",
+   "phash": "b1ffce809b2c327fe5c23537e46d0fd9e8131a8553f5468d5a2140de1cd2e192",
+   "match": "4D98ED0D-CBE0-41F6-81CA-C5D929054D85",
+   "distance": 0
+  },
+  "AE6E8525-49A3-4D55-8D7E-F69E52438049": {
+   "status": "skipped_same_shot",
+   "phash": "ad5af03c01f8f4a1202d8be13c8769ef34a0981563fa9f85e1a79cb6275d4979",
+   "match": "29E81567-9801-495C-9EFF-2EDA8F85413B",
+   "distance": 0
+  },
+  "DD100649-0062-462D-B340-4565ADFACC82": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3bfc8001ae2f23fa4802d3ef8678bc8ce177ab073a14e8fde383368398b85f8",
+   "match": "18074143259727693",
+   "distance": 0
+  },
+  "AD1037DF-C4C1-42C9-AA49-02B187123E03": {
+   "status": "disqualified",
+   "phash": "fa1ea5a161a19e9ea6947078ce5a6b699e7b25e598f9c60169478d2e25a496d8",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and a barcode, rather than the front brand label."
+  },
+  "3B0DFDD0-C418-4E1E-A6F0-BDE578C3E28F": {
+   "status": "disqualified",
+   "phash": "b950f2f002a1478765cf3787d11f472f86329c1b6cba1e6e165e197c9258927b",
+   "reason": "The subject is a can rather than a bottle, and the image shows the descriptive side/back panel of the label instead of the main front brand label (which for this product features a large demon face graphic)."
+  },
+  "215E15DE-ED74-4390-B29D-F9EF23CA33FA": {
+   "status": "disqualified",
+   "phash": "bf55eba4c049155a0d4e187112fe13895f2e322d62756af56cc10d4f6d3e6d2c",
+   "reason": "The main subject is a can, not a bottle."
+  },
+  "92E91F89-7698-483E-9CF6-9C5511D4BB8C": {
+   "status": "posted",
+   "phash": "e0cf6f001970b24ff78037b2fc0f8ff8c233398e5af4427d4f0150ff3cc0c332",
+   "ig_media_id": "18129692954486698",
+   "kind": "sake",
+   "name": "Kaika Junmai Ginjo"
   }
  },
  "token_refreshed_at": 1789215502,
