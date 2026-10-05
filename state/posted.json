@@ -2778,6 +2778,13 @@
    "ig_media_id": "18129692954486698",
    "kind": "sake",
    "name": "Kaika Junmai Ginjo"
+  },
+  "5F655726-5956-4900-AC66-25C043047F6D": {
+   "status": "posted",
+   "phash": "e157e8b7944a855ad90c328d56eb76324f1468cd24ed6769d91a9db6b4a53229",
+   "ig_media_id": "18100224806455759",
+   "kind": "other",
+   "name": "Indo no Aoni"
   }
  },
  "token_refreshed_at": 1789215502,
