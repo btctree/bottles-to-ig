@@ -2792,6 +2792,27 @@
    "ig_media_id": "18142617751593607",
    "kind": "sake",
    "name": "Eiheiji Hakuryu Junmai Daiginjo Namachozo"
+  },
+  "2EA49059-492E-44E6-9B3F-21108C4BF75A": {
+   "status": "disqualified",
+   "phash": "a59af68636434b7b363ec03ef258cdb8c07c0fa0c14b3ce19fe070573969707a",
+   "reason": "The visible label is the back label containing ingredients, contact info, and legal text, rather than the front brand label."
+  },
+  "1F72DAA5-FB4E-4DF6-9018-AB21EDFE4953": {
+   "status": "skipped_already_on_ig",
+   "phash": "a35feb009a5792df3680353eed240dc9601f1bf4c3d14e0542ff39986d83c73a",
+   "match": "17938663020373745",
+   "distance": 58
+  },
+  "AB52773E-B18D-4280-99FA-4ABF076B2890": {
+   "status": "disqualified",
+   "phash": "fc4af37346d50587422e96929e9c9a3898d89a38b8599cd9adc5a54bad8365d5",
+   "reason": "The visible label is the back label containing ingredients, legal text, and a barcode, rather than the front brand label."
+  },
+  "B22B2108-9DFD-4FEB-807C-656B60F7789A": {
+   "status": "disqualified",
+   "phash": "ed124a2d3469e1f832e4cdabf237cd80c0f62f80d9c23c07db8330fe8f33e3b0",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and legal warnings, rather than the front brand label."
   }
  },
  "token_refreshed_at": 1789215502,
