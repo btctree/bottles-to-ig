@@ -2813,6 +2813,23 @@
    "status": "disqualified",
    "phash": "ed124a2d3469e1f832e4cdabf237cd80c0f62f80d9c23c07db8330fe8f33e3b0",
    "reason": "The visible label is the back label containing ingredients, alcohol percentage, and legal warnings, rather than the front brand label."
+  },
+  "F0ADD813-0DDC-4BF0-8ED7-691426AD71E8": {
+   "status": "disqualified",
+   "phash": "ed8c95309710e29c28fd28cf12239ef5e9ccd707e1f438f83e07870fc8f87170",
+   "reason": "There are two cans instead of exactly one bottle, and they are standing on a surface rather than being held by a hand."
+  },
+  "0496C414-DAED-40D9-B1AF-14F2422DA286": {
+   "status": "disqualified",
+   "phash": "ff0b7095bced4b487035cbda715aca4082decd7b9925cca9b56e2cebd0802532",
+   "reason": "The visible label is the back label, as it contains technical information such as ingredients, alcohol percentage, producer details, and a barcode."
+  },
+  "B0D610FF-82EC-4621-9B5C-D42779383CA7": {
+   "status": "posted",
+   "phash": "e79f88555be7325d3480e5b7cf20184df1db071270ee5d8151a3633c9ee1e00f",
+   "ig_media_id": "17949238200298411",
+   "kind": "sake",
+   "name": "Kagura Gaho Yamahai Junmai Genshu"
   }
  },
  "token_refreshed_at": 1789215502,
