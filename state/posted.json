@@ -2830,6 +2830,18 @@
    "ig_media_id": "17949238200298411",
    "kind": "sake",
    "name": "Kagura Gaho Yamahai Junmai Genshu"
+  },
+  "9F503C8A-3C51-4A82-914C-75BEF2BF4187": {
+   "status": "disqualified",
+   "phash": "eb5296d7359b0805f2894faf87cb1c78962929f9970f33aa941627cb9a0a4787",
+   "reason": "The visible label is the back label, as it primarily displays ingredients, alcohol percentage, and legal warnings rather than the main front brand label."
+  },
+  "91DEC59E-E508-444E-AC92-E417DB3BAFD5": {
+   "status": "posted",
+   "phash": "e3cfec819cf492fcf4909d87c0620f6b601b1a7052d9f2172cd4ef85609b837d",
+   "ig_media_id": "18039859625835810",
+   "kind": "sake",
+   "name": "Mouri Kou Daiginjo Yamaguchi Limited Edition"
   }
  },
  "token_refreshed_at": 1789215502,
