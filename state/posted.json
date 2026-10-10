@@ -2842,6 +2842,101 @@
    "ig_media_id": "18039859625835810",
    "kind": "sake",
    "name": "Mouri Kou Daiginjo Yamaguchi Limited Edition"
+  },
+  "038F8D58-65E4-446E-A312-F2D0D02C2951": {
+   "status": "skipped_already_on_ig",
+   "phash": "bbc2c0859ae932bae4b005efe6092cdbe1923f34e17d3e61e2cf0ed9e1923832",
+   "match": "17924957669054463",
+   "distance": 48
+  },
+  "979CB83D-BDD3-48C4-A86D-1DE417FDF0CD": {
+   "status": "disqualified",
+   "phash": "c3adc1f9a47fd80f9a42a659d3369920d652b3438eec22a6ad5864cb24b3e9b5",
+   "reason": "The bottle is standing on a shelf rather than being held by a hand."
+  },
+  "5C1438A1-4189-4576-9B68-36B6F549DD47": {
+   "status": "disqualified",
+   "phash": "f5b545a2c5a01275e2eac3d3aa46c45dc0d13857544e30fb3e6e56ce3857ce0e",
+   "reason": "The label is too dark and lacks sufficient contrast, making it difficult to read and identify the drink clearly."
+  },
+  "3B34F8E8-FEB6-492D-A7A1-8A03AA0C12DA": {
+   "status": "disqualified",
+   "phash": "fee0918779f4de70a78eb0fa0c736204ae86e2a112a1f6bfc48154e790fd1c1e",
+   "reason": "There is no alcohol bottle in the image."
+  },
+  "61C4774D-84BD-4FE1-8C6A-119E71D0B1B2": {
+   "status": "skipped_same_shot",
+   "phash": "bac6c656c1acd5a93ef99c866f852edaa8546272a0771674714b17839da9c88b",
+   "match": "BC766AC1-E151-41FD-B101-763DF852CAF0",
+   "distance": 0
+  },
+  "EA65AF00-720B-4480-9030-AE20ADB9AC8F": {
+   "status": "skipped_already_on_ig",
+   "phash": "aebeca231aea92bf2521a57dad49ab5ae1561bc4c25d1c83d1b85caec3221e6c",
+   "match": "18099101129365732",
+   "distance": 56
+  },
+  "49CAD6F2-6DB7-44ED-9F88-6ACCD1898AF5": {
+   "status": "skipped_already_on_ig",
+   "phash": "a961ca0d1ad2d29437b465a9342d85e2ad0c3979e3633b1ee4f33ccd84fc3393",
+   "match": "18104492422429089",
+   "distance": 0
+  },
+  "A4C3E8A5-611D-417B-B517-AE1F4B22D599": {
+   "status": "skipped_already_on_ig",
+   "phash": "e92d74908f3bf2611bcdc81e66f0631f98d4c0e7660d71bd3c896669d12a99e2",
+   "match": "17909155478718584",
+   "distance": 0
+  },
+  "1748CAE2-4F77-4884-B705-6792B35840DC": {
+   "status": "disqualified",
+   "phash": "8fb350611de6b122d6f26e2fda45263e5311f253a188c538e0f39b9ef27a0b8a",
+   "reason": "The bottle is standing on a coaster on a table, but the rules require a hand to be holding the bottle."
+  },
+  "082A7677-FA08-468A-BC04-F2B447FAB618": {
+   "status": "disqualified",
+   "phash": "8737150268c9285542275edde388c9aa929aad48b1a392d1bc7d8eeffd2f89d4",
+   "reason": "There are multiple bottles instead of exactly one, and no hand is holding a bottle; they are standing on a counter."
+  },
+  "7F613FE3-F52C-4FBF-BE71-D233BEB348F6": {
+   "status": "disqualified",
+   "phash": "e597ca618663a4e69680d2dc7678e1a75ea4a358b269d0075fe4294fe6a095be",
+   "reason": "The bottle is standing on a table, not being held by a hand."
+  },
+  "7C27CBE8-A8EC-4714-BA41-3C9E1479C931": {
+   "status": "disqualified",
+   "phash": "fe1e660b954a975ca79d786b8a12b787c3ab21f81840801545ffff60701e8a7e",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the visible label is the back label containing ingredients, legal text, and a barcode instead of the main front brand label."
+  },
+  "2F60D0C4-074F-43C6-A93C-EF1DB8FEB72B": {
+   "status": "skipped_same_shot",
+   "phash": "b732e73f0c7dbc4a60cc93ec1e289aa234dfd87c72b06ca166c04cea6a6e3171",
+   "match": "4E94B438-1A57-437A-AAE4-32032AFE3059",
+   "distance": 0
+  },
+  "0D6CBFB8-382C-4B45-9F03-A527D67ECF8B": {
+   "status": "disqualified",
+   "phash": "b02d678063979f0dc5289e3c66d1785686b29c13957f686056a7694b9696b5eb",
+   "reason": "The visible label is the back label containing ingredients, alcohol percentage, and legal information, rather than the front brand label."
+  },
+  "5D4201C7-48E0-44AB-86CB-3BB9B2A8A5D0": {
+   "status": "skipped_same_shot",
+   "phash": "e2dfea809ab190df37802537ed6d0d48e15b1b52c3d466715ed3509c5c87c333",
+   "match": "FB9BC314-1FD0-47FF-8437-99B2D00AE8B5",
+   "distance": 0
+  },
+  "961B6475-B8ED-4825-B3B1-AAA76D2D4AD1": {
+   "status": "skipped_already_on_ig",
+   "phash": "e4bceba79a619ac9269e35b7352dcc690d63b9120b5cea418657305cfcc780d6",
+   "match": "17872503557687089",
+   "distance": 0
+  },
+  "CF0796DD-F76B-4B8C-BA6A-6A313782A79D": {
+   "status": "posted",
+   "phash": "8fdc0aaf55aaed544b2b3b43c05895d637b28485ccac33e0ce6b62ca39dacc63",
+   "ig_media_id": "17904658233355424",
+   "kind": "sake",
+   "name": "Hitakami Junmai Daiginjo Yasuke Hyotan Bottle"
   }
  },
  "token_refreshed_at": 1789215502,
