@@ -2944,8 +2944,25 @@
    "ig_media_id": "18119960377954006",
    "kind": "wine",
    "name": "Domaine Chandon de Briailles Savigny-lès-Beaune Aux Fournaux"
+  },
+  "4D450066-1246-426D-B956-795C9302603E": {
+   "status": "disqualified",
+   "phash": "8e9327b336322e8fcd4fc04e6add5a092889310b91b2d1e3e7d3f59715925c2e",
+   "reason": "There is no alcohol bottle in the image; the main subjects are small sample jars of rice and glassware."
+  },
+  "657A2EFE-8F6A-4D54-9B91-B22AD7F43CE5": {
+   "status": "disqualified",
+   "phash": "d11f7bde87d4c817eb825c1b09cbc0d9da3eb22c02add38ddd9b184f334f4060",
+   "reason": "The bottle is standing on the table rather than being held by a hand."
+  },
+  "3758204E-41F3-4007-BFE3-4FA053A81EF1": {
+   "status": "posted",
+   "phash": "c55a38ecb88fcc0f3740377ef8c20fc0e02e3b48c0f36e0653bcd8911ec5e33f",
+   "ig_media_id": "17922392766222992",
+   "kind": "wine",
+   "name": "Casa da Passarella Pai d'Aviz Colheita Tinto"
   }
  },
- "token_refreshed_at": 1789215502,
+ "token_refreshed_at": 1791828441,
  "hash_bits": 256
 }
