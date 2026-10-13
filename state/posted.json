@@ -2961,6 +2961,18 @@
    "ig_media_id": "17922392766222992",
    "kind": "wine",
    "name": "Casa da Passarella Pai d'Aviz Colheita Tinto"
+  },
+  "36C20D12-E48A-4F73-8696-DBD5CDCF8FF4": {
+   "status": "disqualified",
+   "phash": "a067d223ce906f9837cc987df7190dc7b67c307242238d727278898ee74a3e9c",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "B3B25DA7-117A-4377-99AF-154A5FE9DE80": {
+   "status": "posted",
+   "phash": "c5288310cff4f06f0f00cdffc8108fe7f95cce0301df7e303c0f39d96f633058",
+   "ig_media_id": "17907449640591234",
+   "kind": "sake",
+   "name": "Echigo Sakura Genshu"
   }
  },
  "token_refreshed_at": 1791828441,
