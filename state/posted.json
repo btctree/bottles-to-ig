@@ -2973,6 +2973,23 @@
    "ig_media_id": "17907449640591234",
    "kind": "sake",
    "name": "Echigo Sakura Genshu"
+  },
+  "6752AC27-5372-4029-882B-36BF4307BDE6": {
+   "status": "disqualified",
+   "phash": "9e83707e6a1562957abc9483397294a339529695633bda1d63783a1c65ea9bd2",
+   "reason": "The image shows the back label of the bottle, which contains a barcode, legal information, and descriptive text, rather than the main front brand label."
+  },
+  "F43CDE2C-4599-460E-8B3C-9AADD030389F": {
+   "status": "disqualified",
+   "phash": "aa55e855e4e999ca4953e4ed659c56dabb3f6b10358c595a9a49d92362666494",
+   "reason": "There is no alcohol bottle present in the image; it is a selfie in front of a brewery sign."
+  },
+  "93959444-AC6C-4C76-A7CB-30CB154631D1": {
+   "status": "posted",
+   "phash": "d522c08b9e63f78c0c99f3e2067af88307bcfc61018fff3a70c60f8ce03927e6",
+   "ig_media_id": "18166950565467207",
+   "kind": "sake",
+   "name": "AKABU SNOW EXTRA 2022"
   }
  },
  "token_refreshed_at": 1791828441,
