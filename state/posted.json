@@ -2997,6 +2997,29 @@
    "ig_media_id": "18076482467732988",
    "kind": "sake",
    "name": "Kubota Manju Muroka Nama Genshu"
+  },
+  "50927322-AED5-4372-8E22-872CED7D70D5": {
+   "status": "disqualified",
+   "phash": "9860e672a67bdfe4984ca6e9711729baf58598acc9d466ba9851991a99b119ce",
+   "reason": "The bottle is standing on a display surface and is not being held by a hand."
+  },
+  "9CE77F32-9466-4FEA-8DA9-EB1E263B1FBA": {
+   "status": "disqualified",
+   "phash": "eac1802bdfe12e70713a8b95d5ca21cd4d4a2e5570bbd9313b2617c99cce3c95",
+   "reason": "The bottle is standing on a surface and is not being held by a hand."
+  },
+  "6670C325-A649-413B-9C82-8F8C90004608": {
+   "status": "skipped_already_on_ig",
+   "phash": "e3cfec819cf492fcf4909d87c0620f6b601b1a7052d9f2172cd4ef85609b837d",
+   "match": "18039859625835810",
+   "distance": 0
+  },
+  "9DD99AE0-BAC7-4965-8151-ADB6C2364E23": {
+   "status": "posted",
+   "phash": "ec44e14f36c097b5d1253de9e41b337c9861cd9363de3640c33f3982ccdc3319",
+   "ig_media_id": "17985525950891812",
+   "kind": "wine",
+   "name": "Lacoste-Borie"
   }
  },
  "token_refreshed_at": 1791828441,
