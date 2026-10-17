@@ -3020,6 +3020,35 @@
    "ig_media_id": "17985525950891812",
    "kind": "wine",
    "name": "Lacoste-Borie"
+  },
+  "6732E69D-67B1-463A-B5E3-11881785ECC6": {
+   "status": "disqualified",
+   "phash": "b87c9c58eef8c7b1315c9c0e6b8f3f17953778f8ce1525a0d87e628549628434",
+   "reason": "The bottle is not being held by a hand and it is not the clear main subject of the photo, as the food in the foreground takes prominence."
+  },
+  "781B30DB-B2B6-406E-BC99-A4BD21805B9B": {
+   "status": "disqualified",
+   "phash": "adf52954f850eea5d2a9ffadd55f3002caa15d41c17aea0a1bc0343c8da5734b",
+   "reason": "The bottle is standing on a surface rather than being held by a hand, and the image shows the back label containing ingredients, legal text, and a barcode instead of the front brand label."
+  },
+  "64A0B4E4-3A70-41B7-A264-664550B4C5C7": {
+   "status": "skipped_same_bottle",
+   "phash": "ceeb380099f0c0da3702d17dc8410fbbf09e1fc0c27f3e12c1b66c67e719987d",
+   "name": "Domaine Chandon de Briailles Savigny-lès-Beaune Aux Fournaux",
+   "match": "domainechandondebriaillessavignylsbeauneauxfournaux",
+   "similarity": 1.0
+  },
+  "51074FC4-DDD8-4160-AC24-1B88BF5D8445": {
+   "status": "disqualified",
+   "phash": "fa8c542a24622a503e953ea9dfca85d6c073801d243b7a71778e78c45e31dfb7",
+   "reason": "The bottle is standing on a table rather than being held by a hand, and the label shown is the back label containing ingredients, alcohol percentage, and manufacturer information."
+  },
+  "C3E4C681-FD29-4019-8CE7-46D239DD449B": {
+   "status": "posted",
+   "phash": "bc51c0d19dbb3f24e04d1fd9d203cccc39b1e7239c6cf0c91713e2360e64f9c9",
+   "ig_media_id": "18162002671446166",
+   "kind": "sake",
+   "name": "Born Chogin Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1791828441,
