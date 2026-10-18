@@ -3049,6 +3049,16 @@
    "ig_media_id": "18162002671446166",
    "kind": "sake",
    "name": "Born Chogin Junmai Daiginjo"
+  },
+  "E952F140-5A9D-487E-BFEE-2230F3094127": {
+   "status": "disqualified",
+   "phash": "e72692da98cd2f4970a8ad360ab6f5c8ee1539d9c736b94263dcdc2911d2c354",
+   "reason": "The bottle is standing on a table rather than being held by a hand."
+  },
+  "422A2A96-BBC9-43C0-B4B6-59D557C71072": {
+   "status": "disqualified",
+   "phash": "9445d1557a85c6a1781b4ea539151e2b65789f13e5ec93d287a1685e96b361ed",
+   "reason": "The visible label is the back label, as it contains a barcode, legal text, alcohol percentage, and detailed production information."
   }
  },
  "token_refreshed_at": 1791828441,
