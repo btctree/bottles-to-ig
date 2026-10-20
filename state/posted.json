@@ -3059,6 +3059,55 @@
    "status": "disqualified",
    "phash": "9445d1557a85c6a1781b4ea539151e2b65789f13e5ec93d287a1685e96b361ed",
    "reason": "The visible label is the back label, as it contains a barcode, legal text, alcohol percentage, and detailed production information."
+  },
+  "60AA8FA5-326E-4E8F-8C3C-6497BC37AE19": {
+   "status": "skipped_already_on_ig",
+   "phash": "e3bdea049a69d2db369021b78de48dc9a92a3b68e1492e59e6763989c1db2e32",
+   "match": "18092500835089193",
+   "distance": 56
+  },
+  "8C4BB872-148F-4AB2-9793-8CA93628C54A": {
+   "status": "skipped_same_shot",
+   "phash": "e6780c66f4a6c7ac9e3988ae5d8521b9b5c118b9bd9855992971d053cf7c0d63",
+   "match": "00503510-73A6-4A4E-BB78-A821DB626346",
+   "distance": 0
+  },
+  "4C48CC2A-C4D8-4CB4-9F94-2B6EDCAE642F": {
+   "status": "skipped_same_shot",
+   "phash": "ea56781e3a5c397a3c2ae3f49d28c0e09ffdc380183f3a523c2d63db6078e3e0",
+   "match": "E525779A-E025-49BD-B17E-313248E6704A",
+   "distance": 0
+  },
+  "DECD65EC-D1C7-44A3-99CC-EBBB25CF939D": {
+   "status": "skipped_same_shot",
+   "phash": "fb52a838682bc5d035a1d2eb67e59b0b61e52c2d73d33c25c7809925c64f69ec",
+   "match": "87BD3338-80DB-4417-9319-67C89E7B059E",
+   "distance": 0
+  },
+  "B3DCF83B-45CC-4547-A0B8-B95066AA1063": {
+   "status": "skipped_already_on_ig",
+   "phash": "a7bfea209a6392db34902535ed4d2d5be17639dcc791ce76529819c34c264738",
+   "match": "17938663020373745",
+   "distance": 0
+  },
+  "117F54C6-61C1-41CC-BB86-2C2DA8430770": {
+   "status": "skipped_already_on_ig",
+   "phash": "e79f88555be7325d3480e5b7cf20184df1db071270ee5d8151a3633c9ee1e00f",
+   "match": "17949238200298411",
+   "distance": 0
+  },
+  "515B9691-7AE2-4749-B892-59E261D9892B": {
+   "status": "skipped_same_shot",
+   "phash": "fa1ea5a161a19e9ea6947078ce5a6b699e7b25e598f9c60169478d2e25a496d8",
+   "match": "AD1037DF-C4C1-42C9-AA49-02B187123E03",
+   "distance": 0
+  },
+  "965855D8-B4AF-4A04-9D37-E83EA16D8E0F": {
+   "status": "posted",
+   "phash": "cab6e6241d4bb35ce6042c9fe5b21f28c13b59c6f604367f33a48895cc9da3c3",
+   "ig_media_id": "18117139400020657",
+   "kind": "other",
+   "name": "Laphroaig 10 Year Old Original Cask Strength Batch 016"
   }
  },
  "token_refreshed_at": 1791828441,
