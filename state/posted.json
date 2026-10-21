@@ -3108,6 +3108,42 @@
    "ig_media_id": "18117139400020657",
    "kind": "other",
    "name": "Laphroaig 10 Year Old Original Cask Strength Batch 016"
+  },
+  "25090E27-C78F-48CA-B55C-CAB62BD45941": {
+   "status": "skipped_same_shot",
+   "phash": "ff0b7095bced4b487035cbda715aca4082decd7b9925cca9b56e2cebd0802532",
+   "match": "0496C414-DAED-40D9-B1AF-14F2422DA286",
+   "distance": 0
+  },
+  "6ABFD8DF-621F-4002-AED2-D03DB59A5B8D": {
+   "status": "skipped_already_on_ig",
+   "phash": "a35feb009a5792df3680353eed240dc9601f1bf4c3d14e0542ff39986d83c73a",
+   "match": "17938663020373745",
+   "distance": 58
+  },
+  "42370C3D-BD64-48D8-9A27-6DCFA0F0E5DD": {
+   "status": "skipped_same_shot",
+   "phash": "a59af68636434b7b363ec03ef258cdb8c07c0fa0c14b3ce19fe070573969707a",
+   "match": "2EA49059-492E-44E6-9B3F-21108C4BF75A",
+   "distance": 0
+  },
+  "63A4D244-A37B-4D49-9969-03D132A12F54": {
+   "status": "skipped_already_on_ig",
+   "phash": "e0cf6f001970b24ff78037b2fc0f8ff8c233398e5af4427d4f0150ff3cc0c332",
+   "match": "18129692954486698",
+   "distance": 0
+  },
+  "F0EDB1A5-165F-4FF8-A847-D55878255C9A": {
+   "status": "skipped_already_on_ig",
+   "phash": "a3f2d8021b79c2fb3582a57dcc093fd2d8f61b14622d5849c4eb3b1a91b2b47e",
+   "match": "18142617751593607",
+   "distance": 0
+  },
+  "DFAF5529-664A-4EDA-B9C4-A950236A3915": {
+   "status": "skipped_same_shot",
+   "phash": "ed124a2d3469e1f832e4cdabf237cd80c0f62f80d9c23c07db8330fe8f33e3b0",
+   "match": "B22B2108-9DFD-4FEB-807C-656B60F7789A",
+   "distance": 0
   }
  },
  "token_refreshed_at": 1791828441,
