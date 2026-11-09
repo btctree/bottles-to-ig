@@ -3144,6 +3144,18 @@
    "phash": "ed124a2d3469e1f832e4cdabf237cd80c0f62f80d9c23c07db8330fe8f33e3b0",
    "match": "B22B2108-9DFD-4FEB-807C-656B60F7789A",
    "distance": 0
+  },
+  "EAC491F2-2201-49CE-AC61-899B48C8BE5D": {
+   "status": "disqualified",
+   "phash": "de85f85c3878cf8168788d9a63928c1563eb38786341326ce7a79214c73fdb72",
+   "reason": "The visible label is the back label, as it contains a barcode, QR code, legal information, and importer details."
+  },
+  "A85165C0-744A-4278-BA5F-DC4260FE2376": {
+   "status": "posted",
+   "phash": "e1afde2018f9e6933684c03f1f4069df6d0433f8b64787f5b8bd2581e4724f10",
+   "ig_media_id": "18636226540019349",
+   "kind": "wine",
+   "name": "Georges Duboeuf Beaujolais-Villages"
   }
  },
  "token_refreshed_at": 1791828441,
