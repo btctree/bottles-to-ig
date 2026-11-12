@@ -3156,8 +3156,19 @@
    "ig_media_id": "18636226540019349",
    "kind": "wine",
    "name": "Georges Duboeuf Beaujolais-Villages"
+  },
+  "425DE889-6BC1-4A93-B540-8ED66F596E9A": {
+   "status": "disqualified",
+   "phash": "b0d2b2d26d2da325634fc30d970f9a49cf1e30381c3465ad365a6736ca799e3a",
+   "reason": "The visible label is the back label containing technical information, ingredients, and a barcode, not the front brand label. Additionally, there is no hand visible holding the bottle."
+  },
+  "3FA3BB61-09CB-4B2C-A1FF-E1A535686839": {
+   "status": "skipped_same_shot",
+   "phash": "9fccc0191ef292afe1202decec0339fe93499b5a69722ec6649c16b1cb2759a5",
+   "match": "42D536E6-430D-4731-B7FB-496DD81F4DB0",
+   "distance": 60
   }
  },
- "token_refreshed_at": 1791828441,
+ "token_refreshed_at": 1794502727,
  "hash_bits": 256
 }
