@@ -3167,6 +3167,41 @@
    "phash": "9fccc0191ef292afe1202decec0339fe93499b5a69722ec6649c16b1cb2759a5",
    "match": "42D536E6-430D-4731-B7FB-496DD81F4DB0",
    "distance": 60
+  },
+  "BAED80C6-2521-46F9-AEA9-118E9469B46B": {
+   "status": "skipped_same_shot",
+   "phash": "9fccc0191ef292afe1202decec0339fe93499b5a69722ec6649c16b1cb2759a5",
+   "match": "3FA3BB61-09CB-4B2C-A1FF-E1A535686839",
+   "distance": 0
+  },
+  "3C027B32-2AEA-4A2B-A229-45ABDC4C5DBD": {
+   "status": "skipped_same_shot",
+   "phash": "b0d2b2d26d2da325634fc30d970f9a49cf1e30381c3465ad365a6736ca799e3a",
+   "match": "425DE889-6BC1-4A93-B540-8ED66F596E9A",
+   "distance": 0
+  },
+  "0F99FEF1-E564-453C-87FB-8068DCF88EC7": {
+   "status": "disqualified",
+   "phash": "b0e363cf6f0ce4f8670fa63c67869cb665b49cb64da49926653c89296734a12c",
+   "reason": "The visible label is the back label, as it contains a barcode, alcohol percentage, and legal information instead of the main brand logo."
+  },
+  "6B9BF702-3D61-46D3-9D2B-675D57EFD970": {
+   "status": "skipped_already_on_ig",
+   "phash": "e7bce0211a6992db369225b6cc6d1f49c1763b0cc6d13c778f9259ca6e334760",
+   "match": "17938663020373745",
+   "distance": 60
+  },
+  "B59A4B1A-8055-4659-A295-FD9A2FD53026": {
+   "status": "disqualified",
+   "phash": "e85be1246fabc785e5a41e15c5943e5a5b84645a73a0961ee7a4987ac696687b",
+   "reason": "The visible label is the back label as it contains a barcode, QR code, alcohol percentage, and legal/technical information."
+  },
+  "158AC4C7-C3FE-4EAB-8D9B-A03E1ED584FF": {
+   "status": "posted",
+   "phash": "8fede0041ef29616e5202dafe50a18dbda105be764b50eb5f18d9d38c90b39da",
+   "ig_media_id": "18122035498757999",
+   "kind": "wine",
+   "name": "Barrosinha Vinho Tinto"
   }
  },
  "token_refreshed_at": 1794502727,
