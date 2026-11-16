@@ -3202,6 +3202,17 @@
    "ig_media_id": "18122035498757999",
    "kind": "wine",
    "name": "Barrosinha Vinho Tinto"
+  },
+  "D97D91AE-CB68-4BE9-9825-D99E56BDD1CA": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfd1e0179a0513fde40225bec52fbc4961dbdb121e44e6793c93c187583c7334",
+   "match": "18428262007198045",
+   "distance": 60
+  },
+  "A005ACDE-EFB9-4E27-9F35-161ED87DD8D4": {
+   "status": "disqualified",
+   "phash": "ba1fb15a607a3a55e168387997c161799a0f61f99b0963ed792d33a46da52382",
+   "reason": "The visible label is the back label, as it contains a barcode, nutritional information, alcohol percentage, and detailed producer information."
   }
  },
  "token_refreshed_at": 1794502727,
