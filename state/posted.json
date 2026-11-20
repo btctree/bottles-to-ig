@@ -3213,6 +3213,66 @@
    "status": "disqualified",
    "phash": "ba1fb15a607a3a55e168387997c161799a0f61f99b0963ed792d33a46da52382",
    "reason": "The visible label is the back label, as it contains a barcode, nutritional information, alcohol percentage, and detailed producer information."
+  },
+  "EDBB9D69-D424-48D1-B202-7D132DDD99EC": {
+   "status": "skipped_same_shot",
+   "phash": "ba1fb15a607a3a55e168387997c161799a0f61f99b0963ed792d33a46da52382",
+   "match": "A005ACDE-EFB9-4E27-9F35-161ED87DD8D4",
+   "distance": 0
+  },
+  "106C9C2A-CD85-4F83-91E1-F92118657418": {
+   "status": "skipped_already_on_ig",
+   "phash": "e7bce0211a6992db369225b6cc6d1f49c1763b0cc6d13c778f9259ca6e334760",
+   "match": "17938663020373745",
+   "distance": 60
+  },
+  "E59F6AE4-C2C3-495A-AAA1-B5386BE0D535": {
+   "status": "skipped_same_shot",
+   "phash": "de85f85c3878cf8168788d9a63928c1563eb38786341326ce7a79214c73fdb72",
+   "match": "EAC491F2-2201-49CE-AC61-899B48C8BE5D",
+   "distance": 0
+  },
+  "72729DC0-41DA-40C1-9BD4-E896AB6EF957": {
+   "status": "skipped_same_shot",
+   "phash": "b0d2b2d26d2da325634fc30d970f9a49cf1e30381c3465ad365a6736ca799e3a",
+   "match": "425DE889-6BC1-4A93-B540-8ED66F596E9A",
+   "distance": 0
+  },
+  "601E1AD9-74B2-4924-9444-BE7F3FDAAAC6": {
+   "status": "skipped_already_on_ig",
+   "phash": "8fede0041ef29616e5202dafe50a18dbda105be764b50eb5f18d9d38c90b39da",
+   "match": "18122035498757999",
+   "distance": 0
+  },
+  "1C3748E3-3A29-439B-9C69-D4147495C8EF": {
+   "status": "skipped_same_shot",
+   "phash": "b0e363cf6f0ce4f8670fa63c67869cb665b49cb64da49926653c89296734a12c",
+   "match": "0F99FEF1-E564-453C-87FB-8068DCF88EC7",
+   "distance": 0
+  },
+  "789841D6-EF7C-4173-8A44-404605EA8C35": {
+   "status": "skipped_already_on_ig",
+   "phash": "e1afde2018f9e6933684c03f1f4069df6d0433f8b64787f5b8bd2581e4724f10",
+   "match": "18636226540019349",
+   "distance": 0
+  },
+  "F7F5D7D2-15E6-472A-AAE2-5F345EE844F7": {
+   "status": "skipped_already_on_ig",
+   "phash": "bfd1e0179a0513fde40225bec52fbc4961dbdb121e44e6793c93c187583c7334",
+   "match": "18428262007198045",
+   "distance": 60
+  },
+  "E13E07BD-DCF4-4DA6-B795-D98C41B6B523": {
+   "status": "skipped_same_shot",
+   "phash": "9fccc0191ef292afe1202decec0339fe93499b5a69722ec6649c16b1cb2759a5",
+   "match": "3FA3BB61-09CB-4B2C-A1FF-E1A535686839",
+   "distance": 0
+  },
+  "10453074-FC01-48DC-95A6-114C89F13B6F": {
+   "status": "skipped_same_shot",
+   "phash": "e85be1246fabc785e5a41e15c5943e5a5b84645a73a0961ee7a4987ac696687b",
+   "match": "B59A4B1A-8055-4659-A295-FD9A2FD53026",
+   "distance": 0
   }
  },
  "token_refreshed_at": 1794502727,
