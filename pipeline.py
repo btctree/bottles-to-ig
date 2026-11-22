@@ -323,14 +323,28 @@ If it is SAKE (nihonshu):
 "rice_en":"e.g. yamadanishiki","rice_ja":"e.g. 山田錦","brewery_en":"","brewery_ja":"",
 "city_en":"","city_ja":"","flavor_en":"one word e.g. fruity","flavor_ja":"e.g. フルーティー"}
 If it is WINE:
-{"kind":"wine","name":"","country":"","region":"","village":"","grapes":["",""],"vintage":"e.g. 2019","flavor":"one word"}
+{"kind":"wine","name":"",
+"name_parts_en":["producer e.g. Arnaud Aucoeur","appellation/cuvee e.g. Julienas","style e.g. Vieilles Vignes"],
+"name_parts_ja":["e.g. アルノー・オクール"],
+"country":"","region":"","village":"","grapes":["",""],"vintage":"e.g. 2019","flavor":"one word"}
 If it is any OTHER alcohol (whisky, beer, champagne, gin, shochu, umeshu, liqueur...):
-{"kind":"other","name_en":"","name_ja":"","category_en":"e.g. Scotch whisky","category_ja":"e.g. スコッチウイスキー",
+{"kind":"other","name_en":"","name_ja":"",
+"name_parts_en":["maker e.g. Old Pulteney","expression/age e.g. 12 Year Old","style e.g. Single Malt"],
+"name_parts_ja":["e.g. オールドプルトニー"],
+"category_en":"e.g. Scotch whisky","category_ja":"e.g. スコッチウイスキー",
 "maker_en":"","maker_ja":"","country_en":"","country_ja":"","region":"","age_or_vintage":"","flavor_en":"one word","flavor_ja":""}
 If you cannot identify it at all: {"kind":"unknown"}
-Rules: name_parts must split the product name into its meaningful components —
-brand, style words (each its own part: 生原酒, 大吟醸...), edition/collaboration —
-NOT the whole name as one string; 2-6 parts, same split in both languages.
+Rules: name_parts applies to EVERY kind — sake, wine and other alcohol alike.
+Split the product name into its meaningful components — producer/brand, style
+or grade words (each its own part), cuvee/expression, age or edition — NOT the
+whole name as one string; 2-6 parts. Examples:
+  sake      日本盛 / 生原酒 / 大吟醸 / モンベルボトル
+  wine      Arnaud Aucoeur / Julienas / Vieilles Vignes
+  whisky    Old Pulteney / 12 Year Old
+  champagne Nicolas Feuillatte / Millesime 2018 / Blanc de Blancs
+Use the same split in both languages where an established Japanese form exists;
+where it does not (most wine and imported spirits), leave name_parts_ja empty
+rather than inventing a transliteration.
 Read fields from the label when visible (especially rice polishing ratio
 精米歩合 and rice variety). If you have confidently identified the exact product,
 you may fill remaining fields (grapes, flavor, brewery, city, rice, polish) from
@@ -343,15 +357,22 @@ def tagify(s):
     return f"#{s}" if s else ""
 
 
+def name_tags(info, fallback_keys):
+    """One hashtag per meaningful part of the product name, for every kind of
+    drink. A whole name as a single tag (#oldpulteney12yearold) is unsearchable,
+    so the model splits it; this falls back to the whole name only when it
+    returned no parts."""
+    parts = [str(p) for p in (info.get("name_parts_en") or [])]
+    parts += [str(p) for p in (info.get("name_parts_ja") or [])]
+    if not parts:
+        parts = [str(info.get(k, "")) for k in fallback_keys]
+    return [tagify(p) for p in parts]
+
+
 def build_caption(info):
     tags = []
     if info.get("kind") == "sake":
-        parts = (info.get("name_parts_en") or []) + (info.get("name_parts_ja") or [])
-        if parts:
-            for p in parts:
-                tags.append(tagify(str(p)))
-        else:
-            tags += [tagify(str(info.get("name_en", ""))), tagify(str(info.get("name_ja", "")))]
+        tags += name_tags(info, ("name_en", "name_ja"))
         pool_ja = "".join(str(p) for p in (info.get("name_parts_ja") or []))
         pool_en = norm_name("".join(str(p) for p in (info.get("name_parts_en") or [])))
         type_ja = str(info.get("type_ja", ""))
@@ -369,7 +390,8 @@ def build_caption(info):
                  "#日本酒好き", "#日本酒好きな人と繋がりたい", "#sakelover"]
         title = info.get("name_ja") or info.get("name_en") or ""
     elif info.get("kind") == "wine":
-        for k in ["name", "country", "region", "village"]:
+        tags += name_tags(info, ("name",))
+        for k in ["country", "region", "village"]:
             tags.append(tagify(str(info.get(k, ""))))
         for g in info.get("grapes", []):
             tags.append(tagify(str(g)))
@@ -380,7 +402,8 @@ def build_caption(info):
         tags += ["#wine", "#winelover"]
         title = info.get("name") or ""
     elif info.get("kind") == "other":
-        order = ["name_en", "name_ja", "category_ja", "category_en", "maker_ja",
+        tags += name_tags(info, ("name_en", "name_ja"))
+        order = ["category_ja", "category_en", "maker_ja",
                  "maker_en", "country_ja", "country_en", "region",
                  "flavor_ja", "flavor_en"]
         for k in order:
