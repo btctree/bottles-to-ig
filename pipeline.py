@@ -233,13 +233,16 @@ def apply_preset(img_bytes):
 
 # ---------------------------------------------------------------- gemini
 
-def parse_obj(txt):
-    """The JSON object from a model reply, or None if there isn't one.
+def parse_objs(txt):
+    """Every JSON object in a model reply, in order; [] if there is none.
 
-    Three shapes have to be accepted: a bare object; an object wrapped in a
-    one-element array, which the model began returning on 2026-11-15 and which
-    crashed every caller that expected a dict ('list' object has no attribute
-    'get'); and an object with prose around it.
+    The model answers per subject: one object for a photo of one bottle, and
+    several objects for an image holding several. Taking the first and dropping
+    the rest silently accepts a 12-tile collage as a single bottle, which is
+    exactly how 0CDD97F7 got posted on 2026-11-22 - so callers that care about
+    how many subjects there were ask for all of them.
+
+    Also tolerates an object with prose around it.
     """
     candidates = [txt]
     m = re.search(r"[\[{].*[\]}]", txt, re.S)
@@ -250,14 +253,16 @@ def parse_obj(txt):
             parsed = json.loads(c)
         except json.JSONDecodeError:
             continue
-        if isinstance(parsed, list):
-            parsed = next((x for x in parsed if isinstance(x, dict)), None)
         if isinstance(parsed, dict):
-            return parsed
-    return None
+            return [parsed]
+        if isinstance(parsed, list):
+            objs = [x for x in parsed if isinstance(x, dict)]
+            if objs:
+                return objs
+    return []
 
 
-def gemini(prompt, img_bytes=None, retries=5):
+def gemini(prompt, img_bytes=None, retries=5, want_all=False):
     models = [CONFIG["gemini_model"], "gemini-3.1-flash-lite"]
     parts = [{"text": prompt}]
     if img_bytes:
@@ -289,9 +294,9 @@ def gemini(prompt, img_bytes=None, retries=5):
         r.raise_for_status()
         txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
         txt = re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip()
-        obj = parse_obj(txt)
-        if obj is not None:
-            return obj
+        objs = parse_objs(txt)
+        if objs:
+            return objs if want_all else objs[0]
         print(f"  bad JSON from model (attempt {i + 1}), retrying")
         last = "bad JSON"
         continue
@@ -300,9 +305,14 @@ def gemini(prompt, img_bytes=None, retries=5):
 
 QUALIFY_PROMPT = """You check photos for an Instagram feed about alcohol bottles
 (sake, wine, whisky, beer, champagne, gin, shochu, umeshu — any alcoholic drink).
-Answer in JSON: {"qualified": true/false, "reason": "..."}
+Answer with ONE JSON object describing the WHOLE image - never one object
+per bottle: {"qualified": true/false, "reason": "..."}
 qualified=true ONLY if ALL hold:
-- exactly one alcohol bottle is the clear main subject
+- the image is a single real photograph, NOT a screenshot, collage, grid,
+  montage or contact sheet. If you can see several separate photos tiled
+  together, answer qualified=false with reason "collage/screenshot", however
+  good the individual photos are.
+- exactly one alcohol bottle is the clear main subject of that photograph
 - a hand is holding the bottle (not standing on a table/shelf/ice bucket)
 - the visible label is the FRONT brand label, not the back label (reject if it
   mainly shows ingredients 原材料名, alcohol %, legal text, barcode, contact info)
@@ -660,10 +670,22 @@ def main():
 
             checks += 1
             try:
-                q = gemini(QUALIFY_PROMPT, raw)
+                qs = gemini(QUALIFY_PROMPT, raw, want_all=True)
             except Exception as e:
                 print(f"{guid[:8]}: vision unavailable ({e}) - stopping early, will retry next run")
                 break
+            if len(qs) > 1:
+                # one object per subject, so several means a collage or a group
+                # shot. Recorded as disqualified rather than left unjudged - an
+                # unrecorded photo is retried first every run and blocks the
+                # queue, which is what kept the feed dead 2026-11-15..22.
+                photos_state[guid] = {"status": "disqualified", "phash": h,
+                                      "reason": f"{len(qs)} separate subjects in one image"}
+                album_pool[guid] = h
+                save_json(STATE_PATH, state)
+                print(f"{guid[:8]}: not qualified ({len(qs)} subjects in one image)")
+                continue
+            q = qs[0]
             if not q.get("qualified"):
                 photos_state[guid] = {"status": "disqualified", "phash": h,
                                       "reason": q.get("reason", "")}
