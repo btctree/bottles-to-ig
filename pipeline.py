@@ -233,6 +233,30 @@ def apply_preset(img_bytes):
 
 # ---------------------------------------------------------------- gemini
 
+def parse_obj(txt):
+    """The JSON object from a model reply, or None if there isn't one.
+
+    Three shapes have to be accepted: a bare object; an object wrapped in a
+    one-element array, which the model began returning on 2026-11-15 and which
+    crashed every caller that expected a dict ('list' object has no attribute
+    'get'); and an object with prose around it.
+    """
+    candidates = [txt]
+    m = re.search(r"[\[{].*[\]}]", txt, re.S)
+    if m:
+        candidates.append(m.group(0).replace("“", '\\"').replace("”", '\\"'))
+    for c in candidates:
+        try:
+            parsed = json.loads(c)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(parsed, list):
+            parsed = next((x for x in parsed if isinstance(x, dict)), None)
+        if isinstance(parsed, dict):
+            return parsed
+    return None
+
+
 def gemini(prompt, img_bytes=None, retries=5):
     models = [CONFIG["gemini_model"], "gemini-3.1-flash-lite"]
     parts = [{"text": prompt}]
@@ -265,18 +289,12 @@ def gemini(prompt, img_bytes=None, retries=5):
         r.raise_for_status()
         txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
         txt = re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip()
-        try:
-            return json.loads(txt)
-        except json.JSONDecodeError:
-            m = re.search(r"\{.*\}", txt, re.S)
-            if m:
-                try:
-                    return json.loads(m.group(0).replace("“", '\\"').replace("”", '\\"'))
-                except json.JSONDecodeError:
-                    pass
-            print(f"  bad JSON from model (attempt {i + 1}), retrying")
-            last = "bad JSON"
-            continue
+        obj = parse_obj(txt)
+        if obj is not None:
+            return obj
+        print(f"  bad JSON from model (attempt {i + 1}), retrying")
+        last = "bad JSON"
+        continue
     raise RuntimeError(f"Gemini failed after retries ({last})")
 
 
