@@ -3280,6 +3280,18 @@
    "ig_media_id": "18116331779595442",
    "kind": "sake",
    "name": "Hakkaisan Tokubetsu Honjozo"
+  },
+  "25B1EB9F-CBA0-4ADA-B662-CD3D1EE67A1C": {
+   "status": "disqualified",
+   "phash": "c0ab732fc54b5b4434aae70c75c8cb26e64e95740990d65752d2ed56e63699d2",
+   "reason": "no hand holding the bottle"
+  },
+  "729ED52F-B57D-4D64-8CAE-D077951DF392": {
+   "status": "posted",
+   "phash": "ed3b83f0381d47d9246620c6f9ccbe4f81f37c211a9d47f0d031c67fa7cc7240",
+   "ig_media_id": "18063744731574756",
+   "kind": "other",
+   "name": "Pravda Putin Huylo Dry-Hopped Sour Golden Ale"
   }
  },
  "token_refreshed_at": 1794502727,
