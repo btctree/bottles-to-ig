@@ -3292,6 +3292,80 @@
    "ig_media_id": "18063744731574756",
    "kind": "other",
    "name": "Pravda Putin Huylo Dry-Hopped Sour Golden Ale"
+  },
+  "3AE50784-0B48-470C-A2F4-FCADCE54EB49": {
+   "status": "disqualified",
+   "phash": "aeb8ac12d6c69a24cb1ced0bf4224285ac94f51a660bfacfb347f4a181e8db5e",
+   "reason": "no alcohol bottle present"
+  },
+  "2272D6D9-AF2A-4318-B141-32F0BB896C32": {
+   "status": "skipped_same_shot",
+   "phash": "dc1d2dc976948b4a36e1ce0e71f12d2cd3cc9cb353cc64d3910e76d9891974d8",
+   "match": "77C793C7-273F-402B-9EB9-77C1E4D901F7",
+   "distance": 0
+  },
+  "640E546D-6F34-45FF-A824-A4A9102B1DBC": {
+   "status": "disqualified",
+   "phash": "b4b6e36fd369cd906d92326c364d46d11336b936e5c19cd9da4fe3c124643226",
+   "reason": "no hand holding the bottle"
+  },
+  "98864317-A66A-4C18-BE03-C416ADFB1232": {
+   "status": "disqualified",
+   "phash": "a60c9a6589267c9f098a95994949d9b6859bd9c25c99a98adf557cb890634ddf",
+   "reason": "the bottle is standing on a table rather than being held by a hand, and the visible label is the back label containing ingredients and a barcode"
+  },
+  "250E02BB-E816-413C-8510-962B1D2A4C51": {
+   "status": "disqualified",
+   "phash": "858c1fdae19d825f7f3cb05a87fe5a2c42fd6f869c0ecdfcb680621f4a302209",
+   "reason": "no hand holding the bottle"
+  },
+  "1DF178B0-3500-40A6-8D9C-192BAB2571DC": {
+   "status": "disqualified",
+   "phash": "9280005e7afa37ac9d3cc9e44d2f25a36bcbfc510be5375f60c3179eea2303e0",
+   "reason": "no alcohol bottle is present in the image"
+  },
+  "6D677D18-1DCE-46CA-B93E-1F1AC05FAB5A": {
+   "status": "disqualified",
+   "phash": "ef1ea5787cf9610761e39ead614167a334b59696348196be96529838873dcb42",
+   "reason": "The visible label is the back label containing technical information, ingredients, and a barcode, rather than the main front brand label."
+  },
+  "C3CD1087-1DCE-4496-B33E-8A7C8E81023F": {
+   "status": "disqualified",
+   "phash": "e8b840f8b7c55826e21cbf55702621fedf80a0139df5598898bf67748e036677",
+   "reason": "no hand holding the bottle"
+  },
+  "C86AD66E-8531-469F-BF26-4BC064A69955": {
+   "status": "disqualified",
+   "phash": "e489e733ae73965979e7692c11ae8ed058152e3b6161de4b2f36e860638c9e4c",
+   "reason": "no hand holding the bottle"
+  },
+  "508DF2D5-A2D5-4005-8198-C0BFFE41FE71": {
+   "status": "disqualified",
+   "phash": "e56f9d045bd5b3593fc86cbfda06cb48d8b19e82620e21df85f127814b81c917",
+   "reason": "back label (contains barcode/alcohol %/legal text)"
+  },
+  "EB9D778D-C850-44F8-B6FE-4098D6C862D1": {
+   "status": "disqualified",
+   "phash": "fe422a7f21bec4806a1bc0f3d1fcca0ebd53b0d28f14a5ef1d483db126a91c8e",
+   "reason": "multiple bottles are present and none are being held by a hand"
+  },
+  "14B67D42-04B8-4C38-993D-2850BCAB9273": {
+   "status": "disqualified",
+   "phash": "ff4682aad131af5a2d4ad591c2babf46b4e1029a631edce138b9c21f2cf46dc0",
+   "reason": "multiple bottles are present and none are being held by a hand"
+  },
+  "96D412EF-B263-4C78-B9A4-798E67314813": {
+   "status": "skipped_already_on_ig",
+   "phash": "cffdc40032da82f2dc0319ffe0400edfe35c9a75c185d6bc742507e9f96f090a",
+   "match": "18113705030046254",
+   "distance": 0
+  },
+  "5316C38E-1D81-4433-92FA-67A89415E53B": {
+   "status": "posted",
+   "phash": "bac8c0fe9f9f360164fec9231b10f0dc27a3e530186df3c266323c9fc1ec1e23",
+   "ig_media_id": "18162545602507223",
+   "kind": "sake",
+   "name": "Isojiman Junmai Daiginjo 40 Akitsu Nishido"
   }
  },
  "token_refreshed_at": 1794502727,
