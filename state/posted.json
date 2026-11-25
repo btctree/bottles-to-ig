@@ -3366,6 +3366,31 @@
    "ig_media_id": "18162545602507223",
    "kind": "sake",
    "name": "Isojiman Junmai Daiginjo 40 Akitsu Nishido"
+  },
+  "3A437799-85E5-4D0D-82E8-A72C84365F58": {
+   "status": "skipped_same_bottle",
+   "phash": "a4b8cb061a5b3496c5a43c39c9c33336c65938d3c98699393667a6cd999bccf3",
+   "name": "Isojiman Junmai Daiginjo 40 Tojo Akitsu Nishido",
+   "match": "isojimanjunmaidaiginjo40akitsunishido",
+   "similarity": 0.949
+  },
+  "C0F1BBFC-7875-4BAE-BC17-2B9AA7C40A0C": {
+   "status": "skipped_already_on_ig",
+   "phash": "bafeca019af936cea4b0a527cd4d3d5bc0675b8c42395ce367ca1112f3341cc5",
+   "match": "17943880529554803",
+   "distance": 46
+  },
+  "26952BBC-856F-4663-BF0A-522F0E17B92F": {
+   "status": "disqualified",
+   "phash": "adbde259d24acda661b6325927c904da1a66e1612d9bd91ad3c02cd9266d5be6",
+   "reason": "The bottle is standing on the floor rather than being held by a hand."
+  },
+  "1A56E7D6-A4B3-4006-8B4C-948DC6CC1074": {
+   "status": "posted",
+   "phash": "a688880eddcc87f0343779e0cf2e1e4331d8e7920e26f0fc0f89c87e667c3fc1",
+   "ig_media_id": "18426220279152423",
+   "kind": "sake",
+   "name": "Tenbi Junmai Daiginjo"
   }
  },
  "token_refreshed_at": 1794502727,
