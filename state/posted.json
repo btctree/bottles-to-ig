@@ -3391,6 +3391,23 @@
    "ig_media_id": "18426220279152423",
    "kind": "sake",
    "name": "Tenbi Junmai Daiginjo"
+  },
+  "DA57830C-C200-42D3-BDD1-BCAF46F1F913": {
+   "status": "disqualified",
+   "phash": "e513ba45d62a01912c4de733c9f639cc928aa6a9eeba1dae494a6714566acdd5",
+   "reason": "no alcohol bottle is present in the image"
+  },
+  "FAC51B3B-1265-4C27-8E14-0BB0C5E7A943": {
+   "status": "disqualified",
+   "phash": "f4b5878d829a361ac3983c38c6d26c79965b60618f4d70f19f1f34b3cb3826cb",
+   "reason": "back label visible (barcode and technical information)"
+  },
+  "2B7C2376-A16B-48B5-BF94-CA7556499B3B": {
+   "status": "posted",
+   "phash": "cf959a2f9db884b03b2f7b78c0da1e87b170680d0fdaf8321785e4ec0d03c3b3",
+   "ig_media_id": "18200585605386636",
+   "kind": "sake",
+   "name": "Nabeshima Classic Junmai Daiginjo Akaiwa Omachi"
   }
  },
  "token_refreshed_at": 1794502727,
